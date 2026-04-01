@@ -18,15 +18,12 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
+  
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
   --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
   --color-muted-foreground: var(--muted-foreground);
@@ -39,6 +36,12 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  
+  --color-amada-teal: var(--amada-teal);
+  --color-amada-gold: var(--amada-gold);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -49,72 +52,73 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --background: #F7F9FC;
+  --foreground: #102033;
+  --card: #FFFFFF;
+  --card-foreground: #102033;
+  --popover: #FFFFFF;
+  --popover-foreground: #102033;
+  --primary: #0F2A44;
+  --primary-foreground: #FFFFFF;
+  --secondary: #005EB8;
+  --secondary-foreground: #102033;
+  --muted: #E8EDF3;
+  --muted-foreground: #2D3F51;
+  --accent: #E8EDF3;
+  --accent-foreground: #102033;
+  --destructive: #C0392B;
+  --destructive-foreground: #FFFFFF;
+  --border: #E8EDF3;
+  --input: #E8EDF3;
+  --ring: #00A3A6;
+  --radius: 0.75rem;
+  
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #102033;
+  --sidebar-primary: #0F2A44;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #E8EDF3;
+  --sidebar-accent-foreground: #102033;
+  --sidebar-border: #E8EDF3;
+  --sidebar-ring: #00A3A6;
+
+  /* Custom AMADA Accents */
+  --amada-teal: #00A3A6;
+  --amada-gold: #C8A43B;
+  --success: #2E7D32;
+  --warning: #C58B00;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* AMADA is a public sector site; dark mode may not be explicitly required but handled gracefully */
+  --background: #0F2A44;
+  --foreground: #F7F9FC;
+  --card: #102033;
+  --card-foreground: #F7F9FC;
+  --popover: #102033;
+  --popover-foreground: #F7F9FC;
+  --primary: #F7F9FC;
+  --primary-foreground: #0F2A44;
+  --secondary: #00A3A6;
+  --secondary-foreground: #FFFFFF;
+  --muted: #102033;
+  --muted-foreground: #E8EDF3;
+  --accent: #102033;
+  --accent-foreground: #F7F9FC;
+  --destructive: #C0392B;
+  --destructive-foreground: #FFFFFF;
+  --border: #4E6175;
+  --input: #4E6175;
+  --ring: #00A3A6;
+  
+  --sidebar: #0F2A44;
+  --sidebar-foreground: #F7F9FC;
+  --sidebar-primary: #005EB8;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #102033;
+  --sidebar-accent-foreground: #F7F9FC;
+  --sidebar-border: #4E6175;
+  --sidebar-ring: #00A3A6;
 }
 
 @layer base {
@@ -122,7 +126,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
   }
   html {
     @apply font-sans;
