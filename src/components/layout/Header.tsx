@@ -62,7 +62,7 @@ export function Header({ lang }: { lang: string }) {
               </DropdownMenuItem>
               <DropdownMenuItem className="p-0 mb-1">
                 <Link href={`/${l}/education/topics`} className="flex w-full px-3 py-2.5 text-[14px] font-medium text-[#003466] hover:bg-[#F0FDFA] hover:text-[#0D9488] rounded-md transition-colors">
-                  {t(s.antiDoping, l)}
+                  {t(s.cleanSportTopics, l)}
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="p-0 mb-2">

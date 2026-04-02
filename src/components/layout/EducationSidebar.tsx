@@ -137,23 +137,28 @@ export function EducationSidebar({ lang }: SidebarProps) {
                 { label: t(s.webinars, l), path: `/${l}/education/learning/webinars` },
                 { label: t(s.seminars, l), path: `/${l}/education/learning/seminars` },
                 { label: t(s.schoolsPrograms, l), path: `/${l}/education/learning/schools-program` },
-                { label: t(s.medicalEducation, l), path: `/${l}/education/learning/medical-education` },
-                { label: t(s.outreachEvents, l), path: `/${l}/education/events` },
+                { label: t(s.eventBasedEducation, l), path: `/${l}/education/events` },
               ]}
             />
 
-            {/* Dopinqə qarşı mübarizə */}
+            {/* Təmiz İdman Mövzuları */}
             <NavSection
-              title={t(s.antiDoping, l)}
+              title={t(s.cleanSportTopics, l)}
               titleHref={`/${l}/education/topics`}
               isActive={isActive}
               activeStyles={activeStyles}
               hoverStyles={hoverStyles}
               items={[
                 { label: t(s.antiDopingViolations, l), path: `/${l}/education/topics/anti-doping-rule-violations` },
+                { label: t(s.rightsResponsibilities, l), path: `/${l}/education/topics/rights-and-responsibilities` },
+                { label: t(s.consequences, l), path: `/${l}/education/topics/consequences` },
+                { label: t(s.governance, l), path: `/${l}/education/topics/governance` },
+                { label: t(s.valuesCleanSport, l), path: `/${l}/education/topics/values-clean-sport` },
+                { label: t(s.whereaboutsAdams, l), path: `/${l}/education/topics/whereabouts-adams` },
+                { label: t(s.supplementsRisk, l), path: `/${l}/education/topics/supplements-risk` },
+                { label: t(s.reportConcern, l), path: `/${l}/education/report-doping` },
                 { label: t(s.prohibitedList, l), path: `/${l}/education/topics/prohibited-list` },
                 { label: t(s.testingProcedures, l), path: `/${l}/education/topics/testing-procedures` },
-                { label: t(s.supplementsRisk, l), path: `/${l}/education/topics/supplements-risk` },
                 { label: t(s.strictLiability, l), path: `/${l}/education/topics/strict-liability` },
                 { label: t(s.tue, l), path: `/${l}/education/topics/tue` },
               ]}
@@ -168,26 +173,28 @@ export function EducationSidebar({ lang }: SidebarProps) {
               hoverStyles={hoverStyles}
               items={[
                 { label: t(s.athletes, l), path: `/${l}/education/target-groups/athletes` },
-                { label: t(s.supportPersonnel, l), path: `/${l}/education/target-groups/support-personnel` },
+                { label: t(s.coachesSupport, l), path: `/${l}/education/target-groups/support-personnel` },
                 { label: t(s.medicalProfessionals, l), path: `/${l}/education/target-groups/medical` },
-                { label: t(s.parents, l), path: `/${l}/education/target-groups/parents` },
+                { label: t(s.parentsTeachers, l), path: `/${l}/education/target-groups/parents` },
                 { label: t(s.federations, l), path: `/${l}/education/target-groups/federations` },
+                { label: t(s.public, l), path: `/${l}/education/target-groups/public` },
               ]}
             />
 
-            {/* STANDALONE: Support Links */}
-            {[
-              { label: t(s.resourceLibrary, l), path: `/${l}/education/resources` },
-              { label: t(s.contactTeam, l), path: `/${l}/education/contact` },
-            ].map((item, idx) => (
-              <Link
-                key={idx}
-                href={item.path}
-                className={`py-2 px-4 text-[14px] font-medium text-[#0D9488] ml-4 rounded-r-md mt-2 ${isActive(item.path) ? activeStyles : hoverStyles}`}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {/* Resurslar & Dəstək */}
+            <NavSection
+              title={t(s.resourcesSupport, l)}
+              titleHref={`/${l}/education/resources`}
+              isActive={isActive}
+              activeStyles={activeStyles}
+              hoverStyles={hoverStyles}
+              items={[
+                { label: t(s.resourceLibrary, l), path: `/${l}/education/resources` },
+                { label: t(s.reportConcern, l), path: `/${l}/education/report-doping` },
+                { label: t(s.faq, l), path: `/${l}/education/faq` },
+                { label: t(s.contactTeam, l), path: `/${l}/education/contact` },
+              ]}
+            />
           </div>
         </div>
 
