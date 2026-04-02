@@ -1,6 +1,13 @@
 import Link from "next/link";
+import { translations, t, type Lang } from "@/i18n/translations";
 
 export function Footer({ lang }: { lang: string }) {
+  const l = lang as Lang;
+  const isAz = l === "az";
+  const footer = translations.footer;
+  const nav = translations.nav;
+  const s = translations.sidebar;
+
   return (
     <footer className="bg-primary text-white border-t border-border/20 pt-16 pb-8">
       <div className="container mx-auto px-4 lg:px-8">
@@ -15,7 +22,7 @@ export function Footer({ lang }: { lang: string }) {
               <span className="font-bold text-lg tracking-wide">AMADA Education</span>
             </div>
             <p className="text-sm text-white/70 max-w-xs leading-relaxed">
-              Empowering clean sport through high-quality, accessible, and prevention-focused anti-doping education.
+              {t(footer.description, l)}
             </p>
             <div className="text-sm text-white/70 space-y-1">
               <p>Email: education@amada.az</p>
@@ -25,26 +32,26 @@ export function Footer({ lang }: { lang: string }) {
 
           {/* Column 2: Key Learning Pages */}
           <div>
-            <h3 className="font-semibold text-amada-gold mb-4 text-sm uppercase tracking-wider">Key Learning</h3>
+            <h3 className="font-semibold text-amada-gold mb-4 text-sm uppercase tracking-wider">{t(footer.keyLearning, l)}</h3>
             <ul className="space-y-3">
               <li>
                 <Link href={`/${lang}/education/target-groups`} className="text-sm text-white/80 hover:text-white transition-colors">
-                  Who We Educate
+                  {t(nav.whoWeEducate, l)}
                 </Link>
               </li>
               <li>
                 <Link href={`/${lang}/education/athlete-pathway`} className="text-sm text-white/80 hover:text-white transition-colors">
-                  Athlete Pathway
+                  {t(s.athletePathway, l)}
                 </Link>
               </li>
               <li>
                 <Link href={`/${lang}/education/topics`} className="text-sm text-white/80 hover:text-white transition-colors">
-                  Clean Sport Topics
+                  {t(nav.cleanSportTopics, l)}
                 </Link>
               </li>
               <li>
                 <Link href={`/${lang}/education/clean-sport-behaviors`} className="text-sm text-white/80 hover:text-white transition-colors">
-                  Clean Sport Behaviors
+                  {t(s.cleanSportBehaviors, l)}
                 </Link>
               </li>
             </ul>
@@ -52,26 +59,26 @@ export function Footer({ lang }: { lang: string }) {
 
           {/* Column 3: Resources & Organization */}
           <div>
-            <h3 className="font-semibold text-amada-gold mb-4 text-sm uppercase tracking-wider">Resources</h3>
+            <h3 className="font-semibold text-amada-gold mb-4 text-sm uppercase tracking-wider">{t(footer.resources, l)}</h3>
             <ul className="space-y-3">
               <li>
                 <Link href={`/${lang}/education/resources`} className="text-sm text-white/80 hover:text-white transition-colors">
-                  Resource Library
+                  {t(nav.resources, l)}
                 </Link>
               </li>
               <li>
                 <Link href={`/${lang}/education/education-plan`} className="text-sm text-white/80 hover:text-white transition-colors">
-                  Annual Education Plan
+                  {t(s.annualEducationPlan, l)}
                 </Link>
               </li>
               <li>
                 <Link href={`/${lang}/education/impact`} className="text-sm text-white/80 hover:text-white transition-colors">
-                  Monitoring & Impact
+                  {t(s.monitorImpact, l)}
                 </Link>
               </li>
               <li>
                 <Link href={`/${lang}/education/educators`} className="text-sm text-white/80 hover:text-white transition-colors">
-                  Educators
+                  {t(s.educatorNetwork, l)}
                 </Link>
               </li>
             </ul>
@@ -79,11 +86,11 @@ export function Footer({ lang }: { lang: string }) {
 
           {/* Column 4: Reporting & Support */}
           <div>
-            <h3 className="font-semibold text-amada-gold mb-4 text-sm uppercase tracking-wider">Support</h3>
+            <h3 className="font-semibold text-amada-gold mb-4 text-sm uppercase tracking-wider">{t(footer.support, l)}</h3>
             <ul className="space-y-3">
               <li>
                 <Link href={`/${lang}/education/report-doping`} className="text-sm text-white/80 hover:text-white transition-colors font-medium">
-                  Report a Concern
+                  {t(nav.reportConcern, l)}
                 </Link>
               </li>
               <li>
@@ -93,7 +100,7 @@ export function Footer({ lang }: { lang: string }) {
               </li>
               <li>
                 <Link href={`/${lang}/education/contact`} className="text-sm text-white/80 hover:text-white transition-colors">
-                  Contact Us
+                  {t(nav.contact, l)}
                 </Link>
               </li>
             </ul>
@@ -103,11 +110,11 @@ export function Footer({ lang }: { lang: string }) {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-white/50">
-            &copy; {new Date().getFullYear()} Azerbaijan National Anti-Doping Agency (AMADA). All rights reserved.
+            &copy; {new Date().getFullYear()} {t(footer.copyright, l)}
           </p>
           <div className="flex gap-6 text-sm text-white/50">
-            <Link href="#" className="hover:text-white transition-colors">Privacy Notice</Link>
-            <Link href="#" className="hover:text-white transition-colors">Accessibility</Link>
+            <Link href="#" className="hover:text-white transition-colors">{t(footer.privacy, l)}</Link>
+            <Link href="#" className="hover:text-white transition-colors">{t(footer.accessibility, l)}</Link>
           </div>
         </div>
       </div>

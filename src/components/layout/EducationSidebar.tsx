@@ -1,17 +1,90 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { translations, t, type Lang } from "@/i18n/translations";
+import { ChevronDown, ChevronRight } from "lucide-react";
 
 interface SidebarProps {
   lang: string;
+}
+
+interface NavItem {
+  label: string;
+  path: string;
+}
+
+interface NavSectionProps {
+  title: string;
+  titleHref: string;
+  isActive: (path: string) => boolean;
+  activeStyles: string;
+  hoverStyles: string;
+  items: NavItem[];
+}
+
+function NavSection({
+  title,
+  titleHref,
+  isActive,
+  activeStyles,
+  hoverStyles,
+  items,
+}: NavSectionProps) {
+  const isTitleActive = isActive(titleHref);
+  const isAnyChildActive = items.some((item) => isActive(item.path));
+  const shouldBeExpanded = isTitleActive || isAnyChildActive;
+
+  const [isExpanded, setIsExpanded] = useState(shouldBeExpanded);
+
+  // Auto-expand if a child or the title itself becomes active via external navigation
+  useEffect(() => {
+    if (shouldBeExpanded) {
+      setIsExpanded(true);
+    }
+  }, [shouldBeExpanded]);
+
+  return (
+    <div className="flex flex-col mt-2">
+      <div className="flex items-center group relative">
+        <Link
+          href={titleHref}
+          className={`flex-1 py-2 px-4 text-[14px] font-medium text-[#0D9488] ml-4 rounded-r-md ${
+            isTitleActive ? activeStyles : hoverStyles
+          } pr-10`} // Added pr-10 to prevent text from overlapping with the absolute button
+        >
+          {title}
+        </Link>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            setIsExpanded(!isExpanded);
+          }}
+          className="absolute right-2 p-1.5 text-[#0D9488] hover:bg-slate-100 rounded-md transition-colors"
+          aria-label="Toggle section"
+        >
+          {isExpanded ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+        </button>
+      </div>
+      
+      {isExpanded && (
+        <div className="flex flex-col ml-8 border-l border-slate-200 animate-in fade-in slide-in-from-top-2 duration-200">
+          {items.map((item, idx) => (
+            <Link
+              key={idx}
+              href={item.path}
+              className={`py-1.5 px-4 text-[13px] text-[#4B5563] ml-[-1px] border-l border-transparent rounded-r-md ${
+                isActive(item.path) ? activeStyles : hoverStyles
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 }
 
 export function EducationSidebar({ lang }: SidebarProps) {
@@ -19,146 +92,107 @@ export function EducationSidebar({ lang }: SidebarProps) {
   const l = lang as Lang;
   const s = translations.sidebar;
 
-  const isActive = (path: string) => pathname === path || pathname.startsWith(`${path}/`);
+  const isActive = (path: string) => pathname === path;
 
-  const menuItems = [
-    {
-      title: t(s.whatWeDo, l),
-      items: [
-        {
-          title: t(s.education, l),
-          path: `/${l}/education`,
-          subItems: [
-            { label: t(s.educationOverview, l), path: `/${l}/education` },
-            { label: t(s.cleanSportBehaviors, l), path: `/${l}/education/clean-sport-behaviors` },
-            { label: t(s.athletePathway, l), path: `/${l}/education/athlete-pathway` },
-            { label: t(s.annualEducationPlan, l), path: `/${l}/education/education-plan` },
-            { label: t(s.educatorNetwork, l), path: `/${l}/education/educators` },
-          ]
-        },
-        {
-          title: t(s.learningHub, l),
-          path: `/${l}/education/learning`,
-          subItems: [
-            { label: t(s.eLearning, l), path: `/${l}/education/learning/elearning` },
-            { label: t(s.webinars, l), path: `/${l}/education/learning/webinars` },
-            { label: t(s.seminars, l), path: `/${l}/education/learning/seminars` },
-            { label: t(s.schoolsPrograms, l), path: `/${l}/education/learning/schools-program` },
-            { label: t(s.medicalEducation, l), path: `/${l}/education/learning/medical-education` },
-            { label: t(s.outreachEvents, l), path: `/${l}/education/events` },
-          ]
-        },
-        {
-          title: t(s.antiDoping, l),
-          path: `/${l}/education/topics`,
-          subItems: [
-            { label: t(s.antiDopingViolations, l), path: `/${l}/education/topics/anti-doping-rule-violations` },
-            { label: t(s.prohibitedList, l), path: `/${l}/education/topics/prohibited-list` },
-            { label: t(s.testingProcedures, l), path: `/${l}/education/topics/testing-procedures` },
-            { label: t(s.supplementsRisk, l), path: `/${l}/education/topics/supplements-risk` },
-            { label: t(s.strictLiability, l), path: `/${l}/education/topics/strict-liability` },
-          ]
-        },
-        {
-          title: t(s.targetGroups, l),
-          path: `/${l}/education/target-groups`,
-          subItems: [
-            { label: t(s.athletes, l), path: `/${l}/education/target-groups/athletes` },
-            { label: t(s.supportPersonnel, l), path: `/${l}/education/target-groups/support-personnel` },
-            { label: t(s.medicalProfessionals, l), path: `/${l}/education/target-groups/medical` },
-            { label: t(s.parents, l), path: `/${l}/education/target-groups/parents` },
-            { label: t(s.federations, l), path: `/${l}/education/target-groups/federations` },
-          ]
-        },
-        {
-          title: t(s.tue, l),
-          path: `/${l}/education/topics/tue`,
-          subItems: []
-        },
-        {
-          title: t(s.reportingSupport, l),
-          path: `/${l}/education/resources`,
-          subItems: [
-            { label: t(s.resourceLibrary, l), path: `/${l}/education/resources` },
-            { label: t(s.reportConcern, l), path: `/${l}/education/report-doping` },
-            { label: t(s.faq, l), path: `/${l}/education/faq` },
-            { label: t(s.contactTeam, l), path: `/${l}/education/contact` },
-          ]
-        }
-      ]
-    }
-  ];
+  // Active state styles
+  const activeStyles = "border-l-[3px] border-amada-teal bg-amada-teal/10 text-amada-teal font-semibold";
+  const hoverStyles = "hover:bg-[#F0FDFA] transition-colors duration-200";
 
   return (
-    <aside className="w-full bg-[#f7f8f9] rounded-xl border border-border p-2">
-      {/* @ts-ignore */}
-      <Accordion type="multiple" defaultValue={["item-0"]} className="w-full">
-        {menuItems.map((section, idx) => (
-          <AccordionItem key={idx} value={`item-${idx}`} className="border-none">
-            <AccordionTrigger className="font-bold text-[#003466] hover:no-underline py-3 px-4 text-[15px] hover:bg-slate-50 rounded-lg">
-              <span className="flex items-center gap-2">
-                <span className="w-0.5 h-3 bg-[#0055a4]"></span>
-                {section.title}
-              </span>
-            </AccordionTrigger>
-            <AccordionContent className="pt-0 pb-2">
-              <div className="flex flex-col ml-3">
-                {/* @ts-ignore */}
-                <Accordion type="multiple" defaultValue={section.items.map((_, i) => `sub-${i}`)} className="w-full">
-                  {section.items.map((item, subIdx) => {
-                    const hasSubItems = item.subItems && item.subItems.length > 0;
-                    const itemIsActive = isActive(item.path);
+    <aside className="hidden lg:block w-full sticky top-24 h-[calc(100vh-120px)] overflow-y-auto pr-2 pb-10">
+      <nav className="flex flex-col gap-6">
+        
+        {/* MAIN MENU */}
+        <div className="flex flex-col gap-2">
+          <div className="text-[#1F3864] font-bold text-[13px] uppercase tracking-wider mb-2">
+            {t(s.whatWeDo, l)}
+          </div>
+          
+          <div className="flex flex-col gap-1">
+            {/* Təhsil */}
+            <NavSection
+              title={t(s.education, l)}
+              titleHref={`/${l}/education`}
+              isActive={isActive}
+              activeStyles={activeStyles}
+              hoverStyles={hoverStyles}
+              items={[
+                { label: t(s.educationOverview, l), path: `/${l}/education` },
+                { label: t(s.cleanSportBehaviors, l), path: `/${l}/education/clean-sport-behaviors` },
+                { label: t(s.athletePathway, l), path: `/${l}/education/athlete-pathway` },
+                { label: t(s.annualEducationPlan, l), path: `/${l}/education/education-plan` },
+                { label: t(s.educatorNetwork, l), path: `/${l}/education/educators` },
+              ]}
+            />
 
-                    if (!hasSubItems) {
-                      return (
-                        <Link
-                          key={subIdx}
-                          href={item.path}
-                          className={`block py-2.5 px-4 text-sm font-medium hover:text-[#0055a4] transition-colors ${itemIsActive ? 'text-[#0055a4] bg-white rounded-md shadow-sm' : 'text-slate-700'}`}
-                        >
-                          {item.title}
-                        </Link>
-                      );
-                    }
+            {/* Öyrənmə Mərkəzi */}
+            <NavSection
+              title={t(s.learningHub, l)}
+              titleHref={`/${l}/education/learning`}
+              isActive={isActive}
+              activeStyles={activeStyles}
+              hoverStyles={hoverStyles}
+              items={[
+                { label: t(s.eLearning, l), path: `/${l}/education/learning/elearning` },
+                { label: t(s.webinars, l), path: `/${l}/education/learning/webinars` },
+                { label: t(s.seminars, l), path: `/${l}/education/learning/seminars` },
+                { label: t(s.schoolsPrograms, l), path: `/${l}/education/learning/schools-program` },
+                { label: t(s.medicalEducation, l), path: `/${l}/education/learning/medical-education` },
+                { label: t(s.outreachEvents, l), path: `/${l}/education/events` },
+              ]}
+            />
 
-                    return (
-                      <AccordionItem key={subIdx} value={`sub-${subIdx}`} className="border-none">
-                        <AccordionTrigger className="py-2.5 px-4 text-sm font-medium hover:no-underline hover:text-[#0055a4] text-slate-700 hover:bg-white/50 rounded-md">
-                          <span className="flex items-center gap-2">
-                            <span className="w-0.5 h-3 bg-amada-teal opacity-70"></span>
-                            {item.title}
-                          </span>
-                        </AccordionTrigger>
-                        <AccordionContent className="pt-1 pb-1">
-                          <ul className="flex flex-col border-l border-slate-200 ml-5 pl-3 space-y-1">
-                            {item.subItems.map((subItem, linkIdx) => {
-                              const subIsActive = pathname === subItem.path;
-                              return (
-                                <li key={linkIdx}>
-                                  <Link
-                                    href={subItem.path}
-                                    className={`block py-1.5 px-3 text-sm rounded transition-colors ${
-                                      subIsActive
-                                        ? 'text-[#0055a4] font-semibold bg-white shadow-sm'
-                                        : 'text-slate-600 hover:text-[#0055a4] hover:bg-white/50'
-                                    }`}
-                                  >
-                                    {subItem.label}
-                                  </Link>
-                                </li>
-                              )
-                            })}
-                          </ul>
-                        </AccordionContent>
-                      </AccordionItem>
-                    );
-                  })}
-                </Accordion>
-              </div>
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
+            {/* Dopinqə qarşı mübarizə */}
+            <NavSection
+              title={t(s.antiDoping, l)}
+              titleHref={`/${l}/education/topics`}
+              isActive={isActive}
+              activeStyles={activeStyles}
+              hoverStyles={hoverStyles}
+              items={[
+                { label: t(s.antiDopingViolations, l), path: `/${l}/education/topics/anti-doping-rule-violations` },
+                { label: t(s.prohibitedList, l), path: `/${l}/education/topics/prohibited-list` },
+                { label: t(s.testingProcedures, l), path: `/${l}/education/topics/testing-procedures` },
+                { label: t(s.supplementsRisk, l), path: `/${l}/education/topics/supplements-risk` },
+                { label: t(s.strictLiability, l), path: `/${l}/education/topics/strict-liability` },
+                { label: t(s.tue, l), path: `/${l}/education/topics/tue` },
+              ]}
+            />
+
+            {/* Hədəf Qruplar */}
+            <NavSection
+              title={t(s.targetGroups, l)}
+              titleHref={`/${l}/education/target-groups`}
+              isActive={isActive}
+              activeStyles={activeStyles}
+              hoverStyles={hoverStyles}
+              items={[
+                { label: t(s.athletes, l), path: `/${l}/education/target-groups/athletes` },
+                { label: t(s.supportPersonnel, l), path: `/${l}/education/target-groups/support-personnel` },
+                { label: t(s.medicalProfessionals, l), path: `/${l}/education/target-groups/medical` },
+                { label: t(s.parents, l), path: `/${l}/education/target-groups/parents` },
+                { label: t(s.federations, l), path: `/${l}/education/target-groups/federations` },
+              ]}
+            />
+
+            {/* STANDALONE: Support Links */}
+            {[
+              { label: t(s.resourceLibrary, l), path: `/${l}/education/resources` },
+              { label: t(s.contactTeam, l), path: `/${l}/education/contact` },
+            ].map((item, idx) => (
+              <Link
+                key={idx}
+                href={item.path}
+                className={`py-2 px-4 text-[14px] font-medium text-[#0D9488] ml-4 rounded-r-md mt-2 ${isActive(item.path) ? activeStyles : hoverStyles}`}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+      </nav>
     </aside>
   );
 }
+

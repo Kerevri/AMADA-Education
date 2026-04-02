@@ -24,6 +24,7 @@ export const translations = {
     cleanSportBehaviors: { az: "Təmiz idman davranışları", en: "Clean sport behaviors", ru: "Поведение в чистом спорте" },
     athletePathway: { az: "İdmançı yolu", en: "Athlete pathway", ru: "Путь спортсмена" },
     annualEducationPlan: { az: "İllik təhsil planı", en: "Annual education plan", ru: "Годовой план обучения" },
+    monitorImpact: { az: "Monitorinq və Təsir", en: "Monitoring & Impact", ru: "Мониторинг и влияние" },
     educatorNetwork: { az: "Maarifləndirici şəbəkəsi", en: "Educator network", ru: "Сеть преподавателей" },
     learningHub: { az: "Öyrənmə Mərkəzi", en: "Learning Hub", ru: "Учебный центр" },
     eLearning: { az: "Elektron öyrənmə kurslarına baxış", en: "eLearning course overview", ru: "Обзор курсов электронного обучения" },
@@ -575,6 +576,25 @@ export const translations = {
     viewAllTopics: { az: "Bütün Mövzulara Bax", en: "View All Topics", ru: "Все темы" },
     showing: { az: "Göstərilir", en: "Showing", ru: "Показано" },
     coreTopics: { az: "əsas mövzu", en: "core topics", ru: "основных тем" },
+  },
+
+  // ─── Footer ─────────────────────────────────────────────────────────────────
+  footer: {
+    description: {
+      az: "Yüksək keyfiyyətli, əlçatan və profilaktikaya yönəlmiş dopinqə qarşı mübarizə təhsili vasitəsilə təmiz idmanı dəstəkləyirik.",
+      en: "Empowering clean sport through high-quality, accessible, and prevention-focused anti-doping education.",
+      ru: "Поддержка чистого спорта через качественное, доступное и профилактическое антидопинговое образование.",
+    },
+    keyLearning: { az: "Əsas Öyrənmə", en: "Key Learning", ru: "Обучение" },
+    resources: { az: "Resurslar", en: "Resources", ru: "Ресурсы" },
+    support: { az: "Dəstək", en: "Support", ru: "Поддержка" },
+    copyright: { 
+      az: "Azərbaycan Milli Antidopinq Agentliyi (AMADA). Bütün hüquqlar qorunur.", 
+      en: "Azerbaijan National Anti-Doping Agency (AMADA). All rights reserved.",
+      ru: "Национальное антидопинговое агентство Азербайджана (АМАДА). Все права защищены."
+    },
+    privacy: { az: "Məxfilik Bildirişi", en: "Privacy Notice", ru: "Политика конфиденциальности" },
+    accessibility: { az: "Əlçatanlıq", en: "Accessibility", ru: "Доступность" },
   },
 } as const;
 

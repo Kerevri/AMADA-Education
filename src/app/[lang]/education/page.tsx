@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/shared/HeroSection";
 import { AudienceCardGrid, TopicCardGrid } from "@/components/shared/CardGrids";
 import { CTASection } from "@/components/shared/CTASection";
+import { CalloutBlock } from "@/components/shared/CalloutBlock";
 import { Metadata } from "next";
 import { Milestone, BookOpen, Stethoscope, Users, Building, Globe, Scale, FlaskConical, ShieldAlert, FileText, Pill, ShieldCheck, ChevronRight } from "lucide-react";
 import Link from "next/link";
@@ -71,14 +72,25 @@ export default async function EducationPlatformHomePage({
 
       {/* Essential Clean Sport Topics */}
       <section id="essential-topics" className="mb-16 scroll-mt-24">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4 border-t border-slate-200 pt-10">
-          <div>
-            <h2 className="text-2xl font-bold text-[#003466] mb-3">{t(ld.essentialTopics, l)}</h2>
-            <p className="text-[#003466]">{t(ld.essentialTopicsDesc, l)}</p>
+        
+        <div className="border-t border-slate-200 pt-10 mb-8">
+          <CalloutBlock title={l === 'az' ? 'Bilirdinizmi?' : l === 'ru' ? 'Знаете ли вы?' : 'Did You Know?'} variant="fact" className="mb-8">
+            {l === 'az' 
+              ? 'İdmançı olaraq, bədəninizdə tapılan istənilən qadağan olunmuş maddəyə görə ciddi məsuliyyət daşıyırsınız. Buna Ciddi Məsuliyyət (Strict Liability) prinsipi deyilir. Hətta qəsdən olmasa belə qaydanı pozmuş hesab oluna bilərsiniz.'
+              : l === 'ru'
+              ? 'Как спортсмен, вы несете полную ответственность за любое запрещенное вещество, найденное в вашем организме. Это известно как принцип строгой ответственности.'
+              : 'As an athlete, you are solely responsible for any prohibited substance found in your system. This is known as the principle of Strict Liability. You can face a violation even if it was completely unintentional!'}
+          </CalloutBlock>
+
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mt-6">
+            <div>
+              <h2 className="text-2xl font-bold text-[#003466] mb-3">{t(ld.essentialTopics, l)}</h2>
+              <p className="text-[#003466]">{t(ld.essentialTopicsDesc, l)}</p>
+            </div>
+            <Link href={`/${l}/education/topics`} className="text-[#0055a4] text-sm font-semibold flex items-center hover:underline group whitespace-nowrap">
+              {t(ld.viewAllTopics, l)} <ChevronRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+            </Link>
           </div>
-          <Link href={`/${l}/education/topics`} className="text-[#0055a4] text-sm font-semibold flex items-center hover:underline group whitespace-nowrap">
-            {t(ld.viewAllTopics, l)} <ChevronRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
-          </Link>
         </div>
         <TopicCardGrid
           lang={l}
