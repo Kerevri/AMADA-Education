@@ -4,8 +4,8 @@ import { CTASection } from "@/components/shared/CTASection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Clean Sport Behaviors | AMADA Education",
-  description: "Define exactly what is expected of athletes and support personnel to maintain sport integrity.",
+  title: "Təmiz İdman Davranışları | AMADA Təhsil",
+  description: "İdmançılar və idman dəstək heyəti üçün antidopinq qaydaları çərçivəsində nümayiş etdirilməli konkret davranış normaları.",
 };
 
 export default async function CleanSportBehaviorsPage({
@@ -14,82 +14,122 @@ export default async function CleanSportBehaviorsPage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
+  const isAz = lang === "az";
 
   return (
     <div className="flex flex-col min-h-screen">
       <HeroSection
-        title="Clean Sport Behaviors"
-        subtitle="Education is ultimately about driving behavior. What exactly does a clean athlete or a responsible coach do on a daily basis?"
+        title={isAz ? "Təmiz İdman Davranışları" : "Clean Sport Behaviours"}
+        subtitle={isAz
+          ? "Təmiz idman davranışları — idmançıların və idmançı dəstək heyətinin antidopinq qaydaları çərçivəsində nümayiş etdirməli olduğu konkret hərəkət və davranış normalarıdır."
+          : "Clean sport behaviours define exactly what is expected of athletes and support personnel to maintain sport integrity."}
         compact
       />
 
-      <section className="py-20 bg-background text-foreground">
-        <div className=" max-w-5xl">
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-primary mb-4">Values into Action</h2>
-            <p className="text-lg text-[#102033]">
-              Understanding the rules is the first step. Translating that knowledge into everyday protective behaviors is how we maintain a level playing field.
+      <section className="py-16 bg-background text-foreground">
+        <div className="max-w-5xl">
+
+          {/* Intro */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-[#003466] mb-4">
+              {isAz ? "Bilik — Əmələ çevrilir" : "Values into Action"}
+            </h2>
+            <p className="text-[#102033] leading-relaxed">
+              {isAz
+                ? "Bu davranışlar ISE Maddə 8.1.1-də müəyyən edilmiş məcburi mövzular əsasında formalaşır. AMADA-nın bütün təhsil fəaliyyətləri bu davranışların möhkəmləndirilməsinə yönəldilib. Davranışlar idmançının karyerası boyunca — gənc mərhələdən elit səviyyəyə qədər — inkişaf etdirilməlidir."
+                : "Understanding the rules is the first step. Translating that knowledge into everyday protective behaviours is how we maintain a level playing field."}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-white p-8 rounded-xl border-t-4 border-t-amada-teal shadow-sm border border-border">
-              <h3 className="text-2xl font-bold text-primary mb-6">For Athletes</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-4 pb-4 border-b border-border/50">
-                  <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-amada-teal/10 text-amada-teal font-bold">1</span>
-                  <span><strong>Check all medications:</strong> Always use GlobalDRO or consult a sports doctor before taking any substance, whether prescribed or over-the-counter.</span>
+          {/* Three pillar cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+            {/* Bilmək */}
+            <div className="bg-white p-7 rounded-xl border-t-4 border-t-amada-teal shadow-sm border border-border">
+              <div className="w-10 h-10 rounded-full bg-amada-teal/10 flex items-center justify-center mb-4">
+                <span className="text-amada-teal font-bold text-lg">B</span>
+              </div>
+              <h3 className="text-xl font-bold text-[#003466] mb-4">
+                {isAz ? "Bilmək" : "Know"}
+              </h3>
+              <ul className="space-y-3 text-[#102033] text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-amada-teal mt-1">✓</span>
+                  <span>{isAz ? "Qadağan edilmiş Siyahını mütəmadi yoxlamaq" : "Regularly check the Prohibited List"}</span>
                 </li>
-                <li className="flex items-start gap-4 pb-4 border-b border-border/50">
-                  <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-amada-teal/10 text-amada-teal font-bold">2</span>
-                  <span><strong>Inform medical staff:</strong> Proactively identify yourself as an athlete subject to anti-doping rules during any medical consultation.</span>
+                <li className="flex items-start gap-2">
+                  <span className="text-amada-teal mt-1">✓</span>
+                  <span>{isAz ? "AMADA-nın antidopinq qaydaları ilə tanış olmaq" : "Know AMADA's anti-doping rules"}</span>
                 </li>
-                <li className="flex items-start gap-4 pb-4 border-b border-border/50">
-                  <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-amada-teal/10 text-amada-teal font-bold">3</span>
-                  <span><strong>Question supplements:</strong> Practice a food-first philosophy. Treat all supplements as a high-risk vector for accidental doping.</span>
+                <li className="flex items-start gap-2">
+                  <span className="text-amada-teal mt-1">✓</span>
+                  <span>{isAz ? "Terapevtik İstifadə İcazəsi (Tİİ) prosedurunu başa düşmək" : "Understand the TUE procedure"}</span>
                 </li>
-                <li className="flex items-start gap-4 pb-4 border-b border-border/50">
-                  <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-amada-teal/10 text-amada-teal font-bold">4</span>
-                  <span><strong>Maintain absolute control:</strong> Never leave food, drinks, or supplements unattended. Take responsibility for what goes into your body.</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-amada-teal/10 text-amada-teal font-bold">5</span>
-                  <span><strong>Fully cooperate:</strong> During testing, follow DCO instructions meticulously, observe sample sealing, and understand your rights.</span>
+                <li className="flex items-start gap-2">
+                  <span className="text-amada-teal mt-1">✓</span>
+                  <span>{isAz ? "Ciddi Məsuliyyət prinsipini dərk etmək" : "Understand Strict Liability"}</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border-t-4 border-t-primary shadow-sm border border-border">
-              <h3 className="text-2xl font-bold text-primary mb-6">For Coaches & Personnel</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-4 pb-4 border-b border-border/50">
-                  <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-primary/10 text-primary font-bold">1</span>
-                  <span><strong>Set the standard:</strong> Vocally support clean sport. Establish a zero-tolerance policy for doping within your team or club.</span>
+            {/* Etmək */}
+            <div className="bg-white p-7 rounded-xl border-t-4 border-t-[#003466] shadow-sm border border-border">
+              <div className="w-10 h-10 rounded-full bg-[#003466]/10 flex items-center justify-center mb-4">
+                <span className="text-[#003466] font-bold text-lg">E</span>
+              </div>
+              <h3 className="text-xl font-bold text-[#003466] mb-4">
+                {isAz ? "Etmək" : "Do"}
+              </h3>
+              <ul className="space-y-3 text-[#102033] text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#003466] mt-1">✓</span>
+                  <span>{isAz ? "Hər hansı dərman və ya qida əlavəsini qadağan edilmiş Siyahıda yoxlamaq" : "Check every substance against the Prohibited List before taking it"}</span>
                 </li>
-                <li className="flex items-start gap-4 pb-4 border-b border-border/50">
-                  <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-primary/10 text-primary font-bold">2</span>
-                  <span><strong>Enable verification:</strong> Constantly remind athletes to check their medications and assist them in finding safe alternatives.</span>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#003466] mt-1">✓</span>
+                  <span>{isAz ? "Tibb mütəxəssisi ilə məsləhətləşmək" : "Consult a medical professional"}</span>
                 </li>
-                <li className="flex items-start gap-4 pb-4 border-b border-border/50">
-                  <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-primary/10 text-primary font-bold">3</span>
-                  <span><strong>Promote healthy nutrition:</strong> Emphasize diet and proper recovery over the reliance on sports supplements.</span>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#003466] mt-1">✓</span>
+                  <span>{isAz ? "Dopinq nəzarəti prosesinə tam açıqlıqla iştirak etmək" : "Cooperate fully with doping control"}</span>
                 </li>
-                <li className="flex items-start gap-4 pb-4 border-b border-border/50">
-                  <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-primary/10 text-primary font-bold">4</span>
-                  <span><strong>Support compliance:</strong> Help RTP athletes understand the exact requirements of filing correct and timely Whereabouts.</span>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#003466] mt-1">✓</span>
+                  <span>{isAz ? "QTQ üzvləri üçün məkan məlumatını vaxtında təqdim etmək" : "Submit whereabouts information on time (RTP members)"}</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-primary/10 text-primary font-bold">5</span>
-                  <span><strong>Report concerns:</strong> Do not turn a blind eye. If you suspect doping behavior, report it securely to AMADA.</span>
+              </ul>
+            </div>
+
+            {/* Danışmaq */}
+            <div className="bg-white p-7 rounded-xl border-t-4 border-t-green-600 shadow-sm border border-border">
+              <div className="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center mb-4">
+                <span className="text-green-700 font-bold text-lg">D</span>
+              </div>
+              <h3 className="text-xl font-bold text-[#003466] mb-4">
+                {isAz ? "Danışmaq" : "Speak Up"}
+              </h3>
+              <ul className="space-y-3 text-[#102033] text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 mt-1">✓</span>
+                  <span>{isAz ? "Şübhəli vəziyyətlər barədə etibarlı şəxsə məlumat vermək" : "Report suspicious situations to a trusted person"}</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 mt-1">✓</span>
+                  <span>{isAz ? "AMADA-nın Narahatlığı Bildir kanalından istifadə etmək" : "Use AMADA's Report a Concern channel"}</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 mt-1">✓</span>
+                  <span>{isAz ? "Komanda yoldaşlarını təmiz idman haqqında məlumatlandırmaq" : "Inform teammates about clean sport"}</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl">
             <InfoCard
-              title="A Shared Responsibility"
-              content="Every behavior—from an athlete double-checking a headache tablet, to a coach questioning a sudden performance spike, to a federation hosting a seminar—accumulates to form a robust shield against doping. You are part of the solution."
+              title={isAz ? "Ortaq Məsuliyyət" : "A Shared Responsibility"}
+              content={isAz
+                ? "Hər bir davranış — idmançının baş ağrısı dərmanını iki dəfə yoxlamasından, məşqçinin qəfil performans artışını sorğulamasına, federasiyanın seminar keçirməsinə qədər — dopinqə qarşı güclü bir qalxan formalaşdırır. Siz həllin bir hissəsisiniz."
+                : "Every behaviour—from an athlete double-checking a headache tablet, to a coach questioning a sudden performance spike, to a federation hosting a seminar—accumulates to form a robust shield against doping."}
               type="info"
             />
           </div>
@@ -97,9 +137,11 @@ export default async function CleanSportBehaviorsPage({
       </section>
 
       <CTASection
-        title="Check Your Knowledge"
-        description="Put your understanding of clean sport behaviors to the test with our e-learning modules."
-        primaryAction={{ label: "Go to e-Learning", path: `/${lang}/education/learning/elearning` }}
+        title={isAz ? "Biliklərinizi Yoxlayın" : "Check Your Knowledge"}
+        description={isAz
+          ? "Elektron öyrənmə modullarımız vasitəsilə təmiz idman davranışları haqqında biliklərinizi sınaqdan keçirin."
+          : "Put your understanding of clean sport behaviours to the test with our e-learning modules."}
+        primaryAction={{ label: isAz ? "Elektron öyrənməyə keç" : "Go to e-Learning", path: `/${lang}/education/learning/elearning` }}
         variant="primary"
       />
     </div>

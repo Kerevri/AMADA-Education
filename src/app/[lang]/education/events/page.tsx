@@ -1,11 +1,11 @@
 import { HeroSection } from "@/components/shared/HeroSection";
-import { InfoCard } from "@/components/shared/InfoCards";
+import { InfoCard, ChecklistCard } from "@/components/shared/InfoCards";
 import { CTASection } from "@/components/shared/CTASection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Multi-Sport Event Education | AMADA",
-  description: "Pre-event education and in-event outreach for major national and international games.",
+  title: "Hadisə əsaslı təhsil | AMADA",
+  description: "Yarış, turnir və idman tədbirləri zamanı AMADA-nın hadisə əsaslı antidopinq maarifləndirməsi.",
 };
 
 export default async function EventsPage({
@@ -14,62 +14,90 @@ export default async function EventsPage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
+  const isAz = lang === "az";
 
   return (
     <div className="flex flex-col min-h-screen">
       <HeroSection
-        title="Event-Based Education"
-        subtitle="Ensuring athletes are educated before they arrive at major sporting events, and engaged while they are there."
+        title={isAz ? "Hadisə əsaslı təhsil" : "Event-Based Education"}
+        subtitle={isAz
+          ? "Yarış, turnir və idman tədbirləri zamanı AMADA hadisə əsaslı antidopinq maarifləndirməsi həyata keçirir. Bu fəaliyyətlər ISE Maddə 9.2-nin Event-Based Education kateqoriyasına uyğun gəlir."
+          : "Ensuring athletes are educated before they arrive at major sporting events, and engaged while they are there."}
         compact
       />
 
       <section className="py-16 bg-white">
-        <div className=" max-w-5xl">
-          <div className="mb-12 text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-primary mb-6">The Importance of Event Education</h2>
-            <p className="text-lg text-[#102033] leading-relaxed">
-              Major Games (like the Olympics, Paralympics, and Continental Games) are the pinnacle of an athlete's career. It is critical that athletes do not inadvertently commit a doping offence at these stages.
+        <div className="max-w-5xl">
+
+          <div className="mb-12 max-w-3xl">
+            <h2 className="text-2xl font-bold text-primary mb-4">
+              {isAz ? "Tədbirlərdə nə edilir?" : "What happens at events?"}
+            </h2>
+            <p className="text-[#102033] leading-relaxed">
+              {isAz
+                ? "Milli yarışlar, turnir və beynəlxalq tədbirlər zamanı AMADA idman mühitinin içindəki natural öyrənmə imkanlarından istifadə edir. Əsas məqsəd — idmançıların antidopinq qaydalarını yarışdan öncə özündə möhkəmləndirməsinə dəstək verməkdir."
+                : "During national championships and major events, AMADA leverages natural learning opportunities within the sports environment. The goal is to reinforce anti-doping knowledge right before competition."}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-light_gray p-8 rounded-xl border border-border">
-              <h3 className="text-xl font-bold text-primary mb-4">Pre-Event Education</h3>
-              <p className="text-[#102033] mb-6">
-                Under the WADA International Standard for Education, athletes must be educated prior to participating in major events. AMADA works with the National Olympic Committee and Federations to ensure all delegates complete required anti-doping training before departure.
-              </p>
-              <ul className="space-y-2 text-sm text-[#102033] font-medium">
-                <li>• Verification of ADEL module completion</li>
-                <li>• Pre-departure seminars for the national delegation</li>
-                <li>• Support for TUE applications ahead of the games</li>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-14">
+            <div className="bg-slate-50 p-8 rounded-xl border border-border">
+              <h3 className="text-xl font-bold text-primary mb-4">
+                {isAz ? "Tədbird\u0259 n\u0259 görmək olar?" : "What to Expect at Events"}
+              </h3>
+              <ul className="space-y-3 text-sm text-[#102033]">
+                {(isAz ? [
+                  "Yarışlara aid xüsusi antidopinq qaydaları",
+                  "Tanıtım materialları: flayerlər, bukletlər, afişalar",
+                  "AMADA stendi: məlumat, sual-cavab",
+                  "QR kodlar vasitəsilə onlayn resurslara birbaşa keçid",
+                ] : [
+                  "Competition-specific anti-doping rules",
+                  "Promotional materials: flyers, booklets, posters",
+                  "AMADA booth: information, Q&A",
+                  "QR codes for direct access to online resources",
+                ]).map((item, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="text-amada-teal mt-1">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
-            
-            <div className="bg-light_gray p-8 rounded-xl border border-border">
-              <h3 className="text-xl font-bold text-primary mb-4">In-Event Outreach</h3>
-              <p className="text-[#102033] mb-6">
-                During National Championships and Major Events held in Azerbaijan, AMADA sets up Outreach Booths in the athlete village or competition venues to promote clean sport values in a fun, pressure-free environment.
+
+            <div className="bg-slate-50 p-8 rounded-xl border border-border">
+              <h3 className="text-xl font-bold text-primary mb-4">
+                {isAz ? "ISE Maddə 9.2-yə uyğunluq" : "ISE Article 9.2 Compliance"}
+              </h3>
+              <p className="text-sm text-[#102033] mb-4">
+                {isAz
+                  ? "AMADA-nın hadisə əsaslı maarifləndirməsi WADA-nın Beynəlxalq Təhsil Standardının (ISE) Maddə 9.2-də müəyyən edilmiş Event-Based Education kateqoriyasına tam uyğundur."
+                  : "AMADA's event-based education aligns with the Event-Based Education category defined in Article 9.2 of the WADA International Standard for Education (ISE)."}
               </p>
-              <ul className="space-y-2 text-sm text-[#102033] font-medium">
-                <li>• Play True interactive quizzes</li>
-                <li>• Clean Sport Pledge walls</li>
-                <li>• Distribution of practical informational materials</li>
-              </ul>
+              <p className="text-sm text-[#102033]">
+                {isAz
+                  ? "Bu fəaliyyətlər federasiyalarla, Milli Olimpiya Komitəsi ilə və tədbirləri təşkil edən qurumlarla birlikdə planlaşdırılır."
+                  : "These activities are planned in coordination with federations, the National Olympic Committee, and event organizers."}
+              </p>
             </div>
           </div>
 
           <InfoCard
-            title="Hosting an Event in Azerbaijan?"
-            content="If you are an International or National Federation hosting a major championship event in Azerbaijan, contact our Education Department to coordinate an Outreach Booth for your athletes."
+            title={isAz ? "Azərbaycanda Tədbiriniz var?" : "Hosting an Event in Azerbaijan?"}
+            content={isAz
+              ? "AMADA-nın maarifləndirməsini tədbirinizə daxil etmək istəyirsinizsə, education@amada.az ünvanına müraciət edin."
+              : "If you'd like to include AMADA education at your event, contact education@amada.az"}
             type="info"
           />
         </div>
       </section>
 
       <CTASection
-        title="Request Event Outreach"
-        description="Book the AMADA Education team for your next major championship."
-        primaryAction={{ label: "Contact Us", path: `/${lang}/education/contact` }}
+        title={isAz ? "Tədbiriniz üçün müraciət edin" : "Request Event Outreach"}
+        description={isAz
+          ? "AMADA Təhsil komandası növbəti tədbiriniz üçün hazırdır."
+          : "Book the AMADA Education team for your next major championship."}
+        primaryAction={{ label: isAz ? "Bizimlə əlaqə" : "Contact Us", path: `/${lang}/education/contact` }}
         variant="light"
       />
     </div>

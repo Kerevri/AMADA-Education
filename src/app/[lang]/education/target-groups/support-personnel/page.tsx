@@ -28,21 +28,48 @@ export default async function SupportPersonnelTargetGroupPage({
 
       <section className="py-16 bg-white">
         <div className=" max-w-5xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <InfoCard
-              title={isAz ? "Sizin Təsiriniz" : "Your Influence"}
+              title={isAz ? "İdmançı Dəstək Heyəti (İDH) kimdir?" : "Who is Athlete Support Personnel (ASP)?"}
               content={isAz 
-                ? "İdmançılar öz məşqçilərinə və dəstək heyətinə nümunə kimi baxırlar. Sizin təmiz idmana münasibətiniz onların davranışlarını birbaşa formalaşdırır. Müsbət və güzəştsiz nümunə olmaq sizin ən mühüm məsuliyyətinizdir." 
-                : "Athletes look up to their coaches and support staff. Your attitude towards clean sport directly shapes their behaviors. Setting a positive, uncompromising example is your most crucial responsibility."}
+                ? "İdmançı Dəstək Heyəti (İDH) — idmançı ilə birbaşa işləyən, onun fəaliyyətinə təsir edən hər kəsi əhatə edir: məşqçilər, idman menecerləri, tibb mütəxəssisləri, fizioterapevtlər, psixoloqlar, valideynlər (profesional müqavilə çərçivəsində) və digərləri." 
+                : "Athlete Support Personnel (ASP) includes everyone who works directly with athletes and influences their performance: coaches, sports managers, medical professionals, physiotherapists, psychologists, parents (within professional contracts), and others."}
               type="info"
             />
             <InfoCard
-              title={isAz ? "Riskləriniz & Öhdəlikləriniz" : "Your Risks & Liabilities"}
+              title={isAz ? "AMADA Məşqçilərin Təlimi (ToT) Proqramı" : "AMADA Training of Trainers (ToT) Program"}
               content={isAz 
-                ? "Dəstək heyəti İdarəetmə, Şəriklik və Qadağan edilmiş Əlaqə daxil olmaqla dopinqə qarşı qayda pozuntularına (DQAQP) görə sanksiyaya məruz qala bilər. Qaydaları bilməmək sizi qorumayacaq." 
-                : "Support personnel can be sanctioned for anti-doping rule violations (ADRVs) including Administration, Complicity, and Prohibited Association. Ignorance of the rules will not protect you."}
-              type="warning"
+                ? "AMADA Məşqçilərin Təlimi (ToT) proqramı vasitəsilə idman federasiyaları daxilində dayanıqlı Maarifləndirici şəbəkəsi qurur. Akkreditasiyadan keçən məşqçilər federasiya daxilindəki seminarları müstəqil şəkildə keçirə bilərlər." 
+                : "AMADA's Training of Trainers (ToT) program builds a sustainable Educator network within sports federations. Accredited coaches can independently deliver seminars within their federation."}
+              type="success"
             />
+          </div>
+
+          {/* Öhdəliklər */}
+          <div className="mb-12 p-6 bg-amber-50 border border-amber-200 rounded-xl">
+            <h3 className="text-lg font-bold text-[#003466] mb-3">
+              {isAz ? "Öhdəliklər — Məcəllə Maddə 21.2" : "Obligations — Code Article 21.2"}
+            </h3>
+            <ul className="space-y-2 text-sm text-[#102033]">
+              {(isAz ? [
+                "Antidopinq siyasəti və qaydaları ilə tanış olmaq",
+                "Öz idmançılarına antidopinq sahəsindəki biliklərini ötürmək",
+                "Dopinq qayda pozuntularını asanlaşdırmamaq",
+                "AMADA-nın Maarifləndirici Proqramlarında fəal iştirak etmək",
+                "Şübhəli vəziyyətlər barədə AMADA-ya məlumat vermək",
+              ] : [
+                "Be familiar with anti-doping policies and rules",
+                "Pass anti-doping knowledge on to their athletes",
+                "Not facilitate doping rule violations",
+                "Actively participate in AMADA's Education Programmes",
+                "Report suspicious situations to AMADA",
+              ]).map((item, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <span className="text-amber-600 mt-0.5">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">

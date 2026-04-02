@@ -19,10 +19,10 @@ export default async function ParentsTargetGroupPage({
   return (
     <div className="flex flex-col min-h-screen">
       <HeroSection
-        title={isAz ? "Valideynlər & Himayədarlar" : "Parents & Guardians"}
+        title={isAz ? "Valideynlər & Müəllimlər" : "Parents & Teachers"}
         subtitle={isAz 
-          ? "Siz müdafiənin ilk xəttisiniz. Təmiz idman mühitini necə inkişaf etdirəcəyinizi və övladınızın idman yolunu necə təhlükəsiz dəstəkləyəcəyinizi öyrənin." 
-          : "You are the first line of defense. Learn how to foster a clean sport environment and support your child's athletic journey safely."}
+          ? "Valideynlər və müəllimlər gənc idmançıların dəyərlərini formalaşdıran ən mühüm insanlardır. AMADA onları informasiyalı müttəfiq kimi görür — çünki uşaqlıq dövründə formalaşan etik anlayış, karyera boyu davam edir." 
+          : "Parents and teachers are among the most important influences on young athletes. AMADA sees them as informed allies — because ethical understanding formed in childhood lasts throughout a career."}
         compact
       />
 

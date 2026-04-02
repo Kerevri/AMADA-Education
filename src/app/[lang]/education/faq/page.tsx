@@ -5,8 +5,8 @@ import { Metadata } from "next";
 import { translations, t, type Lang } from "@/i18n/translations";
 
 export const metadata: Metadata = {
-  title: "FAQ | AMADA Education",
-  description: "Find quick answers to common questions about anti-doping rules, testing, and medications.",
+  title: "TSS — Tez-tez soruşulan suallar | AMADA Təhsil",
+  description: "AMADA-nın Təhsil proqramı haqqında ümumi sualların cavabları.",
 };
 
 export default async function FAQPage({
@@ -20,46 +20,54 @@ export default async function FAQPage({
   const faqs = l === "az"
     ? [
         {
-          question: "Seçilsəm dərman sınağından keçməliyəmmi?",
-          answer: "Bəli. Bildirişdən sonra nümunə toplanmasından yayınmaq, imtina etmək və ya bunu etməmək Dopinqə Qarşı Qayda Pozuntusudur (DQAQP) və adətən 4 illik qadağana yol açır.",
+          question: "Dopinq nəzarəti nə vaxt baş verə bilər?",
+          answer: "Hər hansı vaxt, yarışda və ya yarış xaricində, xəbərdarlıq edilmədən. Beynəlxalq yarışlarda da, milli yarışlarda da həyata keçirilə bilər.",
         },
         {
-          question: "Qida əlavələri istifadəsi üçün təhlükəsizdir?",
-          answer: "Heç bir əlavə qida 100% risksiz deyil. Sənayenin zəif tənzimlənməsi səbəbindən əlavə qidalar etiketdə göstərilməyən qadağan olunmuş maddələrlə çirklənə bilər. İdmançılar onlardan öz ciddi məsuliyyəti ilə istifadə edir.",
+          question: "Qida əlavəsindəki qadağan edilmiş maddə sübut edildikdə nə baş verir?",
+          answer: "İdmançı yenə də Ciddi Məsuliyyət prinsipinə görə cavabdehdir. Lakin bilmədən qəbul edildiyi sübut olunarsa, cəza müddəti azaldıla bilər. AMADA-ya dərhal müraciət edin: education@amada.az",
         },
         {
-          question: "Həkim qadağan olunmuş dərman yazdırsa nə etməliyəm?",
-          answer: "Tibbi fövqəladə hal olmadıqca, dərmanı istifadə etməzdən ƏVVƏL Terapevtik İstifadə İcazəsi (Tİİ) üçün müraciət etməlisiniz. AMADA icazə vermək üçün tibbi sənədlərinizi nəzərdən keçirəcək.",
+          question: "Tİİ nə qədər müddət ərzində nəzərdən keçirilir?",
+          answer: "Standart müraciətlər 30 gün ərzində, təcili müraciətlər isə 24 saat ərzində nəzərdən keçirilir.",
         },
         {
-          question: "Yarışma xaricindən sınaqdan keçirilə bilərəm?",
-          answer: "Bəli. İstənilən idmançı istənilən yerdə, istənilən vaxt sınaqdan keçirilə bilər. Qeydiyyatlı Sınaq Hovuzundakı (QSH) idmançılar, DNZ-lərin yarışma xarici sınaqlar üçün onları tapa bilməsi üçün gündəlik Yerləşmə məlumatı verməlidir.",
+          question: "Yaşadığım şəhərdə seminar keçirilirmi?",
+          answer: "AMADA bütün regionlarda seminarlar keçirir. Müraciət etmək üçün federasiyanızın koordinatoru vasitəsilə AMADA ilə əlaqə saxlayın: education@amada.az",
         },
         {
-          question: "Müsbət test versəm, lakin bu təsadüfi olursa nə olur?",
-          answer: "Ciddi Məsuliyyət prinsipinə görə, niyyətdən asılı olmayaraq bədəninizdə tapılan maddədən məsuliyyət daşıyırsınız. Bunun əksliyini sübut etmək cəzanızı azalda bilər, lakin bu yenə DQAQP-dir.",
+          question: "ADEL kursları pulludurmu?",
+          answer: "Xeyr. WADA-nın ADEL platformasındakı əsas kurslar tamamilə pulsuzdur. Baxış: https://adel.wada-ama.org",
+        },
+        {
+          question: "Məlumat verdikdə mənim kimliyim açıqlanacaqmı?",
+          answer: "Xeyr. Bütün müraciətlər tam məxfidir. AMADA-ya və ya WADA Speak Up! platformasına göndərilən məlumatlar anonim olaraq qəbul edilir.",
         },
       ]
     : [
         {
-          question: "Do I have to take a drug test if I am selected?",
-          answer: "Yes. Evading, refusing, or failing to submit to sample collection after being notified is an Anti-Doping Rule Violation (ADRV) and typically carries a 4-year ban from sport.",
+          question: "When can doping control happen?",
+          answer: "At any time, in-competition or out-of-competition, without advance notice. It can be carried out at both international and national competitions.",
         },
         {
-          question: "Are dietary supplements safe to use?",
-          answer: "No supplement is 100% risk-free. Due to poor industry regulation, supplements can be contaminated with prohibited substances not listed on the label. Athletes use them at their own strict liability.",
+          question: "What happens if a prohibited substance is found in a dietary supplement I took?",
+          answer: "The athlete is still liable under the principle of Strict Liability. However, if it can be proven that the substance was taken unknowingly, the sanction period may be reduced. Contact AMADA immediately: education@amada.az",
         },
         {
-          question: "What should I do if my doctor prescribes a prohibited medication?",
-          answer: "You must apply for a Therapeutic Use Exemption (TUE) BEFORE using the medication, provided it is not a medical emergency. AMADA will review your medical file to grant authorization.",
+          question: "How long does a TUE application take to be reviewed?",
+          answer: "Standard applications are reviewed within 30 days, and urgent applications within 24 hours.",
         },
         {
-          question: "Can I be tested out-of-competition?",
-          answer: "Yes. Any athlete can be tested anywhere, anytime. If you are in a Registered Testing Pool (RTP), you must provide daily Whereabouts information so DCOs can locate you for out-of-competition testing.",
+          question: "Are seminars held in my city?",
+          answer: "AMADA holds seminars across all regions. To request one, contact AMADA through your federation coordinator: education@amada.az",
         },
         {
-          question: "What happens if I test positive but it was an accident?",
-          answer: "Under the principle of Strict Liability, you are responsible for any substance found in your body regardless of intent. While proving it was accidental may reduce your sanction, it is still an ADRV.",
+          question: "Are ADEL courses free?",
+          answer: "Yes. The core courses on WADA's ADEL platform are completely free. Visit: https://adel.wada-ama.org",
+        },
+        {
+          question: "Will my identity be disclosed if I report a concern?",
+          answer: "No. All submissions are fully confidential. Reports sent to AMADA or via the WADA Speak Up! platform are received anonymously.",
         },
       ];
 
