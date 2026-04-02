@@ -45,30 +45,40 @@ export default async function AthletesTargetGroupPage({
             />
           </div>
 
-          <h2 className="text-3xl font-bold text-primary mb-8 text-center">{isAz ? "Hədəflədiyimiz İdmançı Mərhələləri" : "Athlete Stages We Target"}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            {(isAz 
-              ? [
-                  "Gənc İdmançılar",
-                  "İstedadlı İdmançılar",
-                  "Milli Səviyyəli İdmançılar",
-                  "Beynəlxalq Səviyyəli İdmançılar",
-                  "QSH (Qeydiyyatlı Sınaq Hovuzu) İdmançıları",
-                  "Sanksiyadan Qayıdan İdmançılar"
-                ]
-              : [
-                  "Youth Athletes",
-                  "Talented Athletes",
-                  "National-Level Athletes",
-                  "International-Level Athletes",
-                  "RTP (Registered Testing Pool) Athletes",
-                  "Athletes Returning from Sanction"
-                ]
-            ).map((stage, idx) => (
-              <div key={idx} className="p-6 rounded-xl border border-border flex items-center shadow-sm bg-slate-50">
-                <span className="font-semibold text-primary">{stage}</span>
-              </div>
-            ))}
+          <h2 className="text-2xl font-bold text-[#003466] mb-5">
+            {isAz ? "İdmançı kateqoriyaları" : "Athlete Categories"}
+          </h2>
+          <div className="mb-14 overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-[#003466] text-white">
+                  <th className="text-left px-5 py-3 font-semibold">{isAz ? "Kateqoriya" : "Category"}</th>
+                  <th className="text-left px-5 py-3 font-semibold">{isAz ? "Tərif" : "Definition"}</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {(isAz ? [
+                  ["Milli Səviyyəli İdmançı", "AMADA tərəfindən müəyyən edilən milli yarışlarda iştirak edən idmançı"],
+                  ["Beynəlxalq Səviyyəli İdmançı", "Müvafiq Beynəlxalq Federasiya tərəfindən müəyyən edilən idmançı"],
+                  ["Azyaşlı (Minor)", "18 yaşına çatmamış fiziki şəxs"],
+                  ["Qorunan Şəxs", "Pozuntu zamanı 16 yaşına çatmamış VƏ heç vaxt beynəlxalq açıq kateqoriyada yarışmamış idmançı — xüsusi mühafizə statusu tətbiq edilir"],
+                  ["QTQ İdmançısı", "Qeydiyyata alınmış Test Qrupuna daxil olan, ADAMS-da məkan məlumatı öhdəliyi olan idmançı"],
+                  ["Rekreasiya idmançısı", "Bədən tərbiyəsi məqsədilə idmanla məşğul olan, rəsmi yarışlarda iştirak etməyən şəxs"],
+                ] : [
+                  ["National-Level Athlete", "An athlete competing at national level as defined by AMADA"],
+                  ["International-Level Athlete", "An athlete competing at international level as defined by the relevant International Federation"],
+                  ["Minor", "A natural person who has not reached the age of 18"],
+                  ["Protected Person", "Not yet 16 at time of violation AND never competed in open category international event — special protection status applies"],
+                  ["RTP Athlete", "Member of the Registered Testing Pool with whereabouts obligations in ADAMS"],
+                  ["Recreational Athlete", "A person participating in sport for fitness purposes, not competing in official competitions"],
+                ]).map(([cat, def], i) => (
+                  <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                    <td className="px-5 py-3 font-semibold text-[#003466] whitespace-nowrap">{cat}</td>
+                    <td className="px-5 py-3 text-[#102033]">{def}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">

@@ -103,6 +103,45 @@ export default async function EducationPlanPage({
             />
           </div>
 
+          {/* Per-audience curriculum */}
+          <h2 className="text-2xl font-bold text-[#003466] mb-6">
+            {isAz ? "Hədəf qruplar üzrə tədris proqramı" : "Curriculum by Target Audience"}
+          </h2>
+          <div className="space-y-4 mb-16">
+            {(isAz ? [
+                { audience: "İdmançılar", icon: "🏃", topics: ["İdmançının hüquq və öhdəlikləri", "Dopinq nədir? — Antidopinq Qayda pozuntuları", "Dopinq nəzarəti prosesi", "Qadağan edilmiş Siyahı", "Terapevtik İstifadə üçün İstisnalar (Tİİ)", "Məkan Məlumatı & ADAMS", "Qida əlavələri riskləri", "Dopinq barədə məlumat vermək (Speak Up)"] },
+                { audience: "İdmançı Köməkçi Heyəti", icon: "🧑‍🏫", topics: ["İDH-ə kimlər aiddir — tərif", "İDH-in vəzifə və öhdəlikləri (Məcəllə Maddə 21.2)", "Antidopinq qayda pozuntuları (İDH üçün)", "Qadağan edilmiş Siyahı", "Terapevtik İstifadə üçün İstisnalar", "İdmançıların məkan məlumatına dəstək", "Komandada təmiz idman mədəniyyəti yaratmaq"] },
+                { audience: "Valideynlər & Müəllimlər", icon: "👨‍👩‍👧", topics: ["Antidopinq qayda pozuntuları — valideynlər üçün", "Qadağan edilmiş Siyahı & GlobalDRO istifadəsi", "Təhlükəsiz qida əlavəsi seçimi", "Valideyn üçün yaddaş kitabçası", "Gənclərlə açıq söhbət aparmaq strategiyaları"] },
+                { audience: "İdman Federasiyaları", icon: "🏛️", topics: ["Federasiyanın antidopinq sahəsindəki rolu və öhdəlikləri", "ISE tələblərinə uyğunluq — milli plan", "Seminar keçirilməsi üçün Maarifləndirici şəbəkəsi", "İdmançı məlumatlarının idarəsi"] },
+                { audience: "KİV Nümayəndələri", icon: "📺", topics: ["Təmiz idman — Təmiz qələbə", "Dopinq nədir? Antidopinq Qayda pozuntuları", "Dəyərlərə əsaslanan maarifləndirmə", "Məsuliyyətli hesabatçılıq qaydaları"] }
+              ] : [
+                { audience: "Athletes", icon: "🏃", topics: ["Athlete rights and responsibilities", "What is doping? — Anti-Doping Rule Violations", "Doping control process", "Prohibited List", "Therapeutic Use Exemptions (TUE)", "Whereabouts & ADAMS", "Risks of supplements", "Reporting doping (Speak Up)"] },
+                { audience: "Athlete Support Personnel", icon: "🧑‍🏫", topics: ["Definition of ASP", "ASP roles and responsibilities (Code Art 21.2)", "Anti-doping rule violations (for ASP)", "Prohibited List", "Therapeutic Use Exemptions", "Supporting athlete whereabouts", "Fostering clean sport culture"] },
+                { audience: "Parents & Teachers", icon: "👨‍👩‍👧", topics: ["Anti-doping rule violations — for parents", "Prohibited List & GlobalDRO", "Safe supplement choices", "Parent's handbook", "Open conversation strategies with youth"] },
+                { audience: "Sports Federations", icon: "🏛️", topics: ["Federation roles and responsibilities", "ISE compliance — national plan", "Educator network for seminars", "Athlete data management"] },
+                { audience: "Media Representatives", icon: "📺", topics: ["Clean sport — Clean victory", "What is doping? ADRVs", "Values-based education", "Responsible reporting guidelines"] }
+              ]
+            ).map((ac) => (
+              <details key={ac.audience} className="group border border-slate-200 rounded-xl overflow-hidden">
+                <summary className="flex items-center gap-3 cursor-pointer bg-slate-50 px-5 py-4 font-semibold text-[#003466] hover:bg-slate-100 transition-colors">
+                  <span className="text-xl">{ac.icon}</span>
+                  <span>{ac.audience}</span>
+                  <span className="ml-auto text-slate-400 group-open:rotate-180 transition-transform">▾</span>
+                </summary>
+                <div className="px-5 py-4 bg-white">
+                  <ul className="space-y-2">
+                    {ac.topics.map((t, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-[#102033]">
+                        <span className="text-amada-teal mt-0.5">✓</span>
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </details>
+            ))}
+          </div>
+
           {/* ISE callout */}
           <InfoCard
             title={isAz ? "ISE Maddə 9.4 — Plan minimum aşağıdakıları əhatə etməlidir" : "ISE Article 9.4 — Plan Minimum Requirements"}
