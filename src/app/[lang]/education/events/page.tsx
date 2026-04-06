@@ -4,7 +4,7 @@ import { CTASection } from "@/components/shared/CTASection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hadisə əsaslı təhsil | AMADA",
+  title: "Təbliğat Proqramları | AMADA",
   description: "Yarış, turnir və idman tədbirləri zamanı AMADA-nın hadisə əsaslı antidopinq maarifləndirməsi.",
 };
 
@@ -19,7 +19,7 @@ export default async function EventsPage({
   return (
     <div className="flex flex-col min-h-screen">
       <HeroSection
-        title={isAz ? "Hadisə əsaslı təhsil" : "Event-Based Education"}
+        title={isAz ? "Təbliğat Proqramları" : "Event-Based Education"}
         subtitle={isAz
           ? "Yarış, turnir və idman tədbirləri zamanı AMADA hadisə əsaslı antidopinq maarifləndirməsi həyata keçirir. Bu fəaliyyətlər ISE Maddə 9.2-nin Event-Based Education kateqoriyasına uyğun gəlir."
           : "Ensuring athletes are educated before they arrive at major sporting events, and engaged while they are there."}

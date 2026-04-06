@@ -1,343 +1,306 @@
 // AMADA Education — Central Translation Dictionary
-// Covers AZ (Azerbaijani), EN (English), RU (Russian)
+// Covers AZ (Azerbaijani), EN (English)
 
-export type Lang = "az" | "en" | "ru";
+export type Lang = "az" | "en";
 
 export const translations = {
   // ─── Header & Navigation ───────────────────────────────────────────────────
   nav: {
-    education: { az: "Təhsil", en: "Education", ru: "Образование" },
-    whoWeEducate: { az: "Kimləri Təhsil Edirik", en: "Who We Educate", ru: "Кого обучаем" },
-    cleanSportTopics: { az: "Təmiz İdman Mövzuları", en: "Clean Sport Topics", ru: "Темы чистого спорта" },
-    learning: { az: "Öyrənmə", en: "Learning", ru: "Обучение" },
-    resources: { az: "Resurslar", en: "Resources", ru: "Ресурсы" },
-    reportConcern: { az: "Narahatlığı Bildir", en: "Report Concern", ru: "Сообщить" },
-    contact: { az: "Əlaqə", en: "Contact", ru: "Контакт" },
-    startLearning: { az: "Öyrənməyə Başla", en: "Start Learning", ru: "Начать обучение" },
+    education: { az: "Təhsil", en: "Education" },
+    whoWeEducate: { az: "Kimləri Təhsil Veririk", en: "Who We Educate" },
+    cleanSportTopics: { az: "Təmiz İdman Mövzuları", en: "Clean Sport Topics" },
+    learning: { az: "Öyrənmə", en: "Learning" },
+    resources: { az: "Resurslar", en: "Resources" },
+    reportConcern: { az: "Narahatlığı Bildir", en: "Report Concern" },
+    contact: { az: "Əlaqə", en: "Contact" },
+    startLearning: { az: "Öyrənməyə Başla", en: "Start Learning" }
   },
 
   // ─── Sidebar ────────────────────────────────────────────────────────────────
   sidebar: {
-    whatWeDo: { az: "Biz nə edirik", en: "What we do", ru: "Что мы делаем" },
-    education: { az: "Təhsil", en: "Education", ru: "Образование" },
-    educationOverview: { az: "Təhsilə baxış", en: "Education overview", ru: "Обзор образования" },
-    cleanSportBehaviors: { az: "Təmiz idman davranışları", en: "Clean sport behaviors", ru: "Поведение в чистом спорте" },
-    athletePathway: { az: "İdmançı yolu", en: "Athlete pathway", ru: "Путь спортсмена" },
-    annualEducationPlan: { az: "İllik təhsil planı", en: "Annual education plan", ru: "Годовой план обучения" },
-    monitorImpact: { az: "Monitorinq və Təsir", en: "Monitoring & Impact", ru: "Мониторинг и влияние" },
-    educatorNetwork: { az: "Təlimçilər şəbəkəsi", en: "Educator network", ru: "Сеть преподавателей" },
-    learningHub: { az: "Öyrənmə Mərkəzi", en: "Learning Hub", ru: "Учебный центр" },
-    eLearning: { az: "Elektron öyrənmə kurslarına baxış", en: "eLearning course overview", ru: "Обзор курсов электронного обучения" },
-    webinars: { az: "Vebinarlar", en: "Webinars", ru: "Вебинары" },
-    seminars: { az: "Seminarlar", en: "Seminars", ru: "Семинары" },
-    schoolsPrograms: { az: "Məktəb proqramları", en: "Schools programs", ru: "Школьные программы" },
-    medicalEducation: { az: "Tibbi təhsil", en: "Medical education", ru: "Медицинское образование" },
-    eventBasedEducation: { az: "Hadisə əsaslı təhsil", en: "Event-Based Education", ru: "Образование на основе событий" },
-    cleanSportTopics: { az: "Təmiz İdman Mövzuları", en: "Clean Sport Topics", ru: "Темы чистого спорта" },
-    antiDopingViolations: { az: "Antidopinq Qayda pozuntuları", en: "Anti-Doping Rule Violations", ru: "Нарушения антидопинговых правил" },
-    rightsResponsibilities: { az: "Hüquqlar & Məsuliyyətlər", en: "Rights & Responsibilities", ru: "Права и обязанности" },
-    consequences: { az: "Dopinqin fəsadları", en: "Consequences of Doping", ru: "Последствия допинга" },
-    governance: { az: "Antidopinq sisteminin idarəçiliyi", en: "Governance of the Anti-Doping System", ru: "Управление антидопинговой системой" },
-    valuesCleanSport: { az: "Dəyərlər & Təmiz İdman prinsipləri", en: "Values & Principles of Clean Sport", ru: "Ценности и принципы чистого спорта" },
-    whereaboutsAdams: { az: "Məkan məlumatı & ADAMS", en: "Whereabouts & ADAMS", ru: "Местонахождение и ADAMS" },
-    prohibitedList: { az: "Qadağan olunmuş siyahı", en: "Prohibited List", ru: "Запрещённый список" },
-    testingProcedures: { az: "Test prosedurları", en: "Testing Procedures", ru: "Процедуры тестирования" },
-    supplementsRisk: { az: "Qida Əlavələrinin  riski", en: "Risk of Supplements", ru: "Риск пищевых добавок" },
-    strictLiability: { az: "Ciddi məsuliyyət", en: "Strict Liability", ru: "Строгая ответственность" },
-    targetGroups: { az: "Hədəf Qruplar", en: "Target Groups", ru: "Целевые группы" },
-    athletes: { az: "İdmançılar", en: "Athletes", ru: "Спортсмены" },
-    coachesSupport: { az: "Məşqçilər & Dəstək heyəti", en: "Coaches & Support Personnel", ru: "Тренеры и вспомогательный персонал" },
-    medicalProfessionals: { az: "Tibb mütəxəssisləri", en: "Medical Professionals", ru: "Медицинские работники" },
-    parentsTeachers: { az: "Valideynlər & Müəllimlər", en: "Parents & Teachers", ru: "Родители и учителя" },
-    federations: { az: "Federasiyalar", en: "Federations", ru: "Федерации" },
-    public: { az: "İctimaiyyət", en: "General Public", ru: "Общественность" },
-    tue: { az: "Terapevtik İstifadə üçün İstisnalar (Tİİ)", en: "Therapeutic Use Exemption", ru: "Терапевтическое исключение" },
-    resourcesSupport: { az: "Resurslar & Dəstək", en: "Resources & Support", ru: "Ресурсы и поддержка" },
-    resourceLibrary: { az: "Resurs kitabxanası", en: "Resource library", ru: "Библиотека ресурсов" },
-    reportConcern: { az: "Narahatlığı bildir", en: "Report a concern", ru: "Сообщить о нарушении" },
-    faq: { az: "TSS (Tez-tez soruşulan suallar)", en: "FAQ", ru: "Часто задаваемые вопросы" },
-    contactTeam: { az: "Komandamızla əlaqə", en: "Contact our team", ru: "Связаться с командой" },
+    whatWeDo: { az: "Biz nə edirik", en: "What we do" },
+    education: { az: "Təhsil", en: "Education" },
+    educationOverview: { az: "Təhsilə baxış", en: "Education overview" },
+    cleanSportBehaviors: { az: "Təmiz idman davranışları", en: "Clean sport behaviors" },
+    athletePathway: { az: "İdmançı yolu", en: "Athlete pathway" },
+    annualEducationPlan: { az: "İllik təhsil planı", en: "Annual education plan" },
+    monitorImpact: { az: "Monitorinq və Təsir", en: "Monitoring & Impact" },
+    educatorNetwork: { az: "Təlimçilər şəbəkəsi", en: "Educator network" },
+    learningHub: { az: "Öyrənmə Mərkəzi", en: "Learning Hub" },
+    eLearning: { az: "Elektron öyrənmə kurslarına baxış", en: "eLearning course overview" },
+    webinars: { az: "Vebinarlar", en: "Webinars" },
+    seminars: { az: "Seminarlar", en: "Seminars" },
+    schoolsPrograms: { az: "Məktəb proqramları", en: "Schools programs" },
+    medicalEducation: { az: "Tibbi təhsil", en: "Medical education" },
+    eventBasedEducation: { az: "Tədbirə Əsaslanan Təhsil", en: "Event-Based Education" },
+    cleanSportTopics: { az: "Təmiz İdman Mövzuları", en: "Clean Sport Topics" },
+    antiDopingViolations: { az: "Antidopinq Qayda Pozuntuları", en: "Anti-Doping Rule Violations" },
+    rightsResponsibilities: { az: "Hüquqlar & Məsuliyyətlər", en: "Rights & Responsibilities" },
+    consequences: { az: "Dopinqin nəticələri", en: "Consequences of Doping" },
+    governance: { az: "Antidopinq sisteminin idarəçiliyi", en: "Governance of the Anti-Doping System" },
+    valuesCleanSport: { az: "Dəyərlər & Təmiz İdman prinsipləri", en: "Values & Principles of Clean Sport" },
+    whereaboutsAdams: { az: "Məkan məlumatı & ADAMS", en: "Whereabouts & ADAMS" },
+    prohibitedList: { az: "Qadağan olunmuş siyahı", en: "Prohibited List" },
+    testingProcedures: { az: "Test etmə prosedurları", en: "Testing Procedures" },
+    supplementsRisk: { az: "Əlavə qidaların riski", en: "Risk of Supplements" },
+    strictLiability: { az: "Ciddi məsuliyyət", en: "Strict Liability" },
+    targetGroups: { az: "Hədəf Qruplar", en: "Target Groups" },
+    athletes: { az: "İdmançılar", en: "Athletes" },
+    coachesSupport: { az: "Məşqçilər & İdmançının köməkçi heyəti", en: "Coaches & Support Personnel" },
+    medicalProfessionals: { az: "Tibb mütəxəssisləri", en: "Medical Professionals" },
+    parentsTeachers: { az: "Valideynlər & Müəllimlər", en: "Parents & Teachers" },
+    federations: { az: "Federasiyalar", en: "Federations" },
+    public: { az: "İctimaiyyət", en: "General Public" },
+    tue: { az: "Terapevtik istifadə üçün istisna (Tİİ)", en: "Therapeutic Use Exemption" },
+    resourcesSupport: { az: "Resurslar & Dəstək", en: "Resources & Support" },
+    resourceLibrary: { az: "Resurs kitabxanası", en: "Resource library" },
+    reportConcern: { az: "Narahatlığı bildir", en: "Report a concern" },
+    faq: { az: "TƏS (Tez-tez soruşulan suallar)", en: "FAQ" },
+    contactTeam: { az: "Komandamızla əlaqə", en: "Contact our team" }
   },
 
   // ─── Landing Page ───────────────────────────────────────────────────────────
   landing: {
     heroTitle: {
       az: "Təhsil Vasitəsilə Təmiz İdmana Güc Vermək",
-      en: "Empowering Clean Sport Through Education",
-      ru: "Поддержка чистого спорта через образование",
+      en: "Empowering Clean Sport Through Education"
     },
     heroSubtitle: {
-      az: "Azərbaycandakı bütün idmançılar, idmançı dəstək heyəti, federasiyalar, məktəblər və geniş idman icması üçün əlçatan, profilaktikaya yönəlmiş dopinqə qarşı mübarizə təhsili.",
-      en: "We make sport integrity education accessible to all athletes and support personnel, with the hope that we can build safe, fair sport for everyone in Azerbaijan.",
-      ru: "Мы делаем антидопинговое образование доступным для всех спортсменов и вспомогательного персонала.",
+      az: "Azərbaycandakı bütün idmançılar, idmançının köməkçi heyəti, federasiyalar, məktəblər və geniş idman icması üçün əlçatan, profilaktikaya yönəlmiş antidopinq təhsili.",
+      en: "We make sport integrity education accessible to all athletes and support personnel, with the hope that we can build safe, fair sport for everyone in Azerbaijan."
     },
-    startLearning: { az: "Öyrənməyə Başla", en: "Start Learning", ru: "Начать обучение" },
-    onThisPage: { az: "Bu səhifədə", en: "On this page", ru: "На этой странице" },
-    choosePath: { az: "Öyrənmə Yolunuzu Seçin", en: "Choose Your Learning Path", ru: "Выберите свой путь обучения" },
+    startLearning: { az: "Öyrənməyə Başla", en: "Start Learning" },
+    onThisPage: { az: "Bu səhifədə", en: "On this page" },
+    choosePath: { az: "Öyrənmə Yolunuzu Seçin", en: "Choose Your Learning Path" },
     choosePathDesc: {
-      az: "İdmandakı rolunuza əsasən uyğunlaşdırılmış dopinqə qarşı mübarizə məlumatları və resursları.",
-      en: "Tailored anti-doping information and resources based on your role in sport.",
-      ru: "Персонализированная антидопинговая информация и ресурсы на основе вашей роли в спорте.",
+      az: "İdmandakı rolunuza əsasən uyğunlaşdırılmış antidopinq məlumatları və resursları.",
+      en: "Tailored anti-doping information and resources based on your role in sport."
     },
-    essentialTopics: { az: "Əsas Təmiz İdman Mövzuları", en: "Essential Clean Sport Topics", ru: "Важнейшие темы чистого спорта" },
+    essentialTopics: { az: "Əsas Təmiz İdman Mövzuları", en: "Essential Clean Sport Topics" },
     essentialTopicsDesc: {
       az: "Hər iştirakçının bilməli olduğu qaydalar, prosedurlar və risklərə sürətli giriş.",
-      en: "Quick access to the rules, procedures, and risks every participant must know.",
-      ru: "Быстрый доступ к правилам, процедурам и рискам, которые должен знать каждый участник.",
+      en: "Quick access to the rules, procedures, and risks every participant must know."
     },
-    viewAllTopics: { az: "Bütün Mövzulara Bax", en: "View All Topics", ru: "Просмотреть все темы" },
-    playgroundToPodium: { az: "Oyun Meydançasından Podiumadək", en: "From Playground to Podium", ru: "От детской площадки до пьедестала" },
+    viewAllTopics: { az: "Bütün Mövzulara Bax", en: "View All Topics" },
+    playgroundToPodium: { az: "Oyun Meydançasından Kürsüyə", en: "From Playground to Podium" },
     playgroundDesc: {
       az: "Təhsil idmançı yolunun hər mərhələsində təmiz idman davranışlarını dəstəkləməlidir. Gənc iştirakçılıqdan Elit RTP statusuna qədər uyğunlaşdırılmış öyrənmə ehtiyaclarını kəşf edin.",
-      en: "Education should support clean sport behaviors across every stage of the athlete journey. Discover the tailored learning needs from youth participation up to Elite RTP status.",
-      ru: "Образование должно поддерживать поведение в чистом спорте на каждом этапе спортивного пути.",
+      en: "Education should support clean sport behaviors across every stage of the athlete journey. Discover the tailored learning needs from youth participation up to Elite RTP status."
     },
-    explorePathway: { az: "İdmançı Yolunu Kəşf Et", en: "Explore the Athlete Pathway Mapping", ru: "Изучить путь спортсмена" },
-    learningFormats: { az: "Öyrənmə Formatları & İmkanları", en: "Learning Formats & Opportunities", ru: "Форматы и возможности обучения" },
-    viewLearningHub: { az: "Öyrənmə Mərkəzinə Bax", en: "View the full Learning Hub", ru: "Просмотреть учебный центр" },
-    reporting: { az: "Narahatlığı Bildirmək", en: "Reporting a concern", ru: "Сообщить о нарушении" },
-    speakUp: { az: "Təmiz İdman Naminə Danış", en: "Speak Up for Clean Sport", ru: "Говори за чистый спорт" },
+    explorePathway: { az: "İdmançı Yolunu Kəşf Et", en: "Explore the Athlete Pathway Mapping" },
+    learningFormats: { az: "Öyrənmə Formatları & İmkanları", en: "Learning Formats & Opportunities" },
+    viewLearningHub: { az: "Öyrənmə Mərkəzinə Bax", en: "View the full Learning Hub" },
+    reporting: { az: "Narahatlığı Bildirmək", en: "Reporting a concern" },
+    speakUp: { az: "Təmiz İdman Naminə Danış", en: "Speak Up for Clean Sport" },
     speakUpDesc: {
       az: "Dopinq narahatlıqlarını necə bildirəcəyinizi öyrənin.",
-      en: "Find out how to report doping concerns or seek support confidently and securely.",
-      ru: "Узнайте, как сообщить о допинговых нарушениях.",
+      en: "Find out how to report doping concerns or seek support confidently and securely."
     },
-    reportingOptions: { az: "Bildiriş Seçimləri", en: "Reporting Options", ru: "Варианты отчётности" },
+    reportingOptions: { az: "Bildiriş Seçimləri", en: "Reporting Options" }
   },
 
   // ─── Target Groups ──────────────────────────────────────────────────────────
   targetGroups: {
-    athletes: { az: "İdmançılar", en: "Athletes", ru: "Спортсмены" },
+    athletes: { az: "İdmançılar", en: "Athletes" },
     athletesDesc: {
-      az: "Gənclikdən elit RTP-ə qədər bütün səviyyələr üçün əsas təlimatlar.",
-      en: "Essential guidance for all levels, from youth to elite RTP.",
-      ru: "Основные рекомендации для всех уровней, от молодёжи до элитных спортсменов.",
+      az: "Gənclikdən elit RTP-ə qədər bütün səviyyələr üçün əsas rəhbərlik.",
+      en: "Essential guidance for all levels, from youth to elite RTP."
     },
-    coaches: { az: "Məşqçilər & Dəstək Heyəti", en: "Coaches & Support", ru: "Тренеры и персонал" },
+    coaches: { az: "Məşqçilər & İdmançının köməkçi heyəti", en: "Coaches & Support" },
     coachesDesc: {
-      az: "Məsuliyyətləriniz və təmiz idmançıları necə dəstəkləməli.",
-      en: "Your responsibilities and how to support clean athletes.",
-      ru: "Ваши обязанности и как поддерживать чистых спортсменов.",
+      az: "Məsuliyyətləriniz və təmiz idmançıları necə dəstəkləyəcəyiniz.",
+      en: "Your responsibilities and how to support clean athletes."
     },
-    medical: { az: "Tibb Mütəxəssisləri", en: "Medical Professionals", ru: "Медицинские работники" },
+    medical: { az: "Tibb Mütəxəssisləri", en: "Medical Professionals" },
     medicalDesc: {
-      az: "Tİİ-lər, dərmanlar və idmançı sağlamlığının qorunması.",
-      en: "TUEs, medications, and safeguarding athlete health.",
-      ru: "ТИИ, лекарства и охрана здоровья спортсменов.",
+      az: "Tİİ, dərman preparatları və idmançı sağlamlığının qorunması.",
+      en: "TUEs, medications, and safeguarding athlete health."
     },
-    parents: { az: "Valideynlər & Müəllimlər", en: "Parents & Teachers", ru: "Родители и учителя" },
+    parents: { az: "Valideynlər & Müəllimlər", en: "Parents & Teachers" },
     parentsDesc: {
-      az: "Erkən idman təhsilində güclü dəyərlər formalaşdırmaq.",
-      en: "Building strong values in early sport education.",
-      ru: "Формирование сильных ценностей в раннем спортивном образовании.",
+      az: "Erkən idman iştirakında güclü dəyərlərin formalaşdırılması.",
+      en: "Building strong values in early sport education."
     },
-    federations: { az: "Federasiyalar & Klublar", en: "Federations & Clubs", ru: "Федерации и клубы" },
+    federations: { az: "Federasiyalar & Klublar", en: "Federations & Clubs" },
     federationsDesc: {
-      az: "Uyğunluq, birgə planlaşdırma və təhsilin çatdırılması.",
-      en: "Compliance, joint planning, and education delivery.",
-      ru: "Соблюдение требований, совместное планирование и реализация образования.",
+      az: "Tələblərə uyğunluq, birgə planlaşdırma və təhsilin həyata keçirilməsi.",
+      en: "Compliance, joint planning, and education delivery."
     },
-    public: { az: "İctimaiyyət", en: "Public", ru: "Общественность" },
+    public: { az: "İctimaiyyət", en: "Public" },
     publicDesc: {
-      az: "Təmiz idman idarəçiliyinin missiyası haqqında məlumat alın.",
-      en: "Learn about the mission of clean sport governance.",
-      ru: "Узнайте о миссии управления чистым спортом.",
-    },
+      az: "Təmiz idman idarəetməsinin missiyası haqqında məlumat əldə edin.",
+      en: "Learn about the mission of clean sport governance."
+    }
   },
 
   // ─── Topics ──────────────────────────────────────────────────────────────────
   topics: {
-    adrv: { az: "Dopinqə Qarşı Qayda Pozuntuları", en: "Anti-Doping Rule Violations", ru: "Нарушения антидопинговых правил" },
+    adrv: { az: "Antidopinq Qayda Pozuntuları", en: "Anti-Doping Rule Violations" },
     adrvDesc: {
-      az: "Ümumdünya Dopinqə Qarşı Məcəllə altında 11 DQAQP-ni öyrənin.",
-      en: "Understand the 11 ADRVs under the World Anti-Doping Code.",
-      ru: "Изучите 11 НАДП в соответствии с Всемирным антидопинговым кодексом.",
+      az: "Ümumdünya Antidopinq Məcəlləsi çərçivəsində 11 AQAQP-ni öyrənin.",
+      en: "Understand the 11 ADRVs under the World Anti-Doping Code."
     },
-    testing: { az: "Sınaq Prosedurları", en: "Testing Procedures", ru: "Процедуры тестирования" },
+    testing: { az: "Test etmə prosedurları", en: "Testing Procedures" },
     testingDesc: {
       az: "Sidik və qan nümunəsi toplama prosesinin addım-addım rəhbəri.",
-      en: "Step-by-step guide to the urine and blood collection process.",
-      ru: "Пошаговое руководство по процедуре сбора образцов мочи и крови.",
+      en: "Step-by-step guide to the urine and blood collection process."
     },
-    prohibitedList: { az: "Qadağan olunmuş siyahı", en: "Prohibited List", ru: "Запрещённый список" },
+    prohibitedList: { az: "Qadağan olunmuş siyahı", en: "Prohibited List" },
     prohibitedListDesc: {
-      az: "Yarışma zamanı və sonrasında qadağan olunmuş maddə və üsullar.",
-      en: "Substances and methods banned in and out of competition.",
-      ru: "Вещества и методы, запрещённые во время соревнований и вне их.",
+      az: "Yarış müddətində və yarışdan kənar dövrdə qadağan edilmiş maddə və üsullar.",
+      en: "Substances and methods banned in and out of competition."
     },
-    tue: { az: "Terapevtik İstifadə İcazəsi (Tİİ)", en: "Therapeutic Use Exemptions", ru: "Терапевтические исключения" },
+    tue: { az: "Terapevtik istifadə üçün istisna (Tİİ)", en: "Therapeutic Use Exemptions" },
     tueDesc: {
-      az: "Qanuni tibbi ehtiyaclar üçün Tİİ üçün müraciət.",
-      en: "Applying for a TUE for legitimate medical needs.",
-      ru: "Подача заявки на ТИИ для законных медицинских нужд.",
+      az: "Qanuni tibbi ehtiyac üçün Tİİ müraciəti.",
+      en: "Applying for a TUE for legitimate medical needs."
     },
-    supplements: { az: "Əlavə Qidaların Riski", en: "Supplements Risk", ru: "Риск пищевых добавок" },
+    supplements: { az: "Əlavə qidaların riski", en: "Supplements Risk" },
     supplementsDesc: {
       az: "Çirklənmənin və yoxlanılmamış əlavə qidaların təhlükələri.",
-      en: "The dangers of contamination and unverified supplements.",
-      ru: "Опасности загрязнения и непроверенных пищевых добавок.",
+      en: "The dangers of contamination and unverified supplements."
     },
-    strictLiability: { az: "Ciddi Məsuliyyət", en: "Strict Liability", ru: "Строгая ответственность" },
+    strictLiability: { az: "Ciddi Məsuliyyət", en: "Strict Liability" },
     strictLiabilityDesc: {
-      az: "Bədəninizde tapılanlar üçün nə üçün məsuliyyət daşıyırsınız.",
-      en: "Why you are responsible for what is found in your body.",
-      ru: "Почему вы несёте ответственность за то, что находится в вашем теле.",
+      az: "Bədəninizdə tapılan maddələr üçün nə üçün məsuliyyət daşıdığınızı anlayın.",
+      en: "Why you are responsible for what is found in your body."
     },
-    rights: { az: "Hüquqlar & Məsuliyyətlər", en: "Rights & Responsibilities", ru: "Права и обязанности" },
+    rights: { az: "Hüquqlar & Məsuliyyətlər", en: "Rights & Responsibilities" },
     rightsDesc: {
-      az: "İdmançılar üçün əsas müdafiələr.",
-      en: "Core protections for athletes.",
-      ru: "Основные защиты для спортсменов.",
-    },
+      az: "İdmançılar üçün əsas hüquqi müdafiə vasitələri.",
+      en: "Core protections for athletes."
+    }
   },
 
   // ─── Learning Programs ───────────────────────────────────────────────────────
   learning: {
-    seminars: { az: "Seminarlar", en: "Seminars", ru: "Семинары" },
-    webinars: { az: "Vebinarlar", en: "Webinars", ru: "Вебинары" },
-    outreach: { az: "Maarifləndirmə fəaliyyətləri", en: "Outreach activities", ru: "Работа с населением" },
-    eLearning: { az: "Elektron Öyrənmə", en: "eLearning", ru: "Электронное обучение" },
-    schoolSessions: { az: "Məktəb dərsləri", en: "School sessions", ru: "Школьные занятия" },
-    federationEducation: { az: "Federasiya təhsili", en: "Federation education", ru: "Образование федераций" },
+    seminars: { az: "Seminarlar", en: "Seminars" },
+    webinars: { az: "Vebinarlar", en: "Webinars" },
+    outreach: { az: "Maarifləndirmə fəaliyyətləri", en: "Outreach activities" },
+    eLearning: { az: "Elektron Öyrənmə", en: "eLearning" },
+    schoolSessions: { az: "Məktəb dərsləri", en: "School sessions" },
+    federationEducation: { az: "Federasiya təhsili", en: "Federation education" }
   },
 
   // ─── Athlete Pathway ────────────────────────────────────────────────────────
   pathway: {
     title: {
       az: "İdmançı İnkişaf Yolu",
-      en: "Athlete Development Pathway",
-      ru: "Путь развития спортсмена",
+      en: "Athlete Development Pathway"
     },
     subtitle: {
       az: "Təmiz idman təhsili ömür boyu bir səfərdir. AMADA-nın Təhsil Proqramının idmançıları karyeralarının hər mərhələsində necə dəstəklədiyini kəşf edin.",
-      en: "Clean sport education is a lifelong journey. Explore how AMADA's Education Program supports athletes at every stage of their career.",
-      ru: "Образование в области чистого спорта — это путь длиной в жизнь.",
+      en: "Clean sport education is a lifelong journey. Explore how AMADA's Education Program supports athletes at every stage of their career."
     },
     timelineTitle: {
-      az: "Oyun Meydançasından Podiumadək",
-      en: "From Playground to Podium",
-      ru: "От детской площадки до пьедестала",
+      az: "Oyun Meydançasından Kürsüyə",
+      en: "From Playground to Podium"
     },
     timelineDesc: {
       az: "Hər mərhələdə məsuliyyətlərinizi anlayın. Cari səviyyənizlə bağlı gözlənilən öyrənmə ehtiyaclarını və riskləri nəzərdən keçirin.",
-      en: "Understanding your responsibilities at every stage. Review the expected learning needs and risks associated with your current level.",
-      ru: "Понимайте свои обязанности на каждом этапе.",
+      en: "Understanding your responsibilities at every stage. Review the expected learning needs and risks associated with your current level."
     },
     stages: {
       children: {
-        title: { az: "İdmanda Uşaqlar", en: "Children in Sport", ru: "Дети в спорте" },
-        subtitle: { az: "Əsas Mərhələ", en: "Foundation Stage", ru: "Базовый этап" },
+        title: { az: "İdmanda Uşaqlar", en: "Children in Sport" },
+        subtitle: { az: "Əsas Mərhələ", en: "Foundation Stage" },
         description: {
-          az: "Aktiv oyun vasitəsilə ədalətli oyun, hörmət və bərabərliyin əsas dəyərlərini tanıtmaq. Həqiqi təmiz idman, idmançılar dopinqə qarşı mübarizə qaydalarını öyrənməmişdən əvvəl oyunu özünəməxsus dəyəri üçün sevməyi öyrəndikdə qurulur.",
-          en: "Introducing the core values of fair play, respect, and equity through active play. True clean sport is built when athletes learn to love the game for its intrinsic value before they learn the rules of anti-doping.",
-          ru: "Воспитание базовых ценностей: честная игра, уважение и равенство через активную деятельность.",
+          az: "Aktiv oyun vasitəsilə ədalətli oyun, hörmət və bərabərliyin əsas dəyərlərini tanıtmaq. Həqiqi təmiz idman, idmançılar antidopinq qaydalarını öyrənməzdən əvvəl oyunu özünəməxsus dəyərinə görə sevməyi öyrəndikdə qurulur.",
+          en: "Introducing the core values of fair play, respect, and equity through active play. True clean sport is built when athletes learn to love the game for its intrinsic value before they learn the rules of anti-doping."
         },
         points: {
-          az: ["Dəyərlərə əsaslanan idman proqramlarına diqqət", "Qalib olmaqdan əvvəl iştirakın sevincini artırmaq", "Valideynləri və bədən tərbiyəsi müəllimlərini cəlb etmək", "Ədalətli oyun anlayışını üzvi olaraq tanıtmaq"],
-          en: ["Focus on values-based sport programs", "Promote joy of participation over winning", "Involve parents and physical education teachers", "Introduce the concept of fair play organically"],
-          ru: ["Программы, ориентированные на ценности", "Радость участия важнее победы", "Вовлекать родителей и учителей физкультуры", "Органически вводить понятие честной игры"],
-        },
+          az: ["Dəyərlərə əsaslanan idman proqramlarına diqqət", "Qalib olmaqdan əvvəl iştirakın sevincini ön plana çıxarmaq", "Valideynləri və bədən tərbiyəsi müəllimlərini cəlb etmək", "Ədalətli oyun anlayışını üzvi olaraq tanıtmaq"],
+          en: ["Focus on values-based sport programs", "Promote joy of participation over winning", "Involve parents and physical education teachers", "Introduce the concept of fair play organically"]
+        }
       },
       youth: {
-        title: { az: "Gənc İdmançılar", en: "Youth Athletes", ru: "Молодые спортсмены" },
-        subtitle: { az: "İnkişaf Mərhələsi", en: "Development Stage", ru: "Этап развития" },
+        title: { az: "Gənc İdmançılar", en: "Youth Athletes" },
+        subtitle: { az: "İnkişaf Mərhələsi", en: "Development Stage" },
         description: {
-          az: "İdmançılar rəqabət aparmağa başladıqda, qalib olmaq üçün ilk xarici təzyiqlərlə üzləşirlər. Bu, dopinqə qarşı mübarizə anlayışlarını rəsmi olaraq təqdim etmək və onların sağlam qidalanma ilə təhlükəli əlavə qidalar arasındakı fərqi başa düşmələrini təmin etmək mərhələsidir.",
-          en: "As athletes begin to compete, they face their first external pressures to win. This is the stage to formally introduce anti-doping concepts and ensure they understand the difference between healthy nutrition and dangerous supplements.",
-          ru: "Когда спортсмены начинают соревноваться, они сталкиваются с первым внешним давлением.",
+          az: "İdmançılar rəqabət aparmağa başladıqda, qalib olmaq üçün ilk xarici təzyiqlərlə üzləşirlər. Bu, antidopinq anlayışlarını rəsmi olaraq təqdim etmək və onların sağlam qidalanma ilə təhlükəli əlavə qidalar arasındakı fərqi başa düşmələrini təmin etmək mərhələsidir.",
+          en: "As athletes begin to compete, they face their first external pressures to win. This is the stage to formally introduce anti-doping concepts and ensure they understand the difference between healthy nutrition and dangerous supplements."
         },
         points: {
-          az: ["Ciddi məsuliyyətin ilk tanıdılması", "Qadağan olunmuş siyahı haqqında əsas məlumatlılıq", "Dərmanların risk daşıdığını anlamaq", "Əvvəlcə qida fəlsəfəsini formalaşdırmaq"],
-          en: ["First introduction to strict liability", "Basic awareness of the Prohibited List", "Understanding that medications hold risks", "Establishing a food-first philosophy"],
-          ru: ["Первое знакомство со строгой ответственностью", "Базовая осведомлённость о запрещённом списке", "Понимание рисков, связанных с медикаментами", "Философия «сначала еда»"],
-        },
+          az: ["Ciddi məsuliyyətin ilk tanıdılması", "Qadağan olunmuş siyahı haqqında əsas məlumatlılıq", "Dərmanların risk daşıdığını anlamaq", "Qida Öncəlikli yanaşma fəlsəfəsini formalaşdırmaq"],
+          en: ["First introduction to strict liability", "Basic awareness of the Prohibited List", "Understanding that medications hold risks", "Establishing a food-first philosophy"]
+        }
       },
       talented: {
-        title: { az: "İstedadlı İdmançılar", en: "Talented Athletes", ru: "Одарённые спортсмены" },
-        subtitle: { az: "Elit Öncəsi Mərhələ", en: "Pre-Elite Stage", ru: "Доэлитный этап" },
+        title: { az: "İstedadlı İdmançılar", en: "Talented Athletes" },
+        subtitle: { az: "Elit Öncəsi Mərhələ", en: "Pre-Elite Stage" },
         description: {
           az: "Regional və milli yaş qrupu müsabiqələrinə qatılan idmançılar. Onlar ilk dəfə yoxlanıla bilər. Böyük tədbirlərdə iştirak etməzdən əvvəl təhsil rəsmi və məcburi olur.",
-          en: "Athletes entering regional and national age-group competitions. They may be tested for the first time. Education becomes formal and mandatory prior to participating in major events.",
-          ru: "Спортсмены, вступающие в региональные и национальные соревнования.",
+          en: "Athletes entering regional and national age-group competitions. They may be tested for the first time. Education becomes formal and mandatory prior to participating in major events."
         },
         points: {
-          az: ["Nümunə götürmə prosesi haqqında bilik", "Dərmanları yoxlamaq üçün GlobalDRO-dan istifadə", "Əlavə qida çirklənməsinin təhlükələrini anlamaq", "Lazım olduqda Terapevtik İstifadə İcazəsi üçün müraciət"],
-          en: ["Knowledge of the sample collection process", "How to use GlobalDRO to check medications", "Understanding the dangers of supplement contamination", "Applying for a Therapeutic Use Exemption (TUE) if needed"],
-          ru: ["Знание процедуры сбора образцов", "Использование GlobalDRO для проверки медикаментов", "Понимание опасности загрязнения добавок", "Подача заявки на ТИИ при необходимости"],
-        },
+          az: ["Nümunə götürmə prosesi haqqında bilik", "Dərmanları yoxlamaq üçün GlobalDRO-dan istifadə", "Əlavə qida çirklənməsinin təhlükələrini anlamaq", "Lazım olduqda Terapevtik istifadə üçün istisna (Tİİ) almaq üçün müraciət"],
+          en: ["Knowledge of the sample collection process", "How to use GlobalDRO to check medications", "Understanding the dangers of supplement contamination", "Applying for a Therapeutic Use Exemption (TUE) if needed"]
+        }
       },
       national: {
-        title: { az: "Milli & Beynəlxalq İdmançılar", en: "National & International Athletes", ru: "Национальные и международные спортсмены" },
-        subtitle: { az: "Elit Mərhələ", en: "Elite Stage", ru: "Элитный этап" },
+        title: { az: "Milli & Beynəlxalq İdmançılar", en: "National & International Athletes" },
+        subtitle: { az: "Elit Mərhələ", en: "Elite Stage" },
         description: {
-          az: "Ən yüksək səviyyələrdə rəqabət aparılır. Dopinqə Qarşı Qaydalara tam uyğunluq gözlənilir. İdmançılar nümunə göstərənlərdir və qüsursuz təmiz idman davranışları nümayiş etdirməlidirlər.",
-          en: "Competing at the highest levels. Full compliance with the Anti-Doping Rules is expected. Athletes are role models and must demonstrate impeccable clean sport behaviors.",
-          ru: "Соревнования на высшем уровне. Ожидается полное соблюдение антидопинговых правил.",
+          az: "Ən yüksək səviyyələrdə rəqabət aparılır. Antidopinq Qaydalarına tam uyğunluq gözlənilir. İdmançılar nümunə göstərənlərdir və qüsursuz təmiz idman davranışları nümayiş etdirməlidirlər.",
+          en: "Competing at the highest levels. Full compliance with the Anti-Doping Rules is expected. Athletes are role models and must demonstrate impeccable clean sport behaviors."
         },
         points: {
-          az: ["11 DQAQP-nin dərindən anlaşılması", "Dəqiq Yerləşmə məlumatının təqdim edilməsi", "Hər hansı dopinq yanaşmalarını və narahatlıqları bildirmək", "Nümunə göstərən kimi AMADA-nın maarifləndirici fəaliyyətinə kömək etmək"],
-          en: ["Deep understanding of all 11 ADRVs", "Submitting accurate Whereabouts information", "Reporting any doping approaches or concerns", "Assisting AMADA in educational outreach as role models"],
-          ru: ["Глубокое понимание всех 11 НАДП", "Точная подача информации о местонахождении", "Сообщение о допинговых подходах", "Помощь АМАДА в просветительской деятельности"],
-        },
+          az: ["Bütün 11 AQAQP-nin dərindən anlaşılması", "Dəqiq Məkan məlumatının təqdim edilməsi", "İstənilən dopinq yanaşmalarını və narahatlıqları bildirmək", "Nümunə göstərən kimi AMADA-nın maarifləndirici fəaliyyətinə kömək etmək"],
+          en: ["Deep understanding of all 11 ADRVs", "Submitting accurate Whereabouts information", "Reporting any doping approaches or concerns", "Assisting AMADA in educational outreach as role models"]
+        }
       },
       rtp: {
-        title: { az: "Qeydiyyatlı Sınaq Hovuzu (QSH)", en: "Registered Testing Pool (RTP)", ru: "Зарегистрированный пул тестирования (ЗПТ)" },
-        subtitle: { az: "Yüksək Riskli Elit Mərhələ", en: "High-Risk Elite Stage", ru: "Высокорисковый элитный этап" },
+        title: { az: "Qeydiyyata alınmış Test Qrupu (QTQ)", en: "Registered Testing Pool (RTP)" },
+        subtitle: { az: "Yüksək Riskli Elit Mərhələ", en: "High-Risk Elite Stage" },
         description: {
-          az: "Performans səviyyəsinə görə ən yüksək dopinqə qarşı mübarizə diqqətinə məruz qalan idmançılar. Yerləşmə və sınaq protokollarına ciddi və dərhal uyğunluq məcburidir.",
-          en: "Athletes subject to the highest level of anti-doping scrutiny due to their performance level. Strict and immediate compliance with Whereabouts and testing protocols is mandatory.",
-          ru: "Спортсмены, подвергающиеся высшему уровню антидопингового контроля.",
+          az: "Performans səviyyəsinə görə ən yüksək antidopinq nəzarətinə cəlb edilən idmançılar. Məkan məlumatı və sınaq protokollarına ciddi və dərhal riayət məcburidir.",
+          en: "Athletes subject to the highest level of anti-doping scrutiny due to their performance level. Strict and immediate compliance with Whereabouts and testing protocols is mandatory."
         },
         points: {
-          az: ["ADAMS-ı hər gün yeniləmək", "Yerləşmə Uğursuzluqlarının nəticələrini anlamaq", "Beynəlxalq səviyyədə Tİİ-ləri idarə etmək", "Bütün dopinqə qarşı mübarizə tələblərinə ciddi riayət"],
-          en: ["Updating ADAMS daily", "Understanding the consequences of Whereabouts Failures", "Managing TUEs at the international level", "Strict adherence to all anti-doping requirements"],
-          ru: ["Ежедневное обновление ADAMS", "Понимание последствий нарушений местонахождения", "Управление ТИИ на международном уровне", "Строгое соблюдение всех антидопинговых требований"],
-        },
+          az: ["ADAMS-ı hər gün yeniləmək", "Məkan məlumatı pozuntularının nəticələrini anlamaq", "Beynəlxalq səviyyədə Tİİ-ləri idarə etmək", "Bütün antidopinq tələblərinə ciddi riayət"],
+          en: ["Updating ADAMS daily", "Understanding the consequences of Whereabouts Failures", "Managing TUEs at the international level", "Strict adherence to all anti-doping requirements"]
+        }
       },
       returning: {
-        title: { az: "Geri Dönən İdmançılar", en: "Returning Athletes", ru: "Возвращающиеся спортсмены" },
-        subtitle: { az: "Reintegrasiya Mərhələsi", en: "Re-integration Stage", ru: "Этап реинтеграции" },
+        title: { az: "Geri Dönən İdmançılar", en: "Returning Athletes" },
+        subtitle: { az: "Reintegrasiya Mərhələsi", en: "Re-integration Stage" },
         description: {
-          az: "Sanksiya dövründən qayıdan idmançılar. Təhsil, reabilitasiya, yeni qaydalara dair biliklərin yenilənməsi və müsabiqəyə qayıdarkən uyğunluğun təmin edilməsinə yönəlir.",
-          en: "Athletes returning from a sanction period. Education focuses on rehabilitation, updating knowledge on new rules, and ensuring compliance upon returning to competition.",
-          ru: "Спортсмены, возвращающиеся после дисквалификации.",
+          az: "Sanksiya müddətini başa vuran idmançılar. Təhsil reabilitasiyaya, yenilənmiş qaydalara dair biliklərin artırılmasına və müsabiqəyə qayıdışda uyğunluğun təmin edilməsinə yönəlir.",
+          en: "Athletes returning from a sanction period. Education focuses on rehabilitation, updating knowledge on new rules, and ensuring compliance upon returning to competition."
         },
         points: {
           az: ["Cari Qadağan olunmuş Siyahı haqqında biliyin yenilənməsi", "Bərpa şərtlərini anlamaq", "Təmiz idman vərdişlərini yenidən qurmaq", "Əvvəlki pozuntuların kök səbəblərini aradan qaldırmaq"],
-          en: ["Updating knowledge of the current Prohibited List", "Understanding conditions of reinstatement", "Rebuilding clean sport habits", "Addressing the root causes of previous violations"],
-          ru: ["Обновление знаний о текущем запрещённом списке", "Понимание условий восстановления", "Восстановление привычек чистого спорта", "Устранение первопричин предыдущих нарушений"],
-        },
-      },
-    },
+          en: ["Updating knowledge of the current Prohibited List", "Understanding conditions of reinstatement", "Rebuilding clean sport habits", "Addressing the root causes of previous violations"]
+        }
+      }
+    }
   },
 
   // ─── Topics Detail Pages ─────────────────────────────────────────────────────
   topicPages: {
     adrv: {
-      title: { az: "Dopinqə Qarşı Qayda Pozuntuları (DQAQP)", en: "Anti-Doping Rule Violations (ADRVs)", ru: "Нарушения антидопинговых правил (НАДП)" },
+      title: { az: "Antidopinq Qayda Pozuntuları (AQAQP)", en: "Anti-Doping Rule Violations (ADRVs)" },
       subtitle: {
-        az: "Dopinq yalnız müsbət test nəticəsi deyil. Qayda pozuntusunun Ümumdünya Dopinqə Qarşı Məcəllə çərçivəsində baş verə biləcəyi 11 yolu anlayın.",
-        en: "Doping is more than just testing positive. Understand the 11 ways a rule violation can occur under the World Anti-Doping Code.",
-        ru: "Допинг — это не только положительный тест. Изучите 11 способов нарушения правил.",
+        az: "Dopinq yalnız müsbət test nəticəsi deyil. Qayda pozuntusunun Ümumdünya Antidopinq Məcəlləsi çərçivəsində baş verə biləcəyi 11 yolu anlayın.",
+        en: "Doping is more than just testing positive. Understand the 11 ways a rule violation can occur under the World Anti-Doping Code."
       },
       intro: {
-        az: "11 Dopinqə Qarşı Qayda Pozuntusu (DQAQP) mövcuddur. Onların nə olduğunu bilmək sizin məsuliyyətinizdirdir. Qaydaları bilməmək, Ciddi Məsuliyyət prinsipi çərçivəsində qəbul edilə bilən müdafiə deyil.",
-        en: "There are 11 Anti-Doping Rule Violations (ADRVs). It is your responsibility to know what they are. Ignorance of the rules is not an acceptable defense under the principle of Strict Liability.",
-        ru: "Существует 11 нарушений антидопинговых правил (НАДП). Знать их — ваша обязанность.",
+        az: "11 Antidopinq Qayda Pozuntusu (AQAQP) mövcuddur. Onların nə olduğunu bilmək sizin məsuliyyətinizdirdir. Qaydaları bilməmək, Ciddi Məsuliyyət prinsipi çərçivəsində qəbul edilən müdafiə deyil.",
+        en: "There are 11 Anti-Doping Rule Violations (ADRVs). It is your responsibility to know what they are. Ignorance of the rules is not an acceptable defense under the principle of Strict Liability."
       },
       keyFacts: {
         az: [
           "1. Nümunənizdə qadağan olunmuş maddənin olması",
           "2. Qadağan olunmuş maddənin/üsulun istifadəsi və ya istifadəyə cəhd",
           "3. Nümunə toplanmasından yayınma, imtina və ya uğursuzluq",
-          "4. Yerləşmə uğursuzluqları (12 ayda 3 qaçırılmış sınaq və ya uğursuzluq)",
-          "5. Dopinq kontrolunun hər hansı hissəsinə müdaxilə və ya müdaxilə cəhdi",
-          "6. Qadağan olunmuş maddə və ya üsulun sahib olunması",
-          "7. Ticarət və ya ticarət cəhdi",
-          "8. Hər hansı idmançıya idarə etmək və ya etmək cəhdi",
-          "9. Şəriklik və ya şəriklik cəhdi (DQAQP-də kömək etmək)",
+          "4. Məkan məlumatı pozuntuları (12 ayda 3 buraxılmış test və ya məlumat təqdim etmə uğursuzluğu)",
+          "5. Dopinq nəzarətinin hər hansı hissəsinə müdaxilə və ya müdaxilə cəhdi",
+          "6. Qadağan edilmiş maddə və ya üsulun saxlanılması",
+          "7. Qadağan edilmiş maddə/üsulun satışı və ya satış cəhdi (ticarət)",
+          "8. Hər hansı idmançıya qadağan olunmuş maddə/üsul tətbiq etmək və ya tətbiq etməyə cəhd etmək",
+          "9. Şəriklik və ya şəriklik cəhdi (AQAQP-nin törədilməsinə kömək etmək)",
           "10. Qadağan edilmiş Əlaqə (sanksiyaya alınmış şəxslə işləmək)",
-          "11. Bildiriş üzrə şikayətin qarşısını alan və ya intiqam alan hərəkətlər",
+          "11. Nəzarət orqanlarına müraciəti çətinləşdirən və ya bunun üçün təzyiq yaradan hərəkətlər",
         ],
         en: [
           "1. Presence of a prohibited substance in your sample",
@@ -351,48 +314,32 @@ export const translations = {
           "9. Complicity or attempted complicity (assisting in an ADRV)",
           "10. Prohibited Association (working with a sanctioned person)",
           "11. Acts to discourage or retaliate against reporting to authorities",
-        ],
-        ru: [
-          "1. Присутствие запрещённого вещества в вашем образце",
-          "2. Использование или попытка использования запрещённого вещества",
-          "3. Уклонение от сдачи проб или отказ",
-          "4. Нарушения местонахождения (3 пропуска за 12 месяцев)",
-          "5. Фальсификация процедуры допинг-контроля",
-          "6. Владение запрещённым веществом или методом",
-          "7. Торговля или попытка торговли",
-          "8. Введение или попытка введения спортсмену",
-          "9. Соучастие или попытка соучастия",
-          "10. Запрещённое объединение (работа с дисквалифицированным лицом)",
-          "11. Воспрепятствование сообщению о нарушениях",
-        ],
+        ]
       },
       risks: {
-        az: "Bir çox idmançı yalnız sınaq barədə narahat olmaq lazım olduğunu düşünür. Lakin sınaqdan yayınmaq, sanksiyaya alınmış məşqçi ilə əlaqə saxlamaq və ya yerləşmə məlumatını yeniləməmək, müsbət sınaqla eyni 4 illik qadağana səbəb ola bilər.",
-        en: "Many athletes assume they only need to worry about testing. However, evading a test, associating with a sanctioned coach, or failing to update your whereabouts can result in the same 4-year ban as a positive test.",
-        ru: "Многие спортсмены считают, что им нужно беспокоиться только о тестировании. Однако уклонение от теста или несвоевременное обновление местонахождения может привести к 4-летней дисквалификации.",
-      },
+        az: "Bir çox idmançı yalnız sınaq barədə narahat olmaq lazım olduğunu düşünür. Lakin sınaqdan yayınmaq, sanksiyaya alınmış məşqçi ilə əlaqə saxlamaq və ya məkan məlumatını yeniləməmək, müsbət nəticə ilə eyni 4 illik diskvalifikasiyaya səbəb ola bilər.",
+        en: "Many athletes assume they only need to worry about testing. However, evading a test, associating with a sanctioned coach, or failing to update your whereabouts can result in the same 4-year ban as a positive test."
+      }
     },
     "testing-procedures": {
-      title: { az: "Sınaq Prosedurları", en: "Testing Procedures", ru: "Процедуры тестирования" },
+      title: { az: "Sınaq Prosedurları", en: "Testing Procedures" },
       subtitle: {
         az: "Bildirişdən sənədləşdirməyə qədər - sınaq zamanı nə baş verdiyini öyrənin.",
-        en: "From notification to documentation - learn what happens during a test.",
-        ru: "От уведомления до документации - узнайте как проходит тест.",
+        en: "From notification to documentation - learn what happens during a test."
       },
       intro: {
-        az: "Dopinq kontrolu idmançıların karyerasını və təmiz idmanın dürüstlüyünü qorumaq üçün vacib bir vasitədir. Proses həm sidik, həm də qan nümunələrinin toplanmasını əhatə edə bilər.",
-        en: "Doping control is an essential tool for protecting athletes' careers and the integrity of clean sport. The process can involve the collection of both urine and blood samples.",
-        ru: "Допинг-контроль — это важный инструмент защиты карьеры спортсменов и честности спорта.",
+        az: "Dopinq nəzarəti idmançıların karyerasını və təmiz idmanın dürüstlüyünü qorumaq üçün vacib bir vasitədir. Proses həm sidik, həm də qan nümunələrinin toplanmasını əhatə edə bilər.",
+        en: "Doping control is an essential tool for protecting athletes' careers and the integrity of clean sport. The process can involve the collection of both urine and blood samples."
       },
       keyFacts: {
         az: [
-          "Bildiriş: DCO sizi seçildiyiniz barədə məlumatlandırır və hüquqlarınızı izah edir.",
+          "Bildiriş: Dopinq Nəzarəti İnspektoru (DNİ) sizi seçildiyiniz barədə məlumatlandırır və hüquqlarınızı izah edir.",
           "Müşayiət: Bildirişdən nümunə toplama bitənə qədər daim nəzarət altında olmalısınız.",
           "Nümunə Seçimi: Siz bir neçə möhürlənmiş nümunə toplama dəstindən birini seçirsiniz.",
-          "Nümunə Təminatı: Ən azı 90ml sidik nümunəsi toplanmalıdır.",
+          "Nümunə Təqdimi: Ən azı 90 ml sidik nümunəsi təqdim edilməlidir.",
           "Bölünmə: Nümunə A və B şüşələrinə bölünür (A: sınaq üçün, B: ehtiyat üçün).",
           "Kodlaşdırma: Şüşələr anonimlik üçün unikal nömrələrlə möhürlənir.",
-          "Sənədləşdirmə: Dopinq Kontrol Formasını (DKF) yoxlayıb mütləq imzalamalısınız.",
+          "Sənədləşdirmə: Dopinq Nəzarəti Formasını yoxlayıb mütləq imzalamalısınız.",
         ],
         en: [
           "Notification: A DCO informs you of your selection and explains your rights.",
@@ -402,39 +349,27 @@ export const translations = {
           "Splitting the Sample: The sample is divided into A and B bottles.",
           "Sealing and Coding: The bottles are sealed and identified locally by unique numbers.",
           "Documentation: You must verify and sign the Doping Control Form (DCF).",
-        ],
-        ru: [
-          "Уведомление: ИДЛ сообщает вам о выборе для теста.",
-          "Сопровождение: Вы должны находиться под наблюдением до конца процедуры.",
-          "Выбор комплекта: Вы выбираете один из запечатанных комплектов.",
-          "Предоставление пробы: Необходимо предоставить не менее 90 мл мочи.",
-          "Разделение пробы: Проба делится на флаконы А и Б.",
-          "Опечатывание: Флаконы запечатываются и кодируются.",
-          "Документация: Вы должны проверить и подписать протокол.",
-        ],
+        ]
       },
       risks: {
-        az: "Dopinq kontroluna gəlməmək və ya nümunə verməkdən imtina etmək Dopinqə Qarşı Qayda Pozuntusudur (DQAQP) və adətən 4 illik qadağana səbəb olur.",
-        en: "Failing to appear for doping control or refusing to provide a sample is an Anti-Doping Rule Violation (ADRV) and typically carries a 4-year ban.",
-        ru: "Неявка на допинг-контроль или отказ от сдачи пробы является нарушением правил.",
-      },
+        az: "Dopinq nəzarətinə gəlməmək və ya nümunə verməkdən imtina etmək Antidopinq Qayda Pozuntusudur (AQAQP) və adətən 4 illik diskvalifikasiyaya səbəb olur.",
+        en: "Failing to appear for doping control or refusing to provide a sample is an Anti-Doping Rule Violation (ADRV) and typically carries a 4-year ban."
+      }
     },
     "tue": {
-      title: { az: "Terapevtik İstifadə İcazəsi (Tİİ)", en: "Therapeutic Use Exemptions (TUE)", ru: "Терапевтическое использование (ТИ)" },
+      title: { az: "Terapevtik istifadə üçün istisna (Tİİ)", en: "Therapeutic Use Exemptions (TUE)" },
       subtitle: {
-        az: "Əgər idmançı xəstədirsə və ya tibbi vəziyyəti varsa nə olur?",
-        en: "What happens if an athlete is ill or has a medical condition?",
-        ru: "Что делать, если спортсмен болен или имеет медицинские показания?",
+        az: "İdmançının xəstəliyi və ya tibbi problemi olduqda nə etməli?",
+        en: "What happens if an athlete is ill or has a medical condition?"
       },
       intro: {
         az: "İdmançıların da hər kəs kimi tibbi vəziyyətləri ola bilər. Tİİ prosesi idmançılara həqiqi tibbi zərurət olduqda qadağan olunmuş siyahıdakı bir maddəni təhlükəsiz şəkildə istifadə etməyə imkan verir.",
-        en: "Athletes, like everyone else, may have medical conditions. The TUE process allows athletes to safely use a substance on the Prohibited List if there is a genuine medical need.",
-        ru: "У спортсменов могут быть медицинские показания. Процесс ТИ позволяет использовать вещества из списка по необходимости.",
+        en: "Athletes, like everyone else, may have medical conditions. The TUE process allows athletes to safely use a substance on the Prohibited List if there is a genuine medical need."
       },
       keyFacts: {
         az: [
-          "Zərurət: Maddə istifadə edilməməsi sağlamlığın pisləşməsinə səbəb olmalıdır.",
-          "Alternativ: Qeyri-qadağan olunmuş heç bir ağlabatan alternativ müalicə olmamalıdır.",
+          "Zərurət: Maddənin istifadə edilməməsi tibbi vəziyyətin pisləşməsinə səbəb olmalıdır.",
+          "Alternativ: Qadağan edilməmiş ağlabatan alternativ müalicə mövcud olmamalıdır.",
           "Performans: Maddə istifadəsindən gözlənilən performans artımı əhəmiyyətli olmamalıdır.",
           "Müraciət: Maddəni istifadə etməzdən ƏVVƏL müraciət edilməlidir (təcili hallar istisna).",
           "İllik Yenilənmə: Tİİ-lərin adətən bitmə müddəti olur və yenilənməlidir.",
@@ -445,32 +380,22 @@ export const translations = {
           "Performance: Use will not produce any additional enhancement of performance.",
           "Advance Application: You must apply BEFORE using the substance (except emergencies).",
           "Expiration: TUEs have an expiry date and must be renewed.",
-        ],
-        ru: [
-          "Необходимость: Использование требуется для лечения состояния.",
-          "Нет альтернатив: Нет разрешённых терапевтических альтернатив.",
-          "Производительность: Использование не дает значительного преимущества.",
-          "Подача заявки: Нужно подать заявку ДО использования вещества.",
-          "Срок действия: ТИ имеют срок действия и должны продлеваться.",
-        ],
+        ]
       },
       risks: {
-        az: "Təsdiqlənmiş Tİİ olmadan qadağan olunmuş maddədən istifadə etmək müsibət sınaq və sanksiya ilə nəticələnəcəkdir. Həmişə əvvəlcə yoxlayın.",
-        en: "Using a prohibited substance without an approved TUE will result in a positive test and a sanction. Always check first.",
-        ru: "Использование вещества без разрешения приведет к положительному тесту.",
-      },
+        az: "Təsdiqlənmiş Tİİ olmadan qadağan olunmuş maddədən istifadə etmək müsbət analitik nəticəyə və sanksiyaya səbəb olacaqdır. Həmişə əvvəlcədən yoxlayın.",
+        en: "Using a prohibited substance without an approved TUE will result in a positive test and a sanction. Always check first."
+      }
     },
     "supplements-risk": {
-      title: { az: "Əlavə Qidaların Riski", en: "The Risk of Supplements", ru: "Риски пищевых добавок" },
+      title: { az: "Əlavə qidaların riski", en: "The Risk of Supplements" },
       subtitle: {
         az: "Niyə AMADA 'Qida Öncəlikli' yanaşmanı tövsiyə edir.",
-        en: "Why AMADA recommends a 'Food First' approach.",
-        ru: "Почему АМАДА рекомендует подход «Прежде всего еда».",
+        en: "Why AMADA recommends a 'Food First' approach."
       },
       intro: {
         az: "Heç bir pəhriz əlavəsi 100% risksiz deyil. Çirklənmə idmançının bədəninə qadağan olunmuş maddələrin daxil olmasının ən böyük səbəblərindən biridir.",
-        en: "No dietary supplement is 100% risk-free. Contamination is one of the leading causes of prohibited substances entering an athlete's body.",
-        ru: "Ни одна добавка не является на 100% безопасной. Загрязнение — частая причина попадания запрещённых веществ.",
+        en: "No dietary supplement is 100% risk-free. Contamination is one of the leading causes of prohibited substances entering an athlete's body."
       },
       keyFacts: {
         az: [
@@ -478,7 +403,7 @@ export const translations = {
           "Gizli Maddələr: Qadağan olunmuş maddələr çox vaxt etiketdə qeyd edilmir.",
           "Çirklənmə: İstehsal xətlərində digər maddələrin qalıqları qala bilər.",
           "Ciddi Məsuliyyət: Səbəbindən asılı olmayaraq, bədəninizdəki maddədən siz cavabdehsiniz.",
-          "Yoxlama: 'Informed Sport' kimi üçüncü tərəf yoxlamaları riski azaldır, lakin sıfıra endirmir.",
+          "Yoxlama: Üçüncü tərəf sertifikasiyası (məs. Informed Sport) riski azaldır, lakin tamamilə aradan qaldırmır.",
         ],
         en: [
           "Poor Regulation: The supplement industry is not regulated as strictly as medicine.",
@@ -486,41 +411,31 @@ export const translations = {
           "Cross-Contamination: Production lines can be contaminated with shared ingredients.",
           "Strict Liability: You are responsible for any substance found in your body.",
           "Verification: Third-party testing like 'Informed Sport' reduces but doesn't eliminate risk.",
-        ],
-        ru: [
-          "Плохое регулирование: Индустрия добавок не регулируется так строго.",
-          "Скрытые ингредиенты: Запрещённые вещества часто не указываются.",
-          "Перекрестное загрязнение: Линии могут содержать следы других веществ.",
-          "Строгая ответственность: Вы отвечаете за все, что находится в вашем организме.",
-          "Проверка: Тестирование сторонними фирмами снижает риск, но не убирает его.",
-        ],
+        ]
       },
       risks: {
-        az: "'Təbii' və ya 'Bitki mənşəli' etiketləri təhlükəsizlik demək deyil. Bir çox idmançı yanlış etiketlənmiş əlavələrə görə karyerasını itirib.",
-        en: "'Natural' or 'Herbal' labels do not guarantee safety. Many athletes have lost careers due to mislabeled supplements.",
-        ru: "Метки «натуральный» или «травяной» не гарантируют безопасность.",
-      },
+        az: "'Təbii' və ya 'Bitki mənşəli' etiketləri təhlükəsizliyin zəmanəti deyil. Bir çox idmançı yanlış etiketlənmiş əlavələrə görə karyerasını itirib.",
+        en: "'Natural' or 'Herbal' labels do not guarantee safety. Many athletes have lost careers due to mislabeled supplements."
+      }
     },
     "rights-and-responsibilities": {
-      title: { az: "Hüquqlar & Məsuliyyətlər", en: "Rights and Responsibilities", ru: "Права и обязанности" },
+      title: { az: "Hüquqlar & Məsuliyyətlər", en: "Rights and Responsibilities" },
       subtitle: {
-        az: "Dopinqə qarşı mübarizə sistemində gücünüzü və vəzifələrinizi bilin.",
-        en: "Know your empowerment and your duties in the anti-doping system.",
-        ru: "Знайте свои права и обязанности в антидопинговой системе.",
+        az: "Antidopinq sistemindəki hüquqlarınızı və vəzifələrinizi bilin.",
+        en: "Know your empowerment and your duties in the anti-doping system."
       },
       intro: {
-        az: "Dopinqə qarşı mübarizə qaydaları idmançıları qorumaq üçün mövcuddur. İdmançı və dəstək heyəti olaraq həm qanuni hüquqlarınız, həm də mütləq riayət etməli olduğunuz vəzifələriniz var.",
-        en: "Anti-doping rules exist to protect athletes. As an athlete or support personnel, you have both legal rights and duties that must be strictly followed.",
-        ru: "Антидопинговые правила созданы для защиты спортсменов. У вас есть права и обязанности.",
+        az: "Antidopinq qaydaları idmançıları qorumaq üçün mövcuddur. İdmançı və köməkçi heyət olaraq həm qanuni hüquqlarınız, həm də mütləq riayət etməli olduğunuz vəzifələriniz var.",
+        en: "Anti-doping rules exist to protect athletes. As an athlete or support personnel, you have both legal rights and duties that must be strictly followed."
       },
       keyFacts: {
         az: [
-          "Hüquq: Nümunə toplanması zamanı nümayəndənin (məs. məşqçinin) olması.",
-          "Hüquq: Prosedurların izahını və DCO-nun şəxsiyyətini tələb etmək.",
-          "Hüquq: Yerləşmə məlumatını dəyişmək və ya DKF-də qeydlər yazmaq.",
+          "Hüquq: Nümunə toplanması zamanı nümayəndənizin (məs. məşqçinizin) iştirak etməsini tələb etmək.",
+          "Hüquq: Prosedurların izahını və Dopinq Nəzarəti İnspektorunun (DNİ) şəxsiyyətini tələb etmək.",
+          "Hüquq: Dopinq Nəzarəti Formasında (DNF) qeydlər yazmaq.",
           "Vəzifə: Sınaq üçün seçildikdə mütləq nümunə təqdim etmək.",
-          "Vəzifə: Tibb heyətinə idmançı olduğunuzu bildirmək.",
-          "Vəzifə: Həmişə bildirişdən sonra nəzarət altında qalmaq.",
+          "Vəzifə: Tibb heyətinə antidopinq qaydalarına tabe olan idmançı olduğunuzu bildirmək.",
+          "Vəzifə: Bildiriş anından nümunə toplanması başa çatana qədər nəzarət altında qalmaq.",
         ],
         en: [
           "Right: To have a representative (e.g., coach) present during sample collection.",
@@ -529,86 +444,73 @@ export const translations = {
           "Duty: To submit to sample collection when notified.",
           "Duty: To inform medical personnel that you are subject to anti-doping rules.",
           "Duty: To remain under supervision from notification until completion.",
-        ],
-        ru: [
-          "Право: Присутствие представителя во время сдачи пробы.",
-          "Право: Запрашивать объяснения и удостоверение у ИДЛ.",
-          "Право: Оставлять комментарии в протоколе.",
-          "Обязанность: Сдать пробу после уведомления.",
-          "Обязанность: Информировать врачей о своем статусе спортсмена.",
-          "Обязанность: Находиться под наблюдением до конца процедуры.",
-        ],
+        ]
       },
       risks: {
         az: "Hüquqlarınızı bilməmək qayda pozuntularına səbəb ola bilər, vəzifələrinizi yerinə yetirməmək isə birbaşa sanksiya ilə nəticələnir.",
-        en: "Not knowing your rights can lead to mistakes, while failing in your duties results in direct sanctions.",
-        ru: "Незнание своих прав может привести к ошибкам, а невыполнение обязанностей — к санкциям.",
-      },
-    },
+        en: "Not knowing your rights can lead to mistakes, while failing in your duties results in direct sanctions."
+      }
+    }
   },
 
   // ─── FAQ ────────────────────────────────────────────────────────────────────
   faq: {
-    title: { az: "Tez-tez Soruşulan Suallar", en: "Frequently Asked Questions", ru: "Часто задаваемые вопросы" },
+    title: { az: "Tez-tez Soruşulan Suallar", en: "Frequently Asked Questions" },
     subtitle: {
       az: "AMADA-nın Təhsil proqramı haqqında ümumi sualların cavabları.",
-      en: "Answers to common questions about AMADA's Education program and anti-doping requirements.",
-      ru: "Ответы на распространённые вопросы об образовательной программе АМАДА.",
-    },
+      en: "Answers to common questions about AMADA's Education program and anti-doping requirements."
+    }
   },
 
   // ─── Contact ────────────────────────────────────────────────────────────────
   contact: {
-    title: { az: "Bizə Müraciət Edin", en: "Get In Touch", ru: "Свяжитесь с нами" },
+    title: { az: "Bizə Müraciət Edin", en: "Get In Touch" },
     subtitle: {
-      az: "Sualınız var? Tədbiriniz üçün təhsil seansı planlaşdırmaq istəyirsiniz? AMADA Təhsil Qrupu köməyə hazırdır.",
-      en: "Have a question? Want to schedule an education session for your event? The AMADA Education Team is here to help.",
-      ru: "Есть вопрос? Хотите организовать образовательную сессию? Команда АМАДА готова помочь.",
-    },
+      az: "Sualınız var? Tədbiriniz üçün təhsil məşğələsi planlaşdırmaq istəyirsiniz? AMADA Təhsil Qrupu köməyə hazırdır.",
+      en: "Have a question? Want to schedule an education session for your event? The AMADA Education Team is here to help."
+    }
   },
 
   // ─── Common UI ──────────────────────────────────────────────────────────────
   common: {
-    viewPath: { az: "Yola Bax", en: "View Path", ru: "Перейти" },
-    learnMore: { az: "Daha Ətraflı", en: "Learn More", ru: "Узнать больше" },
-    download: { az: "Yüklə", en: "Download", ru: "Скачать" },
-    continueReading: { az: "Oxumağa Davam Et", en: "Continue Reading", ru: "Продолжить чтение" },
-    backToHub: { az: "Mərkəzə Qayıt", en: "Back to Hub", ru: "Назад в центр" },
-    keyFacts: { az: "Bilinməli Əsas Faktlar", en: "Key Facts to Know", ru: "Ключевые факты" },
-    keyFocusAreas: { az: "Əsas Fəaliyyət Sahələri:", en: "Key Focus Areas:", ru: "Ключевые направления:" },
-    crucialRiskFactor: { az: "Kritik Risk Amili", en: "Crucial Risk Factor", ru: "Критический фактор риска" },
-    associatedResources: { az: "Əlaqədar Resurslar", en: "Associated Resources", ru: "Связанные ресурсы" },
-    continuelearning: { az: "Öyrənməyə Davam Et", en: "Continue Learning", ru: "Продолжить обучение" },
-    viewAllTopics: { az: "Bütün Mövzulara Bax", en: "View All Topics", ru: "Все темы" },
-    showing: { az: "Göstərilir", en: "Showing", ru: "Показано" },
-    coreTopics: { az: "əsas mövzu", en: "core topics", ru: "основных тем" },
+    viewPath: { az: "Yola Bax", en: "View Path" },
+    learnMore: { az: "Daha Ətraflı", en: "Learn More" },
+    download: { az: "Yüklə", en: "Download" },
+    continueReading: { az: "Oxumağa Davam Et", en: "Continue Reading" },
+    backToHub: { az: "Mərkəzə Qayıt", en: "Back to Hub" },
+    keyFacts: { az: "Bilməli Olduğunuz Əsas Faktlar", en: "Key Facts to Know" },
+    keyFocusAreas: { az: "Əsas Fəaliyyət Sahələri:", en: "Key Focus Areas:" },
+    crucialRiskFactor: { az: "Mühüm Risk Amili", en: "Crucial Risk Factor" },
+    associatedResources: { az: "Əlaqədar Resurslar", en: "Associated Resources" },
+    continuelearning: { az: "Öyrənməyə Davam Et", en: "Continue Learning" },
+    viewAllTopics: { az: "Bütün Mövzulara Bax", en: "View All Topics" },
+    showing: { az: "Göstərilir", en: "Showing" },
+    coreTopics: { az: "əsas mövzu", en: "core topics" }
   },
 
   // ─── Footer ─────────────────────────────────────────────────────────────────
   footer: {
     description: {
-      az: "Yüksək keyfiyyətli, əlçatan və profilaktikaya yönəlmiş dopinqə qarşı mübarizə təhsili vasitəsilə təmiz idmanı dəstəkləyirik.",
-      en: "Empowering clean sport through high-quality, accessible, and prevention-focused anti-doping education.",
-      ru: "Поддержка чистого спорта через качественное, доступное и профилактическое антидопинговое образование.",
+      az: "Yüksək keyfiyyətli, əlçatan və profilaktikaya yönəlmiş antidopinq təhsili vasitəsilə təmiz idmanı dəstəkləyirik.",
+      en: "Empowering clean sport through high-quality, accessible, and prevention-focused anti-doping education."
     },
-    keyLearning: { az: "Əsas Öyrənmə", en: "Key Learning", ru: "Обучение" },
-    resources: { az: "Resurslar", en: "Resources", ru: "Ресурсы" },
-    support: { az: "Dəstək", en: "Support", ru: "Поддержка" },
+    keyLearning: { az: "Əsas Öyrənmə", en: "Key Learning" },
+    resources: { az: "Resurslar", en: "Resources" },
+    support: { az: "Dəstək", en: "Support" },
     copyright: {
       az: "Azərbaycan Milli Antidopinq Agentliyi (AMADA). Bütün hüquqlar qorunur.",
-      en: "Azerbaijan National Anti-Doping Agency (AMADA). All rights reserved.",
-      ru: "Национальное антидопинговое агентство Азербайджана (АМАДА). Все права защищены."
+      en: "Azerbaijan National Anti-Doping Agency (AMADA). All rights reserved."
     },
-    privacy: { az: "Məxfilik Bildirişi", en: "Privacy Notice", ru: "Политика конфиденциальности" },
-    accessibility: { az: "Əlçatanlıq", en: "Accessibility", ru: "Доступность" },
-  },
+    privacy: { az: "Məxfilik Siyasəti", en: "Privacy Notice" },
+    accessibility: { az: "Əlçatanlıq", en: "Accessibility" }
+  }
 } as const;
 
 export type Translations = typeof translations;
 
 /** Helper: returns the string for the active language, defaulting to "en". */
 export function t(
-  key: { az: string; en: string; ru: string },
+  key: { az: string; en: string },
   lang: Lang
 ): string {
   return key[lang] ?? key.en;
@@ -616,5 +518,5 @@ export function t(
 
 /** Shorthand: get a top-level section typed. */
 export function getT(lang: Lang) {
-  return (key: { az: string; en: string; ru: string }) => t(key, lang);
+  return (key: { az: string; en: string }) => t(key, lang);
 }

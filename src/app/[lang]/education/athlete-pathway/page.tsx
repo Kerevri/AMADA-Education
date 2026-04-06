@@ -72,9 +72,9 @@ export default async function AthletePathwayPage({
       />
 
       <CTASection
-        title={l === "az" ? "Yol Xülasəsini Yüklə" : l === "ru" ? "Скачать обзор пути" : "Download Pathway Overview"}
-        description={l === "az" ? "Federasiyanız, klubunuz və ya məktəb şurası üçün İdmançı Yolu infoqrafikasının surətini saxlayın." : l === "ru" ? "Сохраните копию инфографики пути спортсмена." : "Keep a copy of the Athlete Pathway infographic for your federation, club, or school board."}
-        primaryAction={{ label: l === "az" ? "Yüklə (PDF, 2.1 MB)" : l === "ru" ? "Скачать (PDF, 2.1 МБ)" : "Download PDF (2.1 MB)", path: "#" }}
+        title={l === "az" ? "Yol Xülasəsini Yüklə" : "Download Pathway Overview"}
+        description={l === "az" ? "Federasiyanız, klubunuz və ya məktəb şurası üçün İdmançı Yolu infoqrafikasının surətini saxlayın." : "Keep a copy of the Athlete Pathway infographic for your federation, club, or school board."}
+        primaryAction={{ label: l === "az" ? "Yüklə (PDF, 2.1 MB)" : "Download PDF (2.1 MB)", path: "#" }}
         variant="teal"
       />
     </div>

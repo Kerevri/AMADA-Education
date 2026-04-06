@@ -4,84 +4,104 @@
     "intro": "İdmançı — özünü idmanda yarışçı kimi tanımlayan hər kəsdir. AMADA-nın antidopinq təhsili bütün yarış səviyyəsindəki idmançılara, xüsusilə azyaşlılara və elit idmançılara yönəlib.",
     "categoriesTitle": "İdmançı kateqoriyaları",
     "categories": [
-      { "name": "Milli Səviyyəli İdmançı", "definition": "AMADA tərəfindən müəyyən edilən milli yarışlarda iştirak edən idmançı" },
-      { "name": "Beynəlxalq Səviyyəli İdmançı", "definition": "Müvafiq Beynəlxalq Federasiya tərəfindən müəyyən edilən idmançı" },
-      { "name": "Azyaşlı (Minor)", "definition": "18 yaşına çatmamış fiziki şəxs" },
-      { "name": "Qorunan Şəxs", "definition": "Pozuntu zamanı 16 yaşını doldurmamış idmançı" },
-      { "name": "QTQ İdmançısı", "definition": "Qeydiyyata alınmış Test Qrupuna daxil olan, məkan məlumatı öhdəliyi olan idmançı" }
+      {
+        "name": "Milli səviyyəli idmançı",
+        "definition": "AMADA tərəfindən müəyyən edilən milli yarışlarda iştirak edən idmançı"
+      },
+      {
+        "name": "Beynəlxalq səviyyəli idmançı",
+        "definition": "Müvafiq Beynəlxalq Federasiya tərəfindən müəyyən edilən idmançı"
+      },
+      {
+        "name": "Azyaşlı",
+        "definition": "18 yaşına çatmamış fiziki şəxs"
+      },
+      {
+        "name": "Qorunan Şəxs",
+        "definition": "Pozuntu zamanı 16 yaşını doldurmamış VƏ heç vaxt beynəlxalq açıq kateqoriyada yarışmamış idmançı — xüsusi mühafizə statusu tətbiq edilir"
+      },
+      {
+        "name": "Qeydiyyata alınmış Test Qrupu (QTQ) idmançısı",
+        "definition": "Qeydiyyata alınmış Test Qrupuna (QTQ) daxil olan, ADAMS-da məkan məlumatı öhdəliyi olan idmançı"
+      },
+      {
+        "name": "Həvəskar idmançı",
+        "definition": "Bədən tərbiyəsi məqsədilə idmanla məşğul olan, rəsmi yarışlarda iştirak etməyən şəxs"
+      }
     ],
     "outcomesTitle": "İdmançılar üçün əsas öyrənmə nəticələri",
     "outcomes": [
-      "Qadağan edilmiş Siyahını müstəqil yoxlaya bilmək",
-      "Dopinq nəzarəti prosesinə hazır olmaq",
-      "Tİİ prosedurunu bilmək",
-      "Məkan məlumatı öhdəliklərini yerinə yetirmək",
+      "Qadağan Edilmiş Siyahını müstəqil yoxlaya bilmək",
+      "Dopinq Nəzarəti prosesinə hazır olmaq",
+      "Terapevtik İstifadə İcazəsi (Tİİ) prosedurunu bilmək",
+      "Məkan məlumatı öhdəliklərini vaxtında yerinə yetirmək",
       "Narahatlıq hiss etdikdə anonim şəkildə məlumat verə bilmək"
     ]
   },
   "supportPersonnel": {
-    "title": "Məşqçilər & Dəstək heyəti",
-    "intro": "İdmançı Dəstək Heyəti (İDH) — idmançı ilə birbaşa işləyən, onun fəaliyyətinə təsir edən hər kəsi əhatə edir: məşqçilər, idman menecerləri, tibb mütəxəssisləri, fizioterapevtlər, psixoloqlar, valideynlər (profesional müqavilə çərçivəsində) və digərləri.",
-    "dutiesTitle": "Öhdəliklər (Məcəllə Maddə 21.2)",
+    "title": "Məşqçilər & İdmançının köməkçi heyəti",
+    "intro": "İdmançının köməkçi heyəti (İKH) — idmançı ilə birbaşa işləyən, onun fəaliyyətinə təsir edən hər kəsi əhatə edir: məşqçilər, idman menecerləri, tibb mütəxəssisləri, fizioterapevtlər, psixoloqlar, valideynlər (peşəkar müqavilə çərçivəsində) və digərləri.",
+    "dutiesTitle": "Öhdəliklər — Məcəllə Maddə 21.2",
     "duties": [
       "Antidopinq siyasəti və qaydaları ilə tanış olmaq",
       "Öz idmançılarına antidopinq sahəsindəki biliklərini ötürmək",
-      "Dopinq qayda pozuntularını asanlaşdırmamaq",
-      "AMADA-nın Maarifləndirici Proqramlarında fəal iştirak etmək",
+      "Antidopinq Qayda Pozuntularını asanlaşdırmamaq",
+      "AMADA-nın maarifləndirici proqramlarında fəal iştirak etmək",
       "Şübhəli vəziyyətlər barədə AMADA-ya məlumat vermək"
     ],
-    "programTitle": "Məşqçilər üçün xüsusi proqram",
-    "program": "AMADA Məşqçilərin Təlimi (Training of Trainers — ToT) proqramı vasitəsilə idman federasiyaları daxilində dayanıqlı Maarifləndirici şəbəkəsi qurur. Proqrama iştirak edib akkreditasiyadan keçən məşqçilər federasiya daxilindəki seminarları müstəqil şəkildə keçirə bilərlər."
+    "programTitle": "Məşqçilər üçün xüsusi proqram — Məşqçilərin Təlimi (ToT)",
+    "program": "AMADA Məşqçilərin Təlimi (Training of Trainers — ToT) proqramı vasitəsilə idman federasiyaları daxilində dayanıqlı Maarifləndirici şəbəkəsi qurur. ISE Maddə 7.1–7.3-ə uyğun akkreditasiyadan keçən məşqçilər federasiya daxilindəki seminarları müstəqil şəkildə keçirə bilərlər."
   },
   "medical": {
     "title": "Tibb mütəxəssisləri",
     "intro": "Tibb mütəxəssisləri — idmançıların sağlamlıq qayğısına baxan, müalicə planlaşdıran və dərman təyin edən şəxslər olaraq antidopinq uyğunluğunda kritik rol oynayır.",
     "dutiesTitle": "Tibb mütəxəssisinin öhdəlikləri",
     "duties": [
-      "İdmançıya dərman təyin etməzdən əvvəl Qadağan edilmiş Siyahını yoxlamaq",
-      "Lazım olduqda Tİİ müraciət prosesini başlatmaq",
+      "İdmançıya dərman təyin etməzdən əvvəl WADA-nın Qadağan Edilmiş Siyahısını yoxlamaq (hər il 1 yanvarda yenilənir)",
+      "Lazım olduqda Terapevtik İstifadə İcazəsi (Tİİ) müraciət prosesini başlatmaq",
       "İdmançını qida əlavələrinin riskləri barədə məlumatlandırmaq",
-      "Gizli doping xidməti göstərməmək"
+      "Heç bir halda gizli dopinq xidməti göstərməmək"
     ],
     "resourcesTitle": "Tibb mütəxəssisləri üçün resurslar",
     "resources": [
-      "WADA-nın tibb mütəxəssisləri üçün hazırlanmış resursları: https://www.wada-ama.org/en/resources",
-      "Qadağan edilmiş Siyahının aktual versiyası: 1 yanvar tarixindən qüvvəyə minir",
+      "WADA-nın tibb mütəxəssisləri üçün resursları: https://www.wada-ama.org/en/resources",
+      "Qadağan Edilmiş Siyahının aktual versiyası: hər il 1 yanvar tarixindən qüvvəyə minir",
+      "GlobalDRO dərman yoxlama sistemi: https://www.globaldro.com",
       "Tİİ proseduru üzrə AMADA məsləhəti: education@amada.az"
     ]
   },
   "parents": {
     "title": "Valideynlər & Müəllimlər",
-    "intro": "Valideynlər və müəllimlər gənc idmançıların dəyərlərini formalaşdıran ən mühüm insanlardır. AMADA onları informasiyalı müttəfiq kimi görür — çünki uşaqlıq dövründə formalaşan etik anlayış, karyera boyu davam edir.",
+    "intro": "Valideynlər və müəllimlər gənc idmançıların dəyərlərini formalaşdıran ən mühüm insanlardır. AMADA onları məlumatlı müttəfiq kimi görür — uşaqlıq dövründə formalaşan etik anlayış karyera boyu davam edir.",
     "parentsTitle": "Valideynlər üçün",
     "parentsItems": [
-      "Uşağınızın qəbul etdiyi hər hansı qida əlavəsi, vitamin, dərman barədə məlumat toplayın",
-      "Qadağan edilmiş Siyahı ilə tanış olun",
-      "Uşağınızın idman həkimi ilə Tİİ məsələsini açıq müzakirə edin",
-      "AMADA-nın valideynlər üçün yaddaş kitabçasından istifadə edin",
-      "'Dopinq haqqında danışmaq' — ən güclü profilaktika üsuludur"
+      "Uşağınızın qəbul etdiyi bütün qida əlavələri, vitaminlər və dərmanlar barədə məlumat toplayın — GlobalDRO ilə yoxlayın",
+      "WADA-nın Qadağan Edilmiş Siyahısı ilə tanış olun",
+      "Uşağınızın idman həkimi ilə Terapevtik İstifadə İcazəsi (Tİİ) məsələsini açıq müzakirə edin",
+      "AMADA-nın valideynlər üçün hazırladığı yaddaş kitabçasından istifadə edin",
+      "Dopinq haqqında açıq danışmaq — ən güclü profilaktika üsuludur"
     ],
     "teachersTitle": "Müəllimlər üçün",
     "teachersItems": [
-      "AMADA məktəb proqramları çərçivəsində sinif dərsliklərindən istifadə edin",
+      "AMADA-nın məktəb proqramları çərçivəsindəki sinif materiallarından istifadə edin",
       "Dəyər əsaslı idman mövzularını fiziki tərbiyə dərslərindəki müzakirələrə daxil edin",
       "AMADA-nın seminar proqramını məktəbinizə dəvət edin: education@amada.az"
     ]
   },
   "federations": {
     "title": "Federasiyalar",
-    "intro": "Milli idman federasiyaları AMADA-nın antidopinq proqramını həyata keçirməkdə əsas tərəfdaşlarıdır. AMADA hər il risk qiymətləndirməsinə əsasən seminar paylanmasını həyata keçirir.",
+    "intro": "Milli idman federasiyaları AMADA-nın antidopinq proqramını həyata keçirməkdə əsas tərəfdaşlarıdır. AMADA hər il risk qiymətləndirməsinə əsasən 29 milli federasiya üzrə seminar paylanmasını həyata keçirir.",
     "roleTitle": "Federasiyaların rolu",
     "role": [
-      "AMADA ilə koordinasiya edərək seminar cədvəlini planlaşdırmaq",
-      "Federasiya daxilindəki idmançı və İDH-nin antidopinq proqramlarına qatılmasını təmin etmək",
-      "AMADA akkreditasiyalı Maarifləndiriciləri dəstəkləmək",
+      "AMADA ilə koordinasiya edərək illik seminar cədvəlini planlaşdırmaq",
+      "Federasiya daxilindəki idmançıların və idmançının köməkçi heyətinin (İKH) antidopinq proqramlarına qatılmasını təmin etmək",
+      "AMADA akkreditasiyalı Maarifləndiriciləri dəstəkləmək və onların fəaliyyətini asanlaşdırmaq",
       "Antidopinq uyğunluq sahəsindəki boşluqları AMADA ilə birgə müəyyənləşdirmək"
     ],
     "distributionTitle": "Risk əsaslı seminar paylanması",
     "distribution": "AMADA hər il 29 milli federasiyaya risk qiymətləndirməsinə əsaslanan seminar kvotaları ayırır. Bu metodologiya risk koeffisientlərini idmançı sayı bonusları ilə birləşdirərək ədalətli paylanmanı təmin edir.",
     "contact": [
-      "Seminar müraciəti üçün: education@amada.az",
+      "Seminar müraciəti üçün: education@amada.az (mövzu: 'Seminar müraciəti')",
       "Federasiya koordinatoru: AMADA ilə birbaşa əlaqə"
     ]
   },
@@ -95,6 +115,6 @@
       "İctimai kampaniyalar: hər il müntəzəm tematik kampaniyalar",
       "Narahatlığı Bildir: speakup.wada-ama.org / education@amada.az"
     ],
-    "closing": "Hər bir vətəndaşın şübhəli dopinq fəaliyyəti barədə məlumat verməsi — anonim şəkildə — qanunla qorunan bir hüquqdur."
+    "closing": "Hər bir vətəndaşın şübhəli dopinq fəaliyyəti barədə məlumat verməsi — anonim şəkildə — antidopinq qaydaları ilə qorunan bir hüquqdur. Ümumdünya Antidopinq Məcəlləsi (Maddə 17) məlumat verənlərə qisas alınmasını açıq şəkildə qadağan edir."
   }
 }

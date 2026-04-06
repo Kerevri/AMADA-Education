@@ -3,7 +3,6 @@ import { translations, t, type Lang } from "@/i18n/translations";
 
 export function Footer({ lang }: { lang: string }) {
   const l = lang as Lang;
-  const isAz = l === "az";
   const footer = translations.footer;
   const nav = translations.nav;
   const s = translations.sidebar;
@@ -67,18 +66,8 @@ export function Footer({ lang }: { lang: string }) {
                 </Link>
               </li>
               <li>
-                <Link href={`/${lang}/education/education-plan`} className="text-sm text-white/80 hover:text-white transition-colors">
-                  {t(s.annualEducationPlan, l)}
-                </Link>
-              </li>
-              <li>
                 <Link href={`/${lang}/education/impact`} className="text-sm text-white/80 hover:text-white transition-colors">
                   {t(s.monitorImpact, l)}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${lang}/education/educators`} className="text-sm text-white/80 hover:text-white transition-colors">
-                  {t(s.educatorNetwork, l)}
                 </Link>
               </li>
             </ul>

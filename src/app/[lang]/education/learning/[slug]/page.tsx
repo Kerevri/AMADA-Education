@@ -235,7 +235,7 @@ const LEARNING_DATA: Record<string, Record<string, {
         "Annual refresher courses"
       ],
       ctaLabel: "Apply to be an Educator",
-      ctaPath: "/education/educators"
+      ctaPath: "/education/contact"
     },
     "az": {
       title: "Maarifləndirici Təlimi",
@@ -249,14 +249,14 @@ const LEARNING_DATA: Record<string, Record<string, {
         "İllik təkmilləşdirmə kursları"
       ],
       ctaLabel: "Maarifləndirici Olmaq Üçün Müraciət Edin",
-      ctaPath: "/education/educators"
+      ctaPath: "/education/contact"
     }
   }
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string, lang: string }> }) {
   const { slug, lang } = await params;
-  const l = (lang === "az" || lang === "en" || lang === "ru") ? lang : "az";
+  const l = (lang === "az" || lang === "en") ? lang : "az";
   // Fallback to English if translation for specific lang is missing (basic check)
   const program = LEARNING_DATA[slug]?.[l] || LEARNING_DATA[slug]?.["en"];
   
@@ -274,7 +274,7 @@ export default async function LearningSlugPage({
   params: Promise<{ lang: string; slug: string }>;
 }) {
   const { lang, slug } = await params;
-  const l = (lang === "az" || lang === "en" || lang === "ru") ? lang : "az";
+  const l = (lang === "az" || lang === "en") ? lang : "az";
   const program = LEARNING_DATA[slug]?.[l] || LEARNING_DATA[slug]?.["en"];
 
   if (!program) {
@@ -289,9 +289,9 @@ export default async function LearningSlugPage({
   const isExternal = program.ctaPath.startsWith("http");
   const finalPath = isExternal ? program.ctaPath : `/${lang}${program.ctaPath}`;
 
-  const keyFeaturesTitle = l === "az" ? "Əsas Özəlliklər" : (l === "ru" ? "Ключевые особенности" : "Key Features");
-  const targetAudienceTitle = l === "az" ? "Hədəf Auditoriya" : (l === "ru" ? "Целевая аудитория" : "Target Audience");
-  const readyToParticipateTitle = l === "az" ? "İştirak etməyə hazırsınız?" : (l === "ru" ? "Готовы к участию?" : "Ready to participate?");
+  const keyFeaturesTitle = l === "az" ? "Əsas Özəlliklər" : "Key Features";
+  const targetAudienceTitle = l === "az" ? "Hədəf Auditoriya" : "Target Audience";
+  const readyToParticipateTitle = l === "az" ? "İştirak etməyə hazırsınız?" : "Ready to participate?";
   const readyDesc = l === "az" 
     ? `${program.title.toLowerCase()} resurslarına daxil olmaq və ya sessiya sorğulamaq üçün aşağıdakı linki izləyin.`
     : `Follow the link below to access ${program.title.toLowerCase()} resources or request a session.`;

@@ -1,53 +1,71 @@
 {
   "overview": {
-    "title": "Öyrənmə Mərkəzi — Ümumi baxış",
-    "intro": "AMADA-nın Öyrənmə Mərkəzi müxtəlif qruplara — idmançılardan tutmuş tibb mütəxəssislərinə, məktəb şagirdlərindən federasiya nümayəndələrinə qədər — uyğunlaşdırılmış antidopinq təhsilini çeşidli formatlar vasitəsilə çatdırır. ISE Maddə 9.2 bu formatların genişliyini məcburi element kimi müəyyən edir."
+    "title": "Öyrənmə Mərkəzi — Ümumi Baxış",
+    "intro": "AMADA-nın Öyrənmə Mərkəzi müxtəlif hədəf qruplara — idmançılardan tutmuş tibb mütəxəssislərinə, məktəb şagirdlərindən federasiya nümayəndələrinə qədər — uyğunlaşdırılmış antidopinq təhsilini müxtəlif formatlar vasitəsilə çatdırır. ISE Maddə 9.2 müxtəlif növ fəaliyyətlərin İllik Təhsil Planına daxil edilməsini tələb edir."
   },
   "elearning": {
-    "title": "Elektron öyrənmə kursları",
-    "intro": "AMADA WADA-nın ADEL (Anti-Doping Education and Learning) platforması vasitəsilə müxtəlif hədəf qruplar üçün onlayn interaktiv kurslar təqdim edir. Kurslar nəticə əsaslı formata uyğun qurulmuş olub, uğurla tamamlayan iştirakçılara elektron sertifikat verilir.",
+    "title": "Elektron Öyrənmə — ADEL Platforması",
+    "intro": "AMADA WADA-nın ADEL (Antidopinq Təhsil və Öyrənmə) platforması vasitəsilə müxtəlif hədəf qruplar üçün onlayn interaktiv kurslar təqdim edir. Kurslar nəticə əsaslı formata uyğun qurulmuş olub, uğurla tamamlayan iştirakçılara elektron sertifikat verilir.",
     "details": [
       "Kurslara giriş: https://adel.wada-ama.org",
       "Azərbaycan dili daxil olmaqla bir neçə dildə mövcuddur",
-      "Yeni Qadağan edilmiş Siyahı ilə sinxronlaşdırılmış məzmun",
-      "İstənilən cihazdan əlçatan"
-    ]
+      "Yeni Qadağan Edilmiş Siyahı ilə sinxronlaşdırılmış məzmun",
+      "İstənilən cihazdan — kompüter, planşet, telefon — əlçatan"
+    ],
+    "iseNote": "ISE Maddə 9.2-yə uyğun fəaliyyət kateqoriyası: Onlayn / Elektron Öyrənmə"
   },
   "webinars": {
     "title": "Vebinarlar",
-    "intro": "AMADA hər il müntəzəm olaraq onlayn vebinarlar təşkil edir. Bu vebinarlar federasiyalar, tibb mütəxəssisləri, məşqçilər və digər maraqlı tərəflər üçün interaktiv öyrənmə imkanı yaradır. Vebinar cədvəli hər ilin əvvəlində açıqlanır.",
+    "intro": "AMADA hər il müntəzəm olaraq onlayn vebinarlar təşkil edir. Bu vebinarlar federasiyalar, tibb mütəxəssisləri, məşqçilər və digər maraqlı tərəflər üçün interaktiv öyrənmə imkanı yaradır.",
     "details": [
-      "Mövzular: qadağan edilmiş maddələr, Tİİ prosesi, dopinq nəzarəti, məkan məlumatı",
-      "Qeydiyyat: education@amada.az ünvanına e-poçt vasitəsilə"
-    ]
+      "Mövzular: Qadağan Edilmiş Siyahı dəyişiklikləri, Tİİ prosesi, Dopinq Nəzarəti prosedurları, məkan məlumatı",
+      "Qeydiyyat: education@amada.az ünvanına e-poçt vasitəsilə",
+      "Keçmiş vebinarların yazıları Resurs Kitabxanasında mövcuddur"
+    ],
+    "iseNote": "ISE Maddə 9.2-yə uyğun fəaliyyət kateqoriyası: Virtual / Onlayn Sessiyalar"
   },
   "seminars": {
-    "title": "Seminarlar",
-    "intro": "Canlı seminarlar AMADA-nın əsas çatdırılma metodlarından biridir. Hər il risk qiymətləndirməsinə əsasən 29 milli federasiya arasında paylanmış seminarlar həyata keçirilir. Seminarlara akkreditasiyalı AMADA Maarifləndiriciləri rəhbərlik edir.",
+    "title": "Əyani Seminarlar",
+    "intro": "Canlı seminarlar AMADA-nın əsas çatdırılma metodlarından biridir. Hər il risk qiymətləndirməsinə əsasən 29 milli federasiya arasında paylanmış seminarlar həyata keçirilir. Seminarlara ISE Maddə 7.0 tələblərinə uyğun akkreditasiyadan keçmiş AMADA Maarifləndiriciləri rəhbərlik edir.",
     "details": [
       "Müddət: 2–4 saat",
-      "Format: Canlı, interaktiv, ssenari əsaslı",
+      "Format: Canlı, interaktiv, ssenari əsaslı, sual-cavab",
       "Dil: Azərbaycan dili",
-      "Qeydiyyat: Federasiya koordinatoru vasitəsilə"
-    ]
+      "Müraciət: education@amada.az — mövzu: 'Seminar müraciəti'"
+    ],
+    "iseNote": "ISE Maddə 9.2.1-ə uyğun fəaliyyət kateqoriyası: Əyani Seminarlar"
   },
   "schoolPrograms": {
-    "title": "Məktəb proqramları",
-    "intro": "AMADA uşaqlar və gənclər arasında erkən mərhələdən antidopinq maarifləndirməsi aparmaq məqsədilə ümumtəhsil məktəbləri ilə əməkdaşlıq edir. Proqramlar yaş qrupuna uyğun metodika ilə hazırlanmış, dəyər əsaslı təhsil elementlərini özündə birləşdirir.",
+    "title": "Məktəb Proqramları",
+    "intro": "AMADA uşaqlar və gənclər arasında erkən yaşdan antidopinq maarifləndirməsi aparmaq məqsədilə ümumtəhsil məktəbləri ilə əməkdaşlıq edir. Proqramlar yaş qrupuna uyğun metodika ilə hazırlanmış, dəyər əsaslı təhsil elementlərini özündə birləşdirir.",
     "details": [
       "Hədəf: 10–17 yaş arası şagirdlər",
-      "Format: İnteraktiv dərs, oyun əsaslı fəaliyyətlər, müzakirə",
-      "Müəllim üçün metodiki vəsait mövcuddur"
-    ]
+      "Format: İnteraktiv dərs, oyun əsaslı fəaliyyətlər, qrup müzakirəsi",
+      "Müəllimlər üçün metodiki vəsait mövcuddur",
+      "Bədən tərbiyəsi dərslərinə inteqrasiya oluna bilər"
+    ],
+    "iseNote": "ISE Maddə 5.1-ə uyğun: İdmançı İnkişaf Yolunun Əsas Mərhələsi üzrə fəaliyyət"
   },
   "events": {
-    "title": "Hadisə əsaslı təhsil",
-    "intro": "Yarış, turnir və idman tədbirləri zamanı AMADA hadisə əsaslı antidopinq maarifləndirməsi həyata keçirir. Bu fəaliyyətlər ISE Maddə 9.2-nin Event-Based Education kateqoriyasına uyğun gəlir.",
+    "title": "Hadisə Əsaslı Təhsil",
+    "intro": "Yarış, turnir və beynəlxalq idman tədbirləri zamanı AMADA hadisə əsaslı antidopinq maarifləndirməsi həyata keçirir. Bu fəaliyyətlər ISE Maddə 9.2-nin tələblərinə uyğun olaraq İllik Təhsil Planına daxil edilir.",
     "details": [
-      "Yarışlara aid xüsusi antidopinq qaydaları",
+      "Yarışa aid xüsusi antidopinq qaydaları barədə məlumat",
       "Tanıtım materialları: flayerlər, bukletlər, afişalar",
-      "AMADA stendi: məlumat, sual-cavab",
-      "QR kodlar vasitəsilə onlayn resurslara birbaşa keçid"
-    ]
+      "AMADA stendi: interaktiv məlumat paylaşımı, sual-cavab",
+      "QR kodlar vasitəsilə onlayn resurslara birbaşa keçid",
+      "Dopinq nəzarəti prosesinin canlı nümayişi"
+    ],
+    "iseNote": "ISE Maddə 9.2-yə uyğun fəaliyyət kateqoriyası: Hadisə Əsaslı Təhsil"
+  },
+  "medicalEducation": {
+    "title": "Tibbi Təhsil",
+    "intro": "AMADA idman həkimləri, fizioterapevtlər, əczaçılar və digər tibb mütəxəssisləri üçün ixtisaslaşmış antidopinq sessiyaları keçirir. Bu sessiyalar Terapevtik İstifadə İcazəsi (Tİİ), Qadağan Edilmiş Siyahı və idmançı sağlamlığının qorunması mövzularını əhatə edir.",
+    "details": [
+      "Mövzular: Tİİ prosesi (ISTUE), Qadağan Edilmiş Siyahı, GlobalDRO istifadəsi",
+      "Format: Vebinar və ya əyani sessiya",
+      "Müraciət: education@amada.az — mövzu: 'Tibbi Təhsil'"
+    ],
+    "iseNote": "ISE Maddə 9.2-yə uyğun fəaliyyət kateqoriyası: İxtisaslaşmış Hədəf Qrup Sessiyaları"
   }
 }

@@ -117,8 +117,6 @@ export function EducationSidebar({ lang }: SidebarProps) {
                 { label: t(s.educationOverview, l), path: `/${l}/education` },
                 { label: t(s.cleanSportBehaviors, l), path: `/${l}/education/clean-sport-behaviors` },
                 { label: t(s.athletePathway, l), path: `/${l}/education/athlete-pathway` },
-                { label: t(s.annualEducationPlan, l), path: `/${l}/education/education-plan` },
-                { label: t(s.educatorNetwork, l), path: `/${l}/education/educators` },
               ]}
             />
 

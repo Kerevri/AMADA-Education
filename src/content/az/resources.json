@@ -1,58 +1,112 @@
 {
   "resourceLibrary": {
-    "title": "Resurs kitabxanası",
-    "intro": "AMADA-nın Resurs Kitabxanası idmançılar, məşqçilər, tibb mütəxəssisləri, valideynlər və federasiyalar üçün rəsmi antidopinq materiallarını bir məkanda toplayır.",
+    "title": "Resurs Kitabxanası",
+    "intro": "AMADA-nın Resurs Kitabxanası idmançılar, idmançının köməkçi heyəti, tibb mütəxəssisləri, valideynlər və federasiyalar üçün rəsmi antidopinq materiallarını bir məkanda toplayır.",
     "resourcesTitle": "Mövcud resurslar",
     "resources": [
-      { "type": "Qadağan edilmiş Siyahı", "description": "WADA-nın aktual siyahısı (hər il 1 yanvarda yenilənir)" },
-      { "type": "Tİİ forma və qaydaları", "description": "Tİİ müraciəti üçün lazımi formalar və izahlı bələdçi" },
-      { "type": "Seminar materialları", "description": "AMADA seminarlarında istifadə olunan slaydlar və handoutlar" },
-      { "type": "Valideyn yaddaş kitabçası", "description": "Gənc idmançıların valideynləri üçün praktik bələdçi" },
-      { "type": "Müəllim dərslikləri", "description": "Məktəb proqramları üçün metodiki vəsaitlər" },
-      { "type": "ADEL kursları", "description": "WADA-nın onlayn öyrənmə platformasına keçid" },
-      { "type": "WADA Speak Up!", "description": "Anonim məlumat verməyə dair bələdçi" }
+      {
+        "type": "Qadağan Edilmiş Siyahı",
+        "description": "WADA-nın aktual siyahısı (hər il 1 yanvarda yenilənir). Baxış: https://www.wada-ama.org/en/prohibited-list"
+      },
+      {
+        "type": "Tİİ forması və qaydaları",
+        "description": "Terapevtik İstifadə İcazəsi müraciəti üçün lazımi formalar və izahlı bələdçi"
+      },
+      {
+        "type": "Seminar materialları",
+        "description": "AMADA seminarlarında istifadə olunan slaydlar və paylaşıq materiallar"
+      },
+      {
+        "type": "Valideyn yaddaş kitabçası",
+        "description": "Gənc idmançıların valideynləri üçün praktik bələdçi"
+      },
+      {
+        "type": "Müəllim metodiki vəsaiti",
+        "description": "Məktəb proqramları üçün yaşa uyğun metodiki vəsaitlər"
+      },
+      {
+        "type": "ADEL platforması",
+        "description": "WADA-nın Antidopinq Təhsil və Öyrənmə (ADEL) onlayn platforması. Giriş: https://adel.wada-ama.org"
+      },
+      {
+        "type": "WADA Speak Up!",
+        "description": "Anonim məlumat vermə platforması. Giriş: https://speakup.wada-ama.org"
+      },
+      {
+        "type": "GlobalDRO dərman yoxlama",
+        "description": "Dərmanın idmanda istifadəsi üçün təhlükəsiz olub-olmadığını yoxlayın. Giriş: https://www.globaldro.com"
+      }
     ],
-    "contact": "Resursları endirmək və ya bilavasitə əlaqə üçün: education@amada.az"
+    "contact": "Resursları endirmək və ya əlavə materiallar üçün: education@amada.az"
   },
   "faq": {
-    "title": "TSS — Tez-tez soruşulan suallar",
+    "title": "TSS — Tez-tez Soruşulan Suallar",
     "questions": [
       {
-        "question": "Dopinq nəzarəti nə vaxt baş verə bilər?",
-        "answer": "Hər hansı vaxt, yarışda və ya yarış xaricində, xəbərdarlıq edilmədən. Beynəlxalq yarışlarda da, milli yarışlarda da həyata keçirilə bilər."
+        "question": "Dopinq Nəzarəti nə vaxt baş verə bilər?",
+        "answer": "İstənilən vaxt — yarış müddətində və yarışdan kənar müddətdə, heç bir əvvəlcədən xəbərdarlıq olmadan. Həm beynəlxalq, həm də milli yarışlarda həyata keçirilə bilər. Dopinq Nəzarəti İnspektoru (DNİ) sizi istənilən yerdə — məşq zamanı, evdə, yarış məntəqəsində — seçə bilər."
       },
       {
-        "question": "Qida əlavəsindəki qadağan edilmiş maddə sübut edildikdə nə baş verir?",
-        "answer": "İdmançı yenə də Ciddi Məsuliyyət prinsipinə görə cavabdehdir. Lakin bilmədən qəbul edildiyi sübut olunarsa, cəza müddəti azaldıla bilər. AMADA-ya dərhal müraciət edin."
+        "question": "Qida əlavəsindəki qadağan edilmiş maddə aşkar edildikdə nə baş verir?",
+        "answer": "İdmançı Ciddi Məsuliyyət prinsipi əsasında cavabdehdir — maddənin mənbəyindən asılı olmayaraq. Lakin bilmədən qəbul etdiyi sübut olunarsa, sanksiya müddəti azaldıla bilər. Belə vəziyyətdə AMADA-ya dərhal müraciət edin: education@amada.az"
       },
       {
-        "question": "Tİİ nə qədər müddət ərzində nəzərdən keçirilir?",
-        "answer": "Standart müraciətlər 30 gün ərzində, təcili müraciətlər isə 24 saat ərzində nəzərdən keçirilir."
+        "question": "Tİİ müraciəti nə qədər müddət ərzində nəzərdən keçirilir?",
+        "answer": "Standart müraciətlər 30 gün, təcili (retroaktiv) müraciətlər isə 24 saat ərzində nəzərdən keçirilir. Müraciəti maddəni istifadə etməzdən əvvəl göndərməlisiniz."
       },
       {
         "question": "Yaşadığım şəhərdə seminar keçirilirmi?",
-        "answer": "AMADA bütün regionlarda seminarlar keçirir. Müraciət etmək üçün federasiyanızın koordinatoru vasitəsilə AMADA ilə əlaqə saxlayın: education@amada.az"
+        "answer": "AMADA bütün regionlarda seminarlar keçirir. Birbaşa müraciət üçün: education@amada.az"
       },
       {
         "question": "ADEL kursları pulludurmu?",
-        "answer": "Xeyr. WADA-nın ADEL platformasındakı əsas kurslar tamamilə pulsuzdur. https://adel.wada-ama.org"
+        "answer": "Xeyr. WADA-nın ADEL platformasındakı əsas kurslar tamamilə pulsuzdur. https://adel.wada-ama.org — iOS və Android tətbiqi də mövcuddur."
       },
       {
-        "question": "Məlumat verdikdə mənim kimliyim açıqlanacaqmı?",
-        "answer": "Xeyr. Bütün müraciətlər tam məxfidir. AMADA-ya və ya WADA Speak Up! platformasına göndərilən məlumatlar anonim olaraq qəbul edilir."
+        "question": "Məlumat verdikdə kimliyim açıqlanacaqmı?",
+        "answer": "Xeyr. Bütün müraciətlər tam məxfidir. WADA Speak Up! platformasına (speakup.wada-ama.org) göndərilən məlumatlar anonimdir. Ümumdünya Antidopinq Məcəlləsi məlumat verənlərə hər hansı qisas alınmasını qadağan edir."
+      },
+      {
+        "question": "QTQ idmançısı olmadığımı necə bilərəm?",
+        "answer": "AMADA sizi Qeydiyyata alınmış Test Qrupuna (QTQ) daxil etdikdə rəsmi bildiriş göndərir. Şübhə olduqda federasiyanızın antidopinq koordinatoru və ya AMADA ilə əlaqə saxlayın: education@amada.az"
+      },
+      {
+        "question": "GlobalDRO-da dərman 'qadağan deyil' göstərilirsə, tamamilə təhlükəsizdirmi?",
+        "answer": "GlobalDRO yalnız dərmanın aktiv tərkibini yoxlayır. Qida əlavələri GlobalDRO-da olmur. Bundan əlavə, istehsal zamanı kontaminasiya riski mövcuddur. Həmişə Ciddi Məsuliyyət prinsipini yadda saxlayın."
       }
     ]
   },
   "contact": {
     "title": "Əlaqə",
     "entries": [
-      { "type": "Ümumi sorğular", "info": "education@amada.az" },
-      { "type": "Telefon", "info": "+994 12 000 00 00" },
-      { "type": "Tİİ müraciəti", "info": "education@amada.az (Tİİ mövzusunu qeyd edin)" },
-      { "type": "Seminar müraciəti", "info": "education@amada.az (Seminar müraciəti mövzusunu qeyd edin)" },
-      { "type": "Maarifləndirici şəbəkəsi", "info": "education@amada.az (Maarifləndirici müraciəti)" },
-      { "type": "Narahatlığı bildir", "info": "speakup.wada-ama.org (anonim) / education@amada.az" },
-      { "type": "Rəsmi ünvan", "info": "Azərbaycan Milli Antidopinq Agentliyi, Bakı, Azərbaycan" }
+      {
+        "type": "Ümumi sorğular",
+        "info": "education@amada.az"
+      },
+      {
+        "type": "Telefon",
+        "info": "AMADA-nın rəsmi veb-saytından yoxlayın: amada.az"
+      },
+      {
+        "type": "Tİİ müraciəti",
+        "info": "education@amada.az — mövzu: 'Tİİ müraciəti'"
+      },
+      {
+        "type": "Seminar müraciəti",
+        "info": "education@amada.az — mövzu: 'Seminar müraciəti'"
+      },
+      {
+        "type": "Maarifləndirici şəbəkəsi",
+        "info": "education@amada.az — mövzu: 'Maarifləndirici müraciəti'"
+      },
+      {
+        "type": "Narahatlığı Bildir",
+        "info": "speakup.wada-ama.org (anonim) — və ya education@amada.az"
+      },
+      {
+        "type": "Rəsmi ünvan",
+        "info": "Azərbaycan Milli Antidopinq Agentliyi (AMADA), Bakı, Azərbaycan"
+      }
     ]
   }
 }

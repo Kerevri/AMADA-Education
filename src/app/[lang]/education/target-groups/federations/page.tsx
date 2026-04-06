@@ -85,7 +85,6 @@ export default async function FederationsTargetGroupPage({
           ? "Federasiyanızın fəaliyyətini AMADA-nın İllik Təhsil Planı ilə uyğunlaşdırmaq üçün bizimlə əlaqə saxlayın." 
           : "Get in touch to align your federation's activities with AMADA's Annual Education Plan."}
         primaryAction={{ label: isAz ? "Federasiya Təhsili Üçün Müraciət" : "Request Federation Education", path: `/${lang}/education/contact` }}
-        secondaryAction={{ label: isAz ? "İllik Plana Bax" : "View Annual Plan", path: `/${lang}/education/education-plan` }}
         variant="light"
       />
     </div>

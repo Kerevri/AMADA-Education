@@ -39,15 +39,6 @@ export default async function TopicsHubPage({
       faq: "Go to FAQ",
       contact: "Contact Us",
     },
-    ru: {
-      hero: "Темы чистого спорта",
-      heroDesc: "Изучите правила, процедуры и риски антидопинга. Важные знания для всех участников спорта.",
-      heading: "Изучить основные темы",
-      cta: "Не можете найти то, что ищете?",
-      ctaDesc: "Проверьте часто задаваемые вопросы или напрямую свяжитесь с командой.",
-      faq: "К часто задаваемым вопросам",
-      contact: "Связаться",
-    },
   };
 
   const ui = hubTitles[l] ?? hubTitles.en;
@@ -56,43 +47,43 @@ export default async function TopicsHubPage({
     { title: t(tp.adrv, l), description: t(tp.adrvDesc, l), path: "/education/topics/anti-doping-rule-violations", icon: <ShieldAlert className="w-6 h-6" /> },
     { title: t(tp.rights, l), description: t(tp.rightsDesc, l) + " Your basic rights and strict responsibilities as an athlete.", path: "/education/topics/rights-and-responsibilities", icon: <Scale className="w-6 h-6" /> },
     {
-      title: l === "az" ? "Dopinqin Nəticələri" : l === "ru" ? "Последствия допинга" : "Consequences of Doping",
-      description: l === "az" ? "Sağlamlıq, sosial, maliyyə və idman nəticələri." : l === "ru" ? "Последствия для здоровья, социальные, финансовые и спортивные." : "Health, social, financial, and sporting consequences.",
+      title: l === "az" ? "Dopinqin Nəticələri" : "Consequences of Doping",
+      description: l === "az" ? "Sağlamlıq, sosial, maliyyə və idman nəticələri." : "Health, social, financial, and sporting consequences.",
       path: "/education/topics/consequences-of-doping",
       icon: <ShieldX className="w-6 h-6" />
     },
     {
-      title: l === "az" ? "Dopinqə Qarşı Mübarizə Sistemi" : l === "ru" ? "Антидопинговая система" : "The Anti-Doping System",
-      description: l === "az" ? "WADA, AMADA və İF-lərin idmanı qorumaq üçün necə birlikdə çalışdığı." : l === "ru" ? "Как ВАДА, АМАДА и МФ работают вместе." : "How WADA, AMADA, and IFs work together to protect sport.",
+      title: l === "az" ? "Dopinqə Qarşı Mübarizə Sistemi" : "The Anti-Doping System",
+      description: l === "az" ? "WADA, AMADA və İF-lərin idmanı qorumaq üçün necə birlikdə çalışdığı." : "How WADA, AMADA, and IFs work together to protect sport.",
       path: "/education/topics/anti-doping-system",
       icon: <Building2 className="w-6 h-6" />
     },
     {
-      title: l === "az" ? "Dəyərlər & Etika" : l === "ru" ? "Ценности и этика" : "Values & Ethics",
-      description: l === "az" ? "İdmanın əsas ruhu və ədalətli oyunun nə üçün vacib olduğu." : l === "ru" ? "Дух спорта и важность честной игры." : "The underlying spirit of sport and why fair play matters.",
+      title: l === "az" ? "Dəyərlər & Etika" : "Values & Ethics",
+      description: l === "az" ? "İdmanın əsas ruhu və ədalətli oyunun nə üçün vacib olduğu." : "The underlying spirit of sport and why fair play matters.",
       path: "/education/topics/values-and-ethics",
       icon: <HeartHandshake className="w-6 h-6" />
     },
     { title: t(tp.testing, l), description: t(tp.testingDesc, l), path: "/education/topics/testing-procedures", icon: <FlaskConical className="w-6 h-6" /> },
     { title: t(tp.prohibitedList, l), description: t(tp.prohibitedListDesc, l), path: "/education/topics/prohibited-list", icon: <FileText className="w-6 h-6" /> },
     {
-      title: l === "az" ? "Yerləşmə & ADAMS" : l === "ru" ? "Местонахождение и ADAMS" : "Whereabouts & ADAMS",
-      description: l === "az" ? "Sınaq Hovuzundaysanızsa yerləşməni necə bildirmək olar." : l === "ru" ? "Как подать сведения о местонахождении." : "How to file whereabouts if you are in a Testing Pool.",
+      title: l === "az" ? "Yerləşmə & ADAMS" : "Whereabouts & ADAMS",
+      description: l === "az" ? "Sınaq Hovuzundaysanızsa yerləşməni necə bildirmək olar." : "How to file whereabouts if you are in a Testing Pool.",
       path: "/education/topics/whereabouts-adams",
       icon: <MapPin className="w-6 h-6" />
     },
     { title: t(tp.tue, l), description: t(tp.tueDesc, l), path: "/education/topics/tue", icon: <Stethoscope className="w-6 h-6" /> },
     {
-      title: l === "az" ? "Dərmanlar" : l === "ru" ? "Медикаменты" : "Medications",
-      description: l === "az" ? "Dərmanınızın idmanda istifadə üçün təhlükəsiz olub-olmadığını necə yoxlamaq olar." : l === "ru" ? "Как проверить безопасность вашего лекарства." : "How to check if your medicine is safe to use in sport.",
+      title: l === "az" ? "Dərmanlar" : "Medications",
+      description: l === "az" ? "Dərmanınızın idmanda istifadə üçün təhlükəsiz olub-olmadığını necə yoxlamaq olar." : "How to check if your medicine is safe to use in sport.",
       path: "/education/topics/medications",
       icon: <Pill className="w-6 h-6" />
     },
     { title: t(tp.supplements, l), description: t(tp.supplementsDesc, l), path: "/education/topics/supplements-risk", icon: <AlertTriangle className="w-6 h-6" /> },
     { title: t(tp.strictLiability, l), description: t(tp.strictLiabilityDesc, l), path: "/education/topics/strict-liability", icon: <AlertOctagon className="w-6 h-6" /> },
     {
-      title: l === "az" ? "Dopinqi Bildirmək" : l === "ru" ? "Сообщить о допинге" : "Reporting Doping",
-      description: l === "az" ? "Dopinq şübhələrini necə təhlükəsiz bildirmək olar." : l === "ru" ? "Как безопасно сообщить о подозрении в допинге." : "How to securely report suspicions of doping.",
+      title: l === "az" ? "Dopinqi Bildirmək" : "Reporting Doping",
+      description: l === "az" ? "Dopinq şübhələrini necə təhlükəsiz bildirmək olar." : "How to securely report suspicions of doping.",
       path: "/education/topics/reporting-doping",
       icon: <PhoneCall className="w-6 h-6" />
     },

@@ -10,7 +10,7 @@ import azTopics from "@/content/az/topics.json";
 import azTargetGroups from "@/content/az/target-groups.json";
 import azResources from "@/content/az/resources.json";
 
-export type ContentLang = "az" | "en" | "ru";
+export type ContentLang = "az" | "en";
 
 const contentMap = {
   az: {

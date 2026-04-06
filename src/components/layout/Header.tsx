@@ -45,16 +45,16 @@ export function Header({ lang }: { lang: string }) {
           <div className="flex flex-col">
             <span className="font-bold text-lg text-[#1F3864] leading-tight">AMADA</span>
             <span className="text-sm text-[#003466] font-medium leading-tight">
-              {l === "az" ? "Təhsil" : l === "ru" ? "Образование" : "Education"}
+              {l === "az" ? "Təhsil" : "Education"}
             </span>
           </div>
         </Link>
 
         {/* Desktop nav links */}
         <div className="hidden lg:flex items-center gap-6 xl:gap-8 mx-auto">
-          {navLink(`/${l}`, l === "az" ? "Ana Səhifə" : l === "ru" ? "Главная" : "Home")}
-          {navLink(`/${l}/about`, l === "az" ? "Haqqımızda" : l === "ru" ? "О нас" : "About Us")}
-          {navLink(`/${l}/anti-doping`, l === "az" ? "Antidopinq" : l === "ru" ? "Антидопинг" : "Anti-Doping")}
+          {navLink(`/${l}`, l === "az" ? "Ana Səhifə" : "Home")}
+          {navLink(`/${l}/about`, l === "az" ? "Haqqımızda" : "About Us")}
+          {navLink(`/${l}/anti-doping`, l === "az" ? "Antidopinq" : "Anti-Doping")}
 
           {/* Təhsil dropdown */}
           <DropdownMenu>
@@ -110,9 +110,6 @@ export function Header({ lang }: { lang: string }) {
               <DropdownMenuItem>
                 <Link href="/en/education" className="w-full cursor-pointer">EN — English</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link href="/ru/education" className="w-full cursor-pointer">RU — Русский</Link>
-              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
@@ -140,8 +137,6 @@ export function Header({ lang }: { lang: string }) {
               <Link href="/az/education" className={`text-sm font-semibold ${l === "az" ? "text-[#0D9488]" : "text-slate-600"}`}>AZ</Link>
               <span className="text-border">|</span>
               <Link href="/en/education" className={`text-sm font-semibold ${l === "en" ? "text-[#0D9488]" : "text-slate-600"}`}>EN</Link>
-              <span className="text-border">|</span>
-              <Link href="/ru/education" className={`text-sm font-semibold ${l === "ru" ? "text-[#0D9488]" : "text-slate-600"}`}>RU</Link>
             </div>
           </div>
         </div>

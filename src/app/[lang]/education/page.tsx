@@ -74,12 +74,10 @@ export default async function EducationPlatformHomePage({
       <section id="essential-topics" className="mb-16 scroll-mt-24">
 
         <div className="border-t border-slate-200 pt-10 mb-8">
-          <CalloutBlock title={l === 'az' ? 'Bilirdinizmi?' : l === 'ru' ? 'Знаете ли вы?' : 'Did You Know?'} variant="fact" className="mb-8">
+          <CalloutBlock title={l === 'az' ? 'Bilirdinizmi?' : 'Did You Know?'} variant="fact" className="mb-8">
             {l === 'az'
               ? 'İdmançı olaraq, bədəninizdə tapılan istənilən qadağan olunmuş maddəyə görə ciddi məsuliyyət daşıyırsınız. Buna Ciddi Məsuliyyət (Strict Liability) prinsipi deyilir. Hətta qəsdən olmasa belə qaydanı pozmuş hesab oluna bilərsiniz.'
-              : l === 'ru'
-                ? 'Как спортсмен, вы несете полную ответственность за любое запрещенное вещество, найденное в вашем организме. Это известно как принцип строгой ответственности.'
-                : 'As an athlete, you are solely responsible for any prohibited substance found in your system. This is known as the principle of Strict Liability. You can face a violation even if it was completely unintentional!'}
+              : 'As an athlete, you are solely responsible for any prohibited substance found in your system. This is known as the principle of Strict Liability. You can face a violation even if it was completely unintentional!'}
           </CalloutBlock>
 
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mt-6">
@@ -109,17 +107,37 @@ export default async function EducationPlatformHomePage({
       {/* Athlete Pathway */}
       <section id="athlete-pathway" className="mb-16 scroll-mt-24">
         <div className="border-t border-slate-200 pt-10">
-          <h2 className="text-2xl font-bold text-[#003466] mb-4">{t(ld.playgroundToPodium, l)}</h2>
+          <h2 className="text-2xl font-bold text-[#003466] mb-3">{t(ld.playgroundToPodium, l)}</h2>
           <p className="text-[#003466] mb-6 leading-relaxed">{t(ld.playgroundDesc, l)}</p>
-          <div className="relative h-48 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-center overflow-hidden mb-6">
-            <div className="absolute inset-x-8 h-1.5 bg-slate-200 top-1/2 -translate-y-1/2"></div>
-            <div className="flex justify-between w-full px-8 relative z-10">
-              <div className="w-10 h-10 rounded-full bg-white border-4 border-amada-teal shadow-sm"></div>
-              <div className="w-10 h-10 rounded-full bg-white border-4 border-amada-teal shadow-sm"></div>
-              <div className="w-10 h-10 rounded-full bg-white border-4 border-amada-teal shadow-sm"></div>
-              <div className="w-12 h-12 rounded-full bg-[#003466] border-4 border-amada-gold shadow-md"></div>
-            </div>
+
+          {/* 6-Stage Pathway Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-6">
+            {(l === "az" ? [
+              { num: "1", name: "İdmanda Uşaqlar", age: "6–12 yaş", desc: "Ədalətli oyun, hörmət və dəyərlərin formalaşdığı mərhələ.", border: "border-emerald-400" },
+              { num: "2", name: "Gənc İdmançılar", age: "13–17 yaş", desc: "Qadağan Edilmiş Siyahı və Ciddi Məsuliyyətin ilk tanıdılması.", border: "border-emerald-500" },
+              { num: "3", name: "İstedadlı İdmançılar", age: "Elit Öncəsi", desc: "İlk dopinq nəzarəti ehtimalı; ADEL sertifikatı məcburi olur.", border: "border-[#0055a4]" },
+              { num: "4", name: "Milli & Beynəlxalq", age: "Elit Mərhələ", desc: "Tam uyğunluq gözlənilir; idmançı nümunə göstərən roluna keçir.", border: "border-[#003466]" },
+              { num: "5", name: "Qeydiyyata alınmış Test Qrupu", age: "QTQ / Elit RTP", desc: "ADAMS məkan məlumatı, Tİİ idarəetməsi — ən yüksək nəzarət.", border: "border-[#003466]" },
+              { num: "6", name: "Geri Dönən İdmançılar", age: "Reintegrasiya", desc: "Sanksiya sonrası biliyin yenilənməsi və yenidən uyğunlaşma.", border: "border-amber-500" },
+            ] : [
+              { num: "1", name: "Children in Sport", age: "Ages 6–12", desc: "Building fair play, respect, and values through active play.", border: "border-emerald-400" },
+              { num: "2", name: "Youth Athletes", age: "Ages 13–17", desc: "First introduction to the Prohibited List and Strict Liability.", border: "border-emerald-500" },
+              { num: "3", name: "Talented Athletes", age: "Pre-Elite", desc: "First doping control exposure; ADEL certificate becomes mandatory.", border: "border-[#0055a4]" },
+              { num: "4", name: "National & International", age: "Elite Stage", desc: "Full compliance expected; athlete takes on a role-model duty.", border: "border-[#003466]" },
+              { num: "5", name: "Registered Testing Pool", age: "RTP / High-Risk Elite", desc: "ADAMS whereabouts, TUE management — highest-level scrutiny.", border: "border-[#003466]" },
+              { num: "6", name: "Returning Athletes", age: "Re-integration", desc: "Post-sanction knowledge refresh and compliance reinstatement.", border: "border-amber-500" },
+            ]).map((stage) => (
+              <div key={stage.num} className={`bg-white border-2 ${stage.border} rounded-xl p-4 shadow-sm flex flex-col gap-2`}>
+                <div className="flex items-center gap-2">
+                  <span className="w-7 h-7 rounded-full bg-[#003466] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">{stage.num}</span>
+                  <span className="text-xs text-slate-500 font-semibold uppercase tracking-wide">{stage.age}</span>
+                </div>
+                <p className="text-[#003466] text-sm font-bold leading-snug">{stage.name}</p>
+                <p className="text-slate-600 text-xs leading-relaxed">{stage.desc}</p>
+              </div>
+            ))}
           </div>
+
           <Link href={`/${l}/education/athlete-pathway`} className="inline-flex items-center text-sm font-semibold text-[#0055a4] hover:underline group">
             {t(ld.explorePathway, l)} <ChevronRight className="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1" />
           </Link>
@@ -129,19 +147,117 @@ export default async function EducationPlatformHomePage({
       {/* Learning Formats */}
       <section id="learning-formats" className="mb-16 scroll-mt-24">
         <div className="border-t border-slate-200 pt-10">
-          <h2 className="text-2xl font-bold text-[#003466] mb-6">{t(ld.learningFormats, l)}</h2>
-          <div className="flex flex-wrap gap-3">
-            {[
-              t(lp.seminars, l),
-              t(lp.webinars, l),
-              t(lp.outreach, l),
-              t(lp.eLearning, l),
-              t(lp.schoolSessions, l),
-              t(lp.federationEducation, l),
-            ].map((tag, i) => (
-              <span key={i} className="px-4 py-2 bg-white border border-slate-200 rounded-md text-[#003466] text-sm font-medium shadow-sm flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-amada-teal" /> {tag}
-              </span>
+          <h2 className="text-2xl font-bold text-[#003466] mb-3">{t(ld.learningFormats, l)}</h2>
+          <p className="text-[#003466] mb-8">
+            {l === "az"
+              ? "AMADA antidopinq təhsilini müxtəlif formatlarda çatdırır — onlayn öyrənmədən canlı seminarlara, məktəb proqramlarından hadisə əsaslı fəaliyyətlərə qədər."
+              : "AMADA delivers anti-doping education across diverse formats — from online learning to live seminars, school programmes to event-based outreach."}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {(l === "az" ? [
+              {
+                icon: <BookOpen className="w-5 h-5 text-amada-teal" />,
+                title: "Elektron Öyrənmə (ADEL)",
+                desc: "WADA-nın ADEL platformasında pulsuz, interaktiv onlayn kurslar. Uğurla tamamlayanlara rəsmi sertifikat verilir.",
+                tag: "adel.wada-ama.org",
+                path: `/education/learning/elearning`,
+              },
+              {
+                icon: <Users className="w-5 h-5 text-amada-teal" />,
+                title: "Əyani Seminarlar",
+                desc: "AMADA-nın akkreditasiyalı maarifləndiriciləri tərəfindən keçirilən interaktiv, ssenari əsaslı sessiyalar. Federasiya, klub, milli komanda.",
+                tag: "2–4 saat · Azərbaycan dili",
+                path: `/education/learning/seminars`,
+              },
+              {
+                icon: <Stethoscope className="w-5 h-5 text-amada-teal" />,
+                title: "Vebinarlar",
+                desc: "Qadağan Edilmiş Siyahı yenilikləri, Tİİ prosesi və digər aktual mövzularda canlı onlayn sessiyalar. Yazılar resurs kitabxanasında qorunur.",
+                tag: "Virtual · Bütün qruplar",
+                path: `/education/learning/webinars`,
+              },
+              {
+                icon: <Globe className="w-5 h-5 text-amada-teal" />,
+                title: "Məktəb Proqramları",
+                desc: "10–17 yaş şagirdlər üçün dəyər əsaslı sinif dərsləri. Bədən tərbiyəsi dərslərinin bir hissəsi kimi tətbiq olunur.",
+                tag: "Gənclər · Müəllimlər",
+                path: `/education/learning/schools-program`,
+              },
+              {
+                icon: <Building className="w-5 h-5 text-amada-teal" />,
+                title: "Federasiya Proqramları",
+                desc: "29 milli federasiya üçün risk qiymətləndirməsinə əsaslanan illik seminar planı. Hər federasiyaya ayrılmış kvota.",
+                tag: "29 federasiya · Risk əsaslı",
+                path: `/education/learning/federation-programs`,
+              },
+              {
+                icon: <ShieldCheck className="w-5 h-5 text-amada-teal" />,
+                title: "Hadisə Əsaslı Təhsil",
+                desc: "Yarış və turnirlərdə AMADA stendi, flayerlər, QR kodlar vasitəsilə canlı maarifləndirmə. İSE Maddə 9.2 tələbinə uyğun.",
+                tag: "Yarışlar · Turniriər",
+                path: `/education/learning/outreach`,
+              },
+            ] : [
+              {
+                icon: <BookOpen className="w-5 h-5 text-amada-teal" />,
+                title: "eLearning (ADEL)",
+                desc: "Free interactive online courses on WADA's ADEL platform. Participants receive an official digital certificate upon completion.",
+                tag: "adel.wada-ama.org",
+                path: `/education/learning/elearning`,
+              },
+              {
+                icon: <Users className="w-5 h-5 text-amada-teal" />,
+                title: "In-Person Seminars",
+                desc: "Interactive, scenario-based sessions run by AMADA-accredited educators. Available for federations, clubs, and national teams.",
+                tag: "2–4 hrs · In-person",
+                path: `/education/learning/seminars`,
+              },
+              {
+                icon: <Stethoscope className="w-5 h-5 text-amada-teal" />,
+                title: "Webinars",
+                desc: "Live online sessions on Prohibited List updates, the TUE process, and other critical topics. Recordings archived in the Resource Library.",
+                tag: "Virtual · All groups",
+                path: `/education/learning/webinars`,
+              },
+              {
+                icon: <Globe className="w-5 h-5 text-amada-teal" />,
+                title: "School Programmes",
+                desc: "Values-based classroom lessons for students aged 10–17, integrated into physical education curricula.",
+                tag: "Youth · Teachers",
+                path: `/education/learning/schools-program`,
+              },
+              {
+                icon: <Building className="w-5 h-5 text-amada-teal" />,
+                title: "Federation Programmes",
+                desc: "Risk-based annual seminar plan distributed across 29 national federations, with allocated quotas per federation.",
+                tag: "29 federations · Risk-based",
+                path: `/education/learning/federation-programs`,
+              },
+              {
+                icon: <ShieldCheck className="w-5 h-5 text-amada-teal" />,
+                title: "Event-Based Education",
+                desc: "AMADA booth, flyers, and QR-linked resources at competitions and tournaments. Aligned with ISE Article 9.2.",
+                tag: "Competitions · Events",
+                path: `/education/learning/outreach`,
+              },
+            ]).map((item, i) => (
+              <Link
+                key={i}
+                href={`/${l}${item.path}`}
+                className="group bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md hover:border-[#0055a4] transition-all flex flex-col gap-3"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center flex-shrink-0 group-hover:bg-[#eef4ff] transition-colors">
+                    {item.icon}
+                  </div>
+                  <p className="text-[#003466] font-bold text-sm leading-snug">{item.title}</p>
+                </div>
+                <p className="text-slate-600 text-xs leading-relaxed flex-1">{item.desc}</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-slate-400 font-medium">{item.tag}</span>
+                  <ChevronRight className="w-4 h-4 text-[#0055a4] opacity-0 group-hover:opacity-100 transition-opacity" />
+                </div>
+              </Link>
             ))}
           </div>
           <div className="mt-6">
