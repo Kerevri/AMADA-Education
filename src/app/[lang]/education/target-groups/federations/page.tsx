@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/shared/HeroSection";
 import { InfoCard, ChecklistCard } from "@/components/shared/InfoCards";
 import { CTASection } from "@/components/shared/CTASection";
 import { Metadata } from "next";
+import azContent from "@/content/az/target-groups.json";
 
 export const metadata: Metadata = {
   title: "Federasiyalar & Klublar | AMADA",
@@ -15,6 +16,7 @@ export default async function FederationsTargetGroupPage({
 }) {
   const { lang } = await params;
   const isAz = lang === "az";
+  const az = azContent.federations;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -40,39 +42,33 @@ export default async function FederationsTargetGroupPage({
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <ChecklistCard
-              title={isAz ? "İllik Planlaşdırma Yanaşması" : "Annual Planning Approach"}
-              items={isAz 
-                ? [
-                    "Təhsil Hovuzu üçün dəqiq idmançı məlumatlarını təqdim edin",
-                    "Milli seminar və vebinarları AMADA ilə birlikdə planlaşdırın",
-                    "Milli komanda idmançılarının yarışdan əvvəl eLearning-i tamamlamasını təmin edin",
-                    "Federasiya daxilində dopinqə qarşı mübarizə üzrə əlaqələndirici şəxs təyin edin",
-                    "Milli məşqçilik sertifikatlarına təmiz idman mövzularını daxil edin"
-                  ]
+              title={isAz ? az.roleTitle : "Federation Role"}
+              items={isAz
+                ? az.role
                 : [
                     "Submit accurate athlete data for the Education Pool",
                     "Co-plan national seminars and webinars with AMADA",
                     "Ensure national team athletes complete eLearning before competing",
                     "Appoint an anti-doping point of contact within the federation",
-                    "Integrate clean sport topics into national coaching certifications"
+                    "Integrate clean sport topics into national coaching certifications",
                   ]}
             />
             <ChecklistCard
               title={isAz ? "AMADA Necə Kömək Edə Bilər" : "How AMADA Can Help"}
-              items={isAz 
+              items={isAz
                 ? [
                     "AMADA Maarifləndiriciləri tərəfindən yerində seminarların keçirilməsi",
                     "Milli Çempionatlarda xüsusi maarifləndirmə stendlərinin təşkili",
                     "Xüsusi rəqəmsal və çap materiallarının təmin edilməsi",
                     "Səlahiyyətli Maarifləndirici olmaq üçün federasiya nümayəndələrinin təlimi",
-                    "Dopinqə qarşı uyğunluq üzrə strateji rəhbərlik"
+                    "Dopinqə qarşı uyğunluq üzrə strateji rəhbərlik",
                   ]
                 : [
                     "Delivery of in-person seminars by AMADA Educators",
                     "Provision of tailored outreach booths at National Championships",
                     "Access to specialized digital and print materials",
                     "Training federation representatives to become authorized Educators",
-                    "Strategic guidance on anti-doping compliance"
+                    "Strategic guidance on anti-doping compliance",
                   ]}
             />
           </div>

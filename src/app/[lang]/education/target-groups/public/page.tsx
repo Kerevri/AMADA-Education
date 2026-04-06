@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/shared/HeroSection";
 import { InfoCard } from "@/components/shared/InfoCards";
 import { CTASection } from "@/components/shared/CTASection";
 import { Metadata } from "next";
+import azContent from "@/content/az/target-groups.json";
 
 export const metadata: Metadata = {
   title: "İctimaiyyət, Media & Geniş İcma | AMADA",
@@ -15,6 +16,7 @@ export default async function PublicTargetGroupPage({
 }) {
   const { lang } = await params;
   const isAz = lang === "az";
+  const az = azContent.public;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -28,22 +30,37 @@ export default async function PublicTargetGroupPage({
 
       <section className="py-16 bg-white">
         <div className=" max-w-5xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <InfoCard
               title={isAz ? "Təmiz İdman Niyə İctimaiyyət Üçün Vacibdir" : "Why Clean Sport Matters Publicly"}
-              content={isAz 
-                ? "Dopinq təkcə idmanda saxtakarlıq deyil; o, ciddi bir ictimai sağlamlıq təhlükəsidir və idmanın gənclərimizə öyrətdiyi etik dəyərlərə xələl gətirir. Azarkeşlər, media və sponsorlar təmiz idman tələb etdikdə, idmançılar düzgün qərarlar verməkdə dəstəklənirlər." 
+              content={isAz
+                ? "Dopinq təkcə idmanda saxtakarlıq deyil; o, ciddi bir ictimai sağlamlıq təhlükəsidir və idmanın gənclərimizə öyrətdiyi etik dəyərlərə xələl gətirir. Azarkeşlər, media və sponsorlar təmiz idman tələb etdikdə, idmançılar düzgün qərarlar verməkdə dəstəklənirlər."
                 : "Doping is not just cheating in sports; it represents a serious public health hazard and undermines the ethical values that sports teach our youth. When fans, media, and sponsors demand clean sport, athletes are supported in making right decisions."}
               type="info"
             />
             <InfoCard
               title={isAz ? "Medianın Rolu" : "The Role of Media"}
-              content={isAz 
-                ? "Media ictimai qavrayışı formalaşdırır. Dopinqə qarşı qaydalar haqqında dəqiq hesabatlar vermək, sensasiyadan qaçmaq və təhsil ilə reabilitasiyanın əhəmiyyətini vurğulamaq məlumatlı idman mədəniyyətinin yaradılmasına kömək edir." 
+              content={isAz
+                ? "Media ictimai qavrayışı formalaşdırır. Dopinqə qarşı qaydalar haqqında dəqiq hesabatlar vermək, sensasiyadan qaçmaq və təhsil ilə reabilitasiyanın əhəmiyyətini vurğulamaq məlumatlı idman mədəniyyətinin yaradılmasına kömək edir."
                 : "The media shapes public perception. Accurate reporting on anti-doping rules, avoiding sensationalism, and emphasizing the importance of education and rehabilitation helps create a well-informed sporting culture."}
               type="default"
             />
           </div>
+
+          {isAz && (
+            <div className="mb-12">
+              <h2 className="text-xl font-bold text-[#003466] mb-4">{az.resourcesTitle}</h2>
+              <ul className="space-y-2 text-sm text-[#102033]">
+                {az.resources.map((item, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="text-amada-teal mt-0.5">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-6 text-sm text-[#102033] leading-relaxed">{az.closing}</p>
+            </div>
+          )}
         </div>
       </section>
 

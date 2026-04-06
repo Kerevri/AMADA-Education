@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/shared/HeroSection";
 import { InfoCard, ChecklistCard } from "@/components/shared/InfoCards";
 import { CTASection } from "@/components/shared/CTASection";
 import { Metadata } from "next";
+import azContent from "@/content/az/target-groups.json";
 
 export const metadata: Metadata = {
   title: "Məşqçilər & Dəstək Heyəti | AMADA",
@@ -15,6 +16,7 @@ export default async function SupportPersonnelTargetGroupPage({
 }) {
   const { lang } = await params;
   const isAz = lang === "az";
+  const az = azContent.supportPersonnel;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -48,16 +50,10 @@ export default async function SupportPersonnelTargetGroupPage({
           {/* Öhdəliklər */}
           <div className="mb-12 p-6 bg-amber-50 border border-amber-200 rounded-xl">
             <h3 className="text-lg font-bold text-[#003466] mb-3">
-              {isAz ? "Öhdəliklər — Məcəllə Maddə 21.2" : "Obligations — Code Article 21.2"}
+              {isAz ? az.dutiesTitle : "Obligations — Code Article 21.2"}
             </h3>
             <ul className="space-y-2 text-sm text-[#102033]">
-              {(isAz ? [
-                "Antidopinq siyasəti və qaydaları ilə tanış olmaq",
-                "Öz idmançılarına antidopinq sahəsindəki biliklərini ötürmək",
-                "Dopinq qayda pozuntularını asanlaşdırmamaq",
-                "AMADA-nın Maarifləndirici Proqramlarında fəal iştirak etmək",
-                "Şübhəli vəziyyətlər barədə AMADA-ya məlumat vermək",
-              ] : [
+              {(isAz ? az.duties : [
                 "Be familiar with anti-doping policies and rules",
                 "Pass anti-doping knowledge on to their athletes",
                 "Not facilitate doping rule violations",

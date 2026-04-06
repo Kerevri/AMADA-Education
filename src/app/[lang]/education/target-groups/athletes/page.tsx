@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/shared/HeroSection";
 import { InfoCard, ChecklistCard } from "@/components/shared/InfoCards";
 import { CTASection } from "@/components/shared/CTASection";
 import { Metadata } from "next";
+import azContent from "@/content/az/target-groups.json";
 
 export const metadata: Metadata = {
   title: "İdmançılar üçün Təhsil | AMADA",
@@ -15,6 +16,7 @@ export default async function AthletesTargetGroupPage({
 }) {
   const { lang } = await params;
   const isAz = lang === "az";
+  const az = azContent.athletes;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -46,7 +48,7 @@ export default async function AthletesTargetGroupPage({
           </div>
 
           <h2 className="text-2xl font-bold text-[#003466] mb-5">
-            {isAz ? "İdmançı kateqoriyaları" : "Athlete Categories"}
+            {isAz ? az.categoriesTitle : "Athlete Categories"}
           </h2>
           <div className="mb-14 overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
             <table className="min-w-full text-sm">
@@ -57,14 +59,7 @@ export default async function AthletesTargetGroupPage({
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
-                {(isAz ? [
-                  ["Milli Səviyyəli İdmançı", "AMADA tərəfindən müəyyən edilən milli yarışlarda iştirak edən idmançı"],
-                  ["Beynəlxalq Səviyyəli İdmançı", "Müvafiq Beynəlxalq Federasiya tərəfindən müəyyən edilən idmançı"],
-                  ["Azyaşlı (Minor)", "18 yaşına çatmamış fiziki şəxs"],
-                  ["Qorunan Şəxs", "Pozuntu zamanı 16 yaşına çatmamış VƏ heç vaxt beynəlxalq açıq kateqoriyada yarışmamış idmançı — xüsusi mühafizə statusu tətbiq edilir"],
-                  ["QTQ İdmançısı", "Qeydiyyata alınmış Test Qrupuna daxil olan, ADAMS-da məkan məlumatı öhdəliyi olan idmançı"],
-                  ["Rekreasiya idmançısı", "Bədən tərbiyəsi məqsədilə idmanla məşğul olan, rəsmi yarışlarda iştirak etməyən şəxs"],
-                ] : [
+                {(isAz ? az.categories.map(c => [c.name, c.definition]) : [
                   ["National-Level Athlete", "An athlete competing at national level as defined by AMADA"],
                   ["International-Level Athlete", "An athlete competing at international level as defined by the relevant International Federation"],
                   ["Minor", "A natural person who has not reached the age of 18"],
@@ -83,35 +78,27 @@ export default async function AthletesTargetGroupPage({
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <ChecklistCard
-              title={isAz ? "Nələri Bilməlisiniz" : "What You Need to Know"}
-              items={isAz 
-                ? [
-                    "11 Dopinqə Qarşı Qayda Pozuntusu (DQAQP)",
-                    "Ciddi Məsuliyyət prinsipi",
-                    "İstifadədən əvvəl dərmanları necə yoxlamalı",
-                    "Qida əlavələri ilə bağlı risklər",
-                    "Nümunə toplama prosesi (Sidik və Qan)",
-                    "Tibbi vəziyyətiniz olduqda Tİİ üçün necə müraciət etməli"
-                  ]
+              title={isAz ? az.outcomesTitle : "Key Learning Outcomes"}
+              items={isAz
+                ? az.outcomes
                 : [
-                    "The 11 Anti-Doping Rule Violations (ADRVs)",
-                    "The principle of Strict Liability",
-                    "How to check medications before use",
-                    "The risks associated with nutritional supplements",
-                    "The sample collection process (Urine & Blood)",
-                    "How to apply for a TUE if you have a medical condition"
+                    "Independently check the Prohibited List",
+                    "Be prepared for the Doping Control process",
+                    "Know the Therapeutic Use Exemption (TUE) procedure",
+                    "Submit whereabouts information on time",
+                    "Report doping concerns anonymously",
                   ]}
             />
             <ChecklistCard
               title={isAz ? "Gözlənilən Təmiz İdman Davranışları" : "Expected Clean Sport Behaviors"}
-              items={isAz 
+              items={isAz
                 ? [
                     "Həmişə təmiz idmanı dəstəkləyin",
                     "Hər bir dərmanı GlobalDRO-da və ya həkimlə yoxlayın",
                     "Tibb heyətinə idmançı olduğunuzu bildirin",
                     "Dopinq Kontrol Əməkdaşları ilə tam əməkdaşlıq edin",
                     "Mümkün olduqda Yerləşmə məlumatlarınızı aktual saxlayın",
-                    "Hər hansı dopinq narahatlığını təhlükəsiz şəkildə bildirin"
+                    "Hər hansı dopinq narahatlığını təhlükəsiz şəkildə bildirin",
                   ]
                 : [
                     "Always advocate for clean sport",
@@ -119,7 +106,7 @@ export default async function AthletesTargetGroupPage({
                     "Inform medical staff that you are an athlete",
                     "Cooperate fully with Doping Control Officers",
                     "Keep your Whereabouts up to date if applicable",
-                    "Report any doping concerns securely"
+                    "Report any doping concerns securely",
                   ]}
             />
           </div>

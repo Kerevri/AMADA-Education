@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/shared/HeroSection";
 import { InfoCard, ChecklistCard } from "@/components/shared/InfoCards";
 import { CTASection } from "@/components/shared/CTASection";
 import { Metadata } from "next";
+import azContent from "@/content/az/target-groups.json";
 
 export const metadata: Metadata = {
   title: "Tibb & Parametrik Mütəxəssislər | AMADA",
@@ -15,6 +16,7 @@ export default async function MedicalTargetGroupPage({
 }) {
   const { lang } = await params;
   const isAz = lang === "az";
+  const az = azContent.medical;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -47,21 +49,15 @@ export default async function MedicalTargetGroupPage({
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <ChecklistCard
-              title={isAz ? "Peşəkar Məsuliyyətlər" : "Professional Responsibilities"}
-              items={isAz 
-                ? [
-                    "WADA Qadağan olunmuş Siyahısını mütəmadi olaraq yoxlayın (hər il yenilənir)",
-                    "Tİİ-lər üzrə Beynəlxalq Standartın prinsiplərini tətbiq edin",
-                    "İdmançıları qida əlavələrinin riskləri barədə məlumatlandırın",
-                    "Potensial Tİİ-lər üçün aydın tibbi qeydlər aparın",
-                    "Müalicələrin dopinqə qarşı qaydalara zidd olmadığını təmin edin"
-                  ]
+              title={isAz ? az.dutiesTitle : "Professional Responsibilities"}
+              items={isAz
+                ? az.duties
                 : [
                     "Regularly consult the WADA Prohibited List (updated annually)",
                     "Apply the principles of the International Standard for TUEs",
                     "Educate athletes about the risks of supplements",
                     "Keep clear medical records for potential TUEs",
-                    "Ensure treatments do not violate anti-doping regulations"
+                    "Ensure treatments do not violate anti-doping regulations",
                   ]}
             />
             <ChecklistCard

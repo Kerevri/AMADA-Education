@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/shared/HeroSection";
 import { InfoCard, ChecklistCard } from "@/components/shared/InfoCards";
 import { CTASection } from "@/components/shared/CTASection";
 import { Metadata } from "next";
+import azContent from "@/content/az/target-groups.json";
 
 export const metadata: Metadata = {
   title: "Valideynlər & Himayədarlar | AMADA Təhsil",
@@ -15,6 +16,7 @@ export default async function ParentsTargetGroupPage({
 }) {
   const { lang } = await params;
   const isAz = lang === "az";
+  const az = azContent.parents;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -47,39 +49,25 @@ export default async function ParentsTargetGroupPage({
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <ChecklistCard
-              title={isAz ? "Necə Kömək Etməli" : "How to Help"}
-              items={isAz 
-                ? [
-                    "Ədalətli oyun və hörmət kimi əsas dəyərləri aşılamaq",
-                    "Övladınıza verilən bütün dərmanların yoxlanılmasına nəzarət edin",
-                    "Əlavə qidalardan qabaq sağlam qidalanma və istirahəti təşviq edin",
-                    "Məşqçilərin təmiz idman prinsiplərini dəstəklədiyindən əmin olun",
-                    "Övladınızın təzyiqləri müzakirə edə biləcəyi təhlükəsiz mühit yaradın"
-                  ]
+              title={isAz ? az.parentsTitle : "How to Help (Parents)"}
+              items={isAz
+                ? az.parentsItems
                 : [
                     "Instill the core values of fair play and respect",
                     "Be the gatekeeper for any medications given to your child",
                     "Promote healthy nutrition and rest over supplements",
                     "Ensure your child's coaches support clean sport principles",
-                    "Create a safe environment for your child to discuss pressures"
+                    "Create a safe environment for your child to discuss pressures",
                   ]}
             />
             <ChecklistCard
-              title={isAz ? "Gözlənilən Davranışlar" : "Expected Behaviors"}
-              items={isAz 
-                ? [
-                    "Dərmanları yoxlamaq üçün GlobalDRO proqramını yükləyin və istifadə edin",
-                    "Valideynlər üçün nəzərdə tutulmuş dopinqə qarşı seminarlarda iştirak edin",
-                    "Övladınız sınaq üçün seçildikdə dopinq kontrol prosesini dəstəkləyin",
-                    "Hər hansı bir maddə haqqında əmin olmadıqda sual verin",
-                    "Kənardan (yarış zamanı) yaxşı davranış nümayiş etdirin"
-                  ]
+              title={isAz ? az.teachersTitle : "For Teachers"}
+              items={isAz
+                ? az.teachersItems
                 : [
-                    "Download and use GlobalDRO to check medications",
-                    "Attend parent-focused anti-doping seminars",
-                    "Support the doping control process if your child is selected",
-                    "Ask questions when unsure about any given substance",
-                    "Model good behavior at the sidelines"
+                    "Use AMADA's school programme classroom materials",
+                    "Incorporate values-based sport topics into PE discussions",
+                    "Invite AMADA's seminar programme to your school: education@amada.az",
                   ]}
             />
           </div>

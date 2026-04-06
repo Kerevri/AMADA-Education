@@ -62,19 +62,19 @@ export function TopicCardGrid({ items, columns = 3, lang }: CardGridProps) {
       {items.map((item, idx) => (
         <Link key={idx} href={`/${lang}${item.path}`} className="group">
           <div className="bg-white border border-border p-5 rounded-lg h-full flex items-start gap-4 hover:border-primary hover:shadow-sm transition-all">
-             <div className="mt-1 w-10 h-10 rounded-full bg-light_gray flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
-               {item.icon ? item.icon : <ChevronRight className="w-5 h-5" />}
-             </div>
-             <div>
-               <h3 className="font-semibold text-lg text-primary mb-1 group-hover:text-amada-teal transition-colors">
-                 {item.title}
-               </h3>
-               {item.description && (
-                 <p className="text-sm text-[#102033] line-clamp-2">
-                   {item.description}
-                 </p>
-               )}
-             </div>
+            <div className="mt-1 w-10 h-10 rounded-full bg-light_gray flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
+              {item.icon ? item.icon : <ChevronRight className="w-5 h-5" />}
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg text-primary mb-1 group-hover:text-amada-teal transition-colors">
+                {item.title}
+              </h3>
+              {item.description && (
+                <p className="text-sm text-[#102033] line-clamp-2">
+                  {item.description}
+                </p>
+              )}
+            </div>
           </div>
         </Link>
       ))}

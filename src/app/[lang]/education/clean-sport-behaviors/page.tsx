@@ -2,10 +2,39 @@ import { HeroSection } from "@/components/shared/HeroSection";
 import { InfoCard } from "@/components/shared/InfoCards";
 import { CTASection } from "@/components/shared/CTASection";
 import { Metadata } from "next";
+import azContent from "@/content/az/education.json";
 
 export const metadata: Metadata = {
   title: "Təmiz İdman Davranışları | AMADA Təhsil",
   description: "İdmançılar və idman dəstək heyəti üçün antidopinq qaydaları çərçivəsində nümayiş etdirilməli konkret davranış normaları.",
+};
+
+const enContent = {
+  title: "Clean Sport Behaviours",
+  intro: "Clean sport behaviours define exactly what is expected of athletes and support personnel to maintain sport integrity. They are grounded in the mandatory topics defined in ISE Article 8.1.1.",
+  areasTitle: "Core Behaviour Areas",
+  knowTitle: "Know",
+  know: [
+    "Regularly check the Prohibited List (updated every 1 January)",
+    "Know AMADA's anti-doping rules",
+    "Understand the Therapeutic Use Exemption (TUE) procedure",
+    "Understand what the Strict Liability principle means",
+  ],
+  doTitle: "Do",
+  do: [
+    "Check every medicine or supplement against the Prohibited List before taking it",
+    "Consult a medical professional before taking any medication and inform them you are an athlete",
+    "Participate in doping control with full transparency",
+    "If you are a Registered Testing Pool (RTP) member, submit your whereabouts information to ADAMS on time",
+  ],
+  speakTitle: "Speak Up",
+  speak: [
+    "Report suspicious situations to a trusted person",
+    "Use AMADA's 'Report a Concern' channel",
+    "Inform and support teammates about clean sport",
+  ],
+  closing:
+    "These behaviours must be developed and reinforced throughout an athlete's career — from the youth stage to elite level. All of AMADA's education activities are aimed at building exactly these behaviours.",
 };
 
 export default async function CleanSportBehaviorsPage({
@@ -15,14 +44,43 @@ export default async function CleanSportBehaviorsPage({
 }) {
   const { lang } = await params;
   const isAz = lang === "az";
+  const c = isAz ? azContent.cleanSportBehaviors : enContent;
+
+  const pillars = [
+    {
+      letter: c.knowTitle[0],
+      title: c.knowTitle,
+      items: c.know,
+      borderColor: "border-t-amada-teal",
+      iconBg: "bg-amada-teal/10",
+      iconText: "text-amada-teal",
+      checkColor: "text-amada-teal",
+    },
+    {
+      letter: c.doTitle[0],
+      title: c.doTitle,
+      items: c.do,
+      borderColor: "border-t-[#003466]",
+      iconBg: "bg-[#003466]/10",
+      iconText: "text-[#003466]",
+      checkColor: "text-[#003466]",
+    },
+    {
+      letter: c.speakTitle[0],
+      title: c.speakTitle,
+      items: c.speak,
+      borderColor: "border-t-green-600",
+      iconBg: "bg-green-50",
+      iconText: "text-green-700",
+      checkColor: "text-green-600",
+    },
+  ];
 
   return (
     <div className="flex flex-col min-h-screen">
       <HeroSection
-        title={isAz ? "Təmiz İdman Davranışları" : "Clean Sport Behaviours"}
-        subtitle={isAz
-          ? "Təmiz idman davranışları — idmançıların və idmançı dəstək heyətinin antidopinq qaydaları çərçivəsində nümayiş etdirməli olduğu konkret hərəkət və davranış normalarıdır."
-          : "Clean sport behaviours define exactly what is expected of athletes and support personnel to maintain sport integrity."}
+        title={c.title}
+        subtitle={c.intro}
         compact
       />
 
@@ -43,93 +101,31 @@ export default async function CleanSportBehaviorsPage({
 
           {/* Three pillar cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
-            {/* Bilmək */}
-            <div className="bg-white p-7 rounded-xl border-t-4 border-t-amada-teal shadow-sm border border-border">
-              <div className="w-10 h-10 rounded-full bg-amada-teal/10 flex items-center justify-center mb-4">
-                <span className="text-amada-teal font-bold text-lg">B</span>
+            {pillars.map((pillar) => (
+              <div
+                key={pillar.title}
+                className={`bg-white p-7 rounded-xl border-t-4 ${pillar.borderColor} shadow-sm border border-border`}
+              >
+                <div className={`w-10 h-10 rounded-full ${pillar.iconBg} flex items-center justify-center mb-4`}>
+                  <span className={`${pillar.iconText} font-bold text-lg`}>{pillar.letter}</span>
+                </div>
+                <h3 className="text-xl font-bold text-[#003466] mb-4">{pillar.title}</h3>
+                <ul className="space-y-3 text-[#102033] text-sm">
+                  {pillar.items.map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className={`${pillar.checkColor} mt-1`}>✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <h3 className="text-xl font-bold text-[#003466] mb-4">
-                {isAz ? "Bilmək" : "Know"}
-              </h3>
-              <ul className="space-y-3 text-[#102033] text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-amada-teal mt-1">✓</span>
-                  <span>{isAz ? "Qadağan edilmiş Siyahını mütəmadi yoxlamaq" : "Regularly check the Prohibited List"}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-amada-teal mt-1">✓</span>
-                  <span>{isAz ? "AMADA-nın antidopinq qaydaları ilə tanış olmaq" : "Know AMADA's anti-doping rules"}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-amada-teal mt-1">✓</span>
-                  <span>{isAz ? "Terapevtik İstifadə İcazəsi (Tİİ) prosedurunu başa düşmək" : "Understand the TUE procedure"}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-amada-teal mt-1">✓</span>
-                  <span>{isAz ? "Ciddi Məsuliyyət prinsipini dərk etmək" : "Understand Strict Liability"}</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Etmək */}
-            <div className="bg-white p-7 rounded-xl border-t-4 border-t-[#003466] shadow-sm border border-border">
-              <div className="w-10 h-10 rounded-full bg-[#003466]/10 flex items-center justify-center mb-4">
-                <span className="text-[#003466] font-bold text-lg">E</span>
-              </div>
-              <h3 className="text-xl font-bold text-[#003466] mb-4">
-                {isAz ? "Etmək" : "Do"}
-              </h3>
-              <ul className="space-y-3 text-[#102033] text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#003466] mt-1">✓</span>
-                  <span>{isAz ? "Hər hansı dərman və ya qida əlavəsini qadağan edilmiş Siyahıda yoxlamaq" : "Check every substance against the Prohibited List before taking it"}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#003466] mt-1">✓</span>
-                  <span>{isAz ? "Tibb mütəxəssisi ilə məsləhətləşmək" : "Consult a medical professional"}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#003466] mt-1">✓</span>
-                  <span>{isAz ? "Dopinq nəzarəti prosesinə tam açıqlıqla iştirak etmək" : "Cooperate fully with doping control"}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#003466] mt-1">✓</span>
-                  <span>{isAz ? "QTQ üzvləri üçün məkan məlumatını vaxtında təqdim etmək" : "Submit whereabouts information on time (RTP members)"}</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Danışmaq */}
-            <div className="bg-white p-7 rounded-xl border-t-4 border-t-green-600 shadow-sm border border-border">
-              <div className="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center mb-4">
-                <span className="text-green-700 font-bold text-lg">D</span>
-              </div>
-              <h3 className="text-xl font-bold text-[#003466] mb-4">
-                {isAz ? "Danışmaq" : "Speak Up"}
-              </h3>
-              <ul className="space-y-3 text-[#102033] text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 mt-1">✓</span>
-                  <span>{isAz ? "Şübhəli vəziyyətlər barədə etibarlı şəxsə məlumat vermək" : "Report suspicious situations to a trusted person"}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 mt-1">✓</span>
-                  <span>{isAz ? "AMADA-nın Narahatlığı Bildir kanalından istifadə etmək" : "Use AMADA's Report a Concern channel"}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 mt-1">✓</span>
-                  <span>{isAz ? "Komanda yoldaşlarını təmiz idman haqqında məlumatlandırmaq" : "Inform teammates about clean sport"}</span>
-                </li>
-              </ul>
-            </div>
+            ))}
           </div>
 
           <div className="max-w-3xl">
             <InfoCard
               title={isAz ? "Ortaq Məsuliyyət" : "A Shared Responsibility"}
-              content={isAz
-                ? "Hər bir davranış — idmançının baş ağrısı dərmanını iki dəfə yoxlamasından, məşqçinin qəfil performans artışını sorğulamasına, federasiyanın seminar keçirməsinə qədər — dopinqə qarşı güclü bir qalxan formalaşdırır. Siz həllin bir hissəsisiniz."
-                : "Every behaviour—from an athlete double-checking a headache tablet, to a coach questioning a sudden performance spike, to a federation hosting a seminar—accumulates to form a robust shield against doping."}
+              content={c.closing}
               type="info"
             />
           </div>
