@@ -1,9 +1,9 @@
 import { HeroSection } from "@/components/shared/HeroSection";
-import { InfoCard, ChecklistCard } from "@/components/shared/InfoCards";
 import { CTASection } from "@/components/shared/CTASection";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { translations, t, type Lang } from "@/i18n/translations";
+import { CheckCircle2, AlertTriangle, ExternalLink } from "lucide-react";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string; lang: string }> }) {
   const { slug, lang } = await params;
@@ -420,44 +420,63 @@ export default async function TopicSlugPage({
         compact
       />
 
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl">
-          <div className="prose prose-lg max-w-none text-[#003466] mb-12">
-            <p className="text-xl text-primary font-medium leading-relaxed">
-              {topic.introContent}
-            </p>
-          </div>
+      <div className="flex flex-col gap-10">
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <ChecklistCard
-              title={t(c.keyFacts, l)}
-              items={topic.keyFacts}
-            />
-            <div className="flex flex-col gap-6">
-              <InfoCard
-                title={t(c.crucialRiskFactor, l)}
-                content={topic.risks}
-                type="warning"
-              />
-              <InfoCard
-                title={t(c.associatedResources, l)}
-                type="info"
-                content={
-                  <ul className="space-y-2 mt-2">
-                    {topic.resources.map((res, i) => (
-                      <li key={i}>
-                        <a href={res.url} className="text-amada-teal font-semibold hover:underline">
-                          🔗 {res.label}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                }
-              />
+        {/* Lead paragraph */}
+        <div className="border-l-4 border-amada-teal pl-5">
+          <p className="text-[17px] text-[#003466] font-medium leading-relaxed">
+            {topic.introContent}
+          </p>
+        </div>
+
+        {/* Key facts */}
+        <div>
+          <h2 className="text-lg font-bold text-[#003466] mb-5 pb-3 border-b border-slate-100 uppercase tracking-wide">
+            {t(c.keyFacts, l)}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {topic.keyFacts.map((fact, i) => (
+              <div
+                key={i}
+                className="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-amada-teal/30 hover:bg-slate-100/60 transition-colors"
+              >
+                <div className="w-6 h-6 rounded-full bg-amada-teal/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-amada-teal" />
+                </div>
+                <p className="text-sm text-[#102033] leading-relaxed">{fact}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Risk callout */}
+        <div className="bg-[#003466] rounded-2xl p-7 text-white">
+          <div className="flex items-start gap-4">
+            <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-0.5" />
+            <div>
+              <p className="font-bold text-base mb-2">{t(c.crucialRiskFactor, l)}</p>
+              <p className="text-blue-100 leading-relaxed text-sm">{topic.risks}</p>
             </div>
           </div>
         </div>
-      </section>
+
+        {/* Resources */}
+        <div className="flex flex-col sm:flex-row gap-3 pb-4">
+          {topic.resources.map((res, i) => (
+            <a
+              key={i}
+              href={res.url}
+              className="flex items-center gap-3 flex-1 bg-white border border-slate-200 rounded-xl px-5 py-4 shadow-sm hover:border-[#0055a4] hover:shadow-md transition-all group"
+            >
+              <ExternalLink className="w-4 h-4 text-[#0055a4] shrink-0" />
+              <p className="font-semibold text-[#003466] text-sm group-hover:underline leading-snug">
+                {res.label}
+              </p>
+            </a>
+          ))}
+        </div>
+
+      </div>
 
       {topic.nextTopic ? (
         <CTASection
