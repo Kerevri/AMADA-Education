@@ -1,0 +1,58 @@
+{
+  "resourceLibrary": {
+    "title": "Resurs kitabxanası",
+    "intro": "AMADA-nın Resurs Kitabxanası idmançılar, məşqçilər, tibb mütəxəssisləri, valideynlər və federasiyalar üçün rəsmi antidopinq materiallarını bir məkanda toplayır.",
+    "resourcesTitle": "Mövcud resurslar",
+    "resources": [
+      { "type": "Qadağan edilmiş Siyahı", "description": "WADA-nın aktual siyahısı (hər il 1 yanvarda yenilənir)" },
+      { "type": "Tİİ forma və qaydaları", "description": "Tİİ müraciəti üçün lazımi formalar və izahlı bələdçi" },
+      { "type": "Seminar materialları", "description": "AMADA seminarlarında istifadə olunan slaydlar və handoutlar" },
+      { "type": "Valideyn yaddaş kitabçası", "description": "Gənc idmançıların valideynləri üçün praktik bələdçi" },
+      { "type": "Müəllim dərslikləri", "description": "Məktəb proqramları üçün metodiki vəsaitlər" },
+      { "type": "ADEL kursları", "description": "WADA-nın onlayn öyrənmə platformasına keçid" },
+      { "type": "WADA Speak Up!", "description": "Anonim məlumat verməyə dair bələdçi" }
+    ],
+    "contact": "Resursları endirmək və ya bilavasitə əlaqə üçün: education@amada.az"
+  },
+  "faq": {
+    "title": "TSS — Tez-tez soruşulan suallar",
+    "questions": [
+      {
+        "question": "Dopinq nəzarəti nə vaxt baş verə bilər?",
+        "answer": "Hər hansı vaxt, yarışda və ya yarış xaricində, xəbərdarlıq edilmədən. Beynəlxalq yarışlarda da, milli yarışlarda da həyata keçirilə bilər."
+      },
+      {
+        "question": "Qida əlavəsindəki qadağan edilmiş maddə sübut edildikdə nə baş verir?",
+        "answer": "İdmançı yenə də Ciddi Məsuliyyət prinsipinə görə cavabdehdir. Lakin bilmədən qəbul edildiyi sübut olunarsa, cəza müddəti azaldıla bilər. AMADA-ya dərhal müraciət edin."
+      },
+      {
+        "question": "Tİİ nə qədər müddət ərzində nəzərdən keçirilir?",
+        "answer": "Standart müraciətlər 30 gün ərzində, təcili müraciətlər isə 24 saat ərzində nəzərdən keçirilir."
+      },
+      {
+        "question": "Yaşadığım şəhərdə seminar keçirilirmi?",
+        "answer": "AMADA bütün regionlarda seminarlar keçirir. Müraciət etmək üçün federasiyanızın koordinatoru vasitəsilə AMADA ilə əlaqə saxlayın: education@amada.az"
+      },
+      {
+        "question": "ADEL kursları pulludurmu?",
+        "answer": "Xeyr. WADA-nın ADEL platformasındakı əsas kurslar tamamilə pulsuzdur. https://adel.wada-ama.org"
+      },
+      {
+        "question": "Məlumat verdikdə mənim kimliyim açıqlanacaqmı?",
+        "answer": "Xeyr. Bütün müraciətlər tam məxfidir. AMADA-ya və ya WADA Speak Up! platformasına göndərilən məlumatlar anonim olaraq qəbul edilir."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Əlaqə",
+    "entries": [
+      { "type": "Ümumi sorğular", "info": "education@amada.az" },
+      { "type": "Telefon", "info": "+994 12 000 00 00" },
+      { "type": "Tİİ müraciəti", "info": "education@amada.az (Tİİ mövzusunu qeyd edin)" },
+      { "type": "Seminar müraciəti", "info": "education@amada.az (Seminar müraciəti mövzusunu qeyd edin)" },
+      { "type": "Maarifləndirici şəbəkəsi", "info": "education@amada.az (Maarifləndirici müraciəti)" },
+      { "type": "Narahatlığı bildir", "info": "speakup.wada-ama.org (anonim) / education@amada.az" },
+      { "type": "Rəsmi ünvan", "info": "Azərbaycan Milli Antidopinq Agentliyi, Bakı, Azərbaycan" }
+    ]
+  }
+}

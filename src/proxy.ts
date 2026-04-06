@@ -18,7 +18,7 @@ export default function proxy(request: NextRequest) {
     if (pathname === `/${currentLocale}`) {
       return NextResponse.redirect(new URL(`/${currentLocale}/education`, request.url));
     }
-    return;
+    return NextResponse.next();
   }
 
   // Redirect if there is no locale

@@ -1,0 +1,156 @@
+{
+  "homepage": {
+    "heroTitle": "Təhsil Vasitəsilə Təmiz İdmana Güc Vermək",
+    "heroSubtitle": "Azərbaycandakı bütün idmançılar, idmançı dəstək heyəti, federasiyalar, məktəblər və geniş idman icması üçün əlçatan, profilaktikaya yönəlmiş dopinqə qarşı mübarizə təhsili.",
+    "startLearning": "Öyrənməyə Başla",
+    "onThisPage": "Bu səhifədə",
+    "choosePath": "Öyrənmə Yolunuzu Seçin",
+    "choosePathDesc": "İdmandakı rolunuza əsasən uyğunlaşdırılmış dopinqə qarşı mübarizə məlumatları və resursları.",
+    "essentialTopics": "Əsas Təmiz İdman Mövzuları",
+    "essentialTopicsDesc": "Hər iştirakçının bilməli olduğu qaydalar, prosedurlar və risklərə sürətli giriş.",
+    "viewAllTopics": "Bütün Mövzulara Bax",
+    "didYouKnow": "Bilirdinizmi?",
+    "didYouKnowText": "İdmançı olaraq, bədəninizdə tapılan istənilən qadağan olunmuş maddəyə görə ciddi məsuliyyət daşıyırsınız. Buna Ciddi Məsuliyyət (Strict Liability) prinsipi deyilir. Hətta qəsdən olmasa belə qaydanı pozmuş hesab oluna bilərsiniz.",
+    "playgroundToPodium": "Oyun Meydançasından Podiumadək",
+    "playgroundDesc": "Təhsil idmançı yolunun hər mərhələsində təmiz idman davranışlarını dəstəkləməlidir. Gənc iştirakçılıqdan Elit RTP statusuna qədər uyğunlaşdırılmış öyrənmə ehtiyaclarını kəşf edin.",
+    "explorePathway": "İdmançı Yolunu Kəşf Et",
+    "learningFormats": "Öyrənmə Formatları & İmkanları",
+    "viewLearningHub": "Öyrənmə Mərkəzinə Bax",
+    "speakUp": "Təmiz İdman Naminə Danış",
+    "speakUpDesc": "Dopinq narahatlıqlarını necə bildirəcəyinizi öyrənin.",
+    "reportingOptions": "Bildiriş Seçimləri",
+    "reporting": "Narahatlığı Bildirmək"
+  },
+  "about": {
+    "title": "Təhsilə baxış",
+    "intro": "Azərbaycan Milli Antidopinq Agentliyi (AMADA) ölkənin idman icmasını dürüstlük, ədalət və sağlam rəqabət prinsipləri əsasında formalaşdırmaq məqsədilə müntəzəm olaraq antidopinq təhsil proqramları həyata keçirir. AMADA-nın Təhsil Proqramı 2027-ci il Ümumdünya Antidopinq Məcəlləsinə və Beynəlxalq Təhsil Standartına (ISE) tam uyğunluq çərçivəsində qurulmuş, dövlət orqanları, beynəlxalq idman qurumları və milli federasiyalarla əlaqəli şəkildə həyata keçirilir.",
+    "intro2": "Proqramın əsas məqsədi idmançılar, idmançı dəstək heyəti, federasiyalar, tibb mütəxəssisləri, valideynlər, müəllimlər və geniş ictimaiyyət üçün əlçatan, praktik və nəticəyönümlü antidopinq təhsilini təmin etməkdir. AMADA bu missiyasını həyata keçirərkən canlı seminarlar, onlayn öyrənmə platformaları, vebinarlar, hadisə əsaslı tədbirlər və məktəb proqramları kimi müxtəlif çatdırılma formatlarından istifadə edir.",
+    "goalsTitle": "Proqramın hədəfləri",
+    "goals": [
+      "İdmançıların antidopinq qaydaları, hüquqları və öhdəlikləri barədə dərin bilik əldə etmələrini təmin etmək",
+      "Doping riskini azaltmaq üçün məlumata əsaslanan qərar qəbulunu inkişaf etdirmək",
+      "Təmiz idman davranışlarını və idmanda ruhun qorunmasını dəstəkləyən dəyərləri formalaşdırmaq",
+      "Federasiyalar, məktəblər və sağlamlıq qurumları ilə tərəfdaşlıq əsasında proqramın əhatə dairəsini genişləndirmək",
+      "WADA-nın ADEL platforması vasitəsilə beynəlxalq öyrənmə imkanlarına çıxışı artırmaq"
+    ],
+    "complianceTitle": "Beynəlxalq standartlara uyğunluq",
+    "compliance": "AMADA Təhsil Proqramı 2027-ci il Beynəlxalq Təhsil Standartının (ISE) Maddə 8.0–12.0 tələblərinə uyğun olaraq sənədləşdirilmiş, illik Təhsil Planı əsasında həyata keçirilir və mütəmadi qiymətləndirilir. Proqram həmçinin WADA-nın ISCCS (İmzaçılar tərəfindən Məcəllənin İcrası üzrə Beynəlxalq Standart) çərçivəsindəki yüksək prioritetli tələblərə cavab verir.",
+    "iseNotes": [
+      "ISE Maddə 8.4 — Təhsil Proqramı sənədləşdirilməlidir",
+      "ISE Maddə 9.1 — İllik Təhsil Planı hazırlanmalıdır",
+      "ISE Maddə 8.1.1 — 12 məcburi mövzu veb-saytda əlçatan olmalıdır",
+      "ISCCS Əlavə A.2(a) — Yüksək prioritetli uyğunluq tələbi"
+    ]
+  },
+  "cleanSportBehaviors": {
+    "title": "Təmiz idman davranışları",
+    "intro": "Təmiz idman davranışları — idmançıların və idmançı dəstək heyətinin antidopinq qaydaları çərçivəsində nümayiş etdirməli olduğu konkret hərəkət və davranış normalarıdır. Bu davranışlar ISE Maddə 8.1.1-də müəyyən edilmiş məcburi mövzular əsasında formalaşır.",
+    "areasTitle": "Əsas davranış sahələri",
+    "knowTitle": "Bilmək",
+    "know": [
+      "Qadağan edilmiş Siyahını mütəmadi yoxlamaq",
+      "AMADA-nın antidopinq qaydaları ilə tanış olmaq",
+      "Terapevtik İstifadə İcazəsi (Tİİ) prosedurunu başa düşmək",
+      "Ciddi Məsuliyyət prinsipini dərk etmək"
+    ],
+    "doTitle": "Etmək",
+    "do": [
+      "Hər hansı dərman və ya qida əlavəsini qəbul etməzdən əvvəl Qadağan edilmiş Siyahıda yoxlamaq",
+      "Tibb mütəxəssisi ilə məsləhətləşmək",
+      "Dopinq nəzarəti prosesinə tam açıqlıqla iştirak etmək",
+      "Qeydiyyata alınmış Test Qrupuna daxil olan idmançılar üçün məkan məlumatını vaxtında təqdim etmək"
+    ],
+    "speakTitle": "Danışmaq",
+    "speak": [
+      "Şübhəli vəziyyətlər barədə etibarlı şəxsə məlumat vermək",
+      "AMADA-nın Narahatlığı Bildir kanalından istifadə etmək",
+      "Komanda yoldaşlarını təmiz idman haqqında məlumatlandırmaq"
+    ],
+    "closing": "Bu davranışlar idmançının karyerası boyunca — gənc mərhələdən elit səviyyəyə qədər — inkişaf etdirilməlidir. AMADA-nın bütün təhsil fəaliyyətləri bu davranışların möhkəmləndirilməsinə yönəldilib."
+  },
+  "athletePathway": {
+    "title": "İdmançı yolu",
+    "intro": "İdmançı Yolu — Azərbaycan idman sisteminin kontekstini əks etdirən, idmançının inkişaf mərhələlərini əhatə edən beş pilləli bir modeldir. AMADA-nın antidopinq təhsili hər mərhələnin xüsusiyyətlərinə uyğunlaşdırılmış şəkildə çatdırılır. ISE Maddə 5.1 bu modelin mövcudluğunu məcburi element kimi müəyyən edir.",
+    "stages": [
+      {
+        "number": 1,
+        "name": "Oyun Meydançası",
+        "subtitle": "Uşaq idmançı",
+        "description": "6–12 yaş. Dəyər əsaslı oyunlar, etik davranış, ədalətli oyun anlayışı. Müəllim və valideyn vasitəsilə çatdırılır."
+      },
+      {
+        "number": 2,
+        "name": "İstedadlı Mərhələ",
+        "subtitle": "Perspektivli idmançı",
+        "description": "13–17 yaş. Qadağan edilmiş Siyahı, Tİİ əsasları, Ciddi Məsuliyyət prinsipinin ilkin mənimsənilməsi."
+      },
+      {
+        "number": 3,
+        "name": "Milli Səviyyə",
+        "subtitle": "Milli idmançı",
+        "description": "18+ yaş. Tam antidopinq kurikulumu, dopinq nəzarəti prosedurları, ADAMS sistemi."
+      },
+      {
+        "number": 4,
+        "name": "Qeydiyyata Alınmış Test Qrupu",
+        "subtitle": "Elit idmançı",
+        "description": "RTP üzvü. Məkan məlumatı, qaçırılmış testlər, beynəlxalq yarışlara hazırlıq, Tİİ idarəetməsi."
+      },
+      {
+        "number": 5,
+        "name": "Karyeranın Sonu",
+        "subtitle": "Keçiş mərhələsi",
+        "description": "İdmandan kənarlaşma dövrü. Məşqçi, rəhbər kimi davranış; öyrənilmiş biliklərin ötürülməsi."
+      }
+    ],
+    "closing": "AMADA bu modeli ISE Maddə 5.1 tələblərinə uyğun olaraq sənədləşdirib. Hər mərhələ üçün ayrı öyrənmə nəticələri, mövzular və çatdırılma formatları müəyyən edilib."
+  },
+  "educationPlan": {
+    "title": "İllik Təhsil Planı",
+    "intro": "İllik Təhsil Planı — AMADA-nın hər il Beynəlxalq Təhsil Standartının (ISE) Maddə 9.1 tələbinə uyğun olaraq hazırladığı, bütün Təhsil Hovuzu kateqoriyaları üzrə fəaliyyətləri əhatə edən rəsmi sənəddir. Plan ölçülə bilən proqram məqsədlərini, öyrənmə nəticələrini, mövzuları, cədvəlləri, məsul şəxsləri və monitorinq prosedurlarını müəyyən edir.",
+    "categoriesTitle": "2026-cı il üzrə Əsas Fəaliyyət Kateqoriyaları",
+    "categories": [
+      "Federasiyalar üzrə risk qiymətləndirməsinə əsaslanan seminar paylanması",
+      "ADEL platforması vasitəsilə onlayn öyrənmə modulları",
+      "Regionlarda məktəb proqramları",
+      "Tibb mütəxəssisləri üçün ixtisaslaşmış vebinarlar",
+      "Hadisə əsaslı antidopinq maarifləndirməsi",
+      "Maarifləndirici şəbəkəsinin inkişafı üzrə fəaliyyətlər"
+    ],
+    "note": "İllik Təhsil Planının tam mətni WADA-nın tələb etdiyi formada ingilis dilində hazırlanır və tələb əsasında WADA-ya təqdim edilir. ISE Maddə 10.1 tələbinə uyğun olaraq planın xülasəsi veb-saytda dərc olunur.",
+    "iseRequirementsTitle": "ISE Maddə 9.4 — İllik Təhsil Planı minimum aşağıdakıları əhatə etməlidir:",
+    "iseRequirements": [
+      "Hansı proqram məqsədləri, mövzular və öyrənmə nəticələrinin həll ediləcəyi",
+      "Hansı Təhsil Hovuzu kateqoriyalarının hədəf alınacağı",
+      "Hansı növ fəaliyyətlərin həyata keçiriləcəyi",
+      "Fəaliyyətləri kimin həyata keçirəcəyi",
+      "Nə zaman və nə qədər tez-tez həyata keçiriləcəyi",
+      "Öyrənməni qiymətləndirmə metodları (ISE Maddə 12.2)",
+      "Monitorinq prosedurları (ISE Maddə 12.1)"
+    ]
+  },
+  "educators": {
+    "title": "Maarifləndirici şəbəkəsi",
+    "intro": "Maarifləndirici (Educator) — AMADA tərəfindən müvafiq qaydada hazırlanmış, qiymətləndirilmiş, akkreditasiyadan keçirilmiş və müəyyən Təhsil Fəaliyyətlərini həyata keçirmək üçün səlahiyyət verilmiş şəxsdir. Bu tərif ISE Maddə 7.0-da müəyyən edilmişdir.",
+    "accreditationTitle": "Maarifləndiricilərin akkreditasiyası",
+    "accreditation": "AMADA Maarifləndiricilərin akkreditasiyası prosesini ISE Maddə 7.1–7.3 tələblərinə uyğun olaraq həyata keçirir. Akkreditasiya dörd ildən çox olmayan müddət üçün verilir. Yeni Məcəllə tətbiq edildikdə yenidən akkreditasiya prosesi başlanır.",
+    "competenciesTitle": "Maarifləndiricilərin kompetensiyaları",
+    "competencies": [
+      "Təqdimat və şəxslərarası ünsiyyət bacarıqları",
+      "Effektiv kommunikasiya qabiliyyəti",
+      "Təhsil sessiyalarının planlaşdırılması və fəaliyyətlərin işlənib hazırlanması",
+      "Müsbət öyrənmə mühitinin yaradılması",
+      "Ssenari əsaslı fəaliyyətlər vasitəsilə öyrənmənin asanlaşdırılması",
+      "Öyrənməni qiymətləndirmə metodlarının tətbiqi",
+      "Özünüqiymətləndirmə bacarıqları və fəaliyyət planlaması",
+      "ISE Maddə 8.1.1-də sadalanan bütün mövzular üzrə antidopinq texniki biliyi"
+    ],
+    "applyTitle": "Necə müraciət etmək olar?",
+    "applyIntro": "AMADA-nın Maarifləndirici şəbəkəsinə qoşulmaq istəyən şəxslər aşağıdakı kanallar vasitəsilə müraciət edə bilərlər:",
+    "applyChannels": [
+      "E-poçt: education@amada.az",
+      "Onlayn müraciət forması: amada.az/educators",
+      "AMADA-nın rəsmi sosial media kanalları"
+    ]
+  }
+}

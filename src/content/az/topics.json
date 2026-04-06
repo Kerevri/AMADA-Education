@@ -1,0 +1,263 @@
+{
+  "ruleViolations": {
+    "title": "Qayda pozuntuları",
+    "intro": "Dopinq — bir və ya bir neçə antidopinq qayda pozuntusunun baş verməsi kimi müəyyən edilir. WADA 2027-ci il Ümumdünya Antidopinq Məcəlləsi çərçivəsində 11 antidopinq qayda pozuntusunu müəyyən edir.",
+    "violations": [
+      { "number": 1, "name": "Mövcudluq", "description": "Müsbət analitik nəticə (qan və ya sidikdə)" },
+      { "number": 2, "name": "İstifadə və ya istifadə cəhdi", "description": "Qadağan edilmiş maddə və ya üsuldan istifadə" },
+      { "number": 3, "name": "Yayınma, imtina", "description": "Dopinq Nəzarəti İnspektorundan gizlənmək, testdən imtina" },
+      { "number": 4, "name": "Məkan məlumatı pozuntuları", "description": "Müəyyən edilmiş məkanda olmamaq, vaxtında məlumat verməmək" },
+      { "number": 5, "name": "Saxtalaşdırma", "description": "Dopinq nəzarəti prossesinə qeyri-qanuni müdaxilə" },
+      { "number": 6, "name": "Sahiblik", "description": "Qadağan edilmiş maddə və ya üsullara əsassız sahib olmaq" },
+      { "number": 7, "name": "Dövriyyə", "description": "Qadağan edilmiş maddələrin emalı, daşınması, satışı" },
+      { "number": 8, "name": "İdmançıya tətbiq etmə", "description": "İdmançıya qadağan edilmiş maddəni vermək" },
+      { "number": 9, "name": "Əlbirlik", "description": "Dopinq qəbul etməkdə kömək etmək" },
+      { "number": 10, "name": "Qadağan edilmiş əməkdaşlıq", "description": "Diskvalifikasiya müddətindəki şəxslə işləmək" },
+      { "number": 11, "name": "Yayındırma", "description": "Məlumat vermək istəyən şəxsə hədə-qorxu gəlmək" }
+    ]
+  },
+  "rightsResponsibilities": {
+    "title": "Hüquqlar & Məsuliyyətlər",
+    "intro": "İdmançıların və İdmançı Dəstək Heyətinin Ümumdünya Antidopinq Məcəlləsi, Beynəlxalq Standartlar və İdmançıların Antidopinq Hüquqları Aktı ilə müəyyən edilmiş hüquq və öhdəlikləri mövcuddur.",
+    "rightsTitle": "İdmançının hüquqları",
+    "rights": [
+      "Hər hansı nümunə götürülməsindən əvvəl dopinq nəzarəti prosesi haqqında məlumat almaq hüququ",
+      "Nümunə götürülməsi zamanı nümayəndəsinin (şahidin) iştirakını tələb etmək hüququ",
+      "Qeyri-adekvat nümunə götürülməsi prosedurunun qeydə alınmasını tələb etmək hüququ",
+      "Tİİ almaq hüququ — tibbi zərurət olduqda",
+      "İddia edilmiş pozuntu barədə vaxtında xəbərdar edilmək hüququ",
+      "Ədalətli eşitilmə hüququ",
+      "Məxfilik hüququ"
+    ],
+    "dutiesTitle": "İdmançının öhdəlikləri (ISE Maddə 8.1.1, Məcəllə Maddə 21.1)",
+    "duties": [
+      "İstənilən vaxt dopinq nəzaratına tabe olmaq",
+      "Bütün qida əlavələri, dərmanlar və tibbi preparatlar barədə məsuliyyət daşımaq",
+      "Məkan məlumatını (Whereabouts) vaxtında təqdim etmək (RTP üzvləri üçün)",
+      "Antidopinq proqramlarında iştirak etmək",
+      "Dopinq barədə şübhəli vəziyyətləri yetkili orqana bildirmək"
+    ],
+    "strictLiabilityTitle": "Ciddi Məsuliyyət prinsipi",
+    "strictLiability": "Ciddi Məsuliyyət — idmançı öz bədəninə daxil olan hər hansı bir maddəyə görə şəxsən məsuliyyət daşıyır. Bu, məcəllənin əsas prinsiplərindən biridir. İdmançı heç vaxt bilməzlikdən istinad edərək bu məsuliyyətdən azad ola bilməz.",
+    "warning": "Ciddi Məsuliyyət: İdmançı bədəninə daxil olan maddələrə görə şəxsən məsuliyyət daşıyır. Bu o deməkdir ki, başqa birinin verdiyi maddə qəbul edilsə belə — məsuliyyət idmançıdadır. Hər hansı dərman və ya qida əlavəsi qəbul etməzdən əvvəl mütləq yoxlayın."
+  },
+  "consequences": {
+    "title": "Dopinqin fəsadları",
+    "intro": "Dopinq vasitələrinin istifadəsi sağlamlıq, sosial həyat və karyera üzərində ağır və bəzən geri dönüşsüz fəsadlar doğurur.",
+    "healthTitle": "Sağlamlığa zərərlər",
+    "health": {
+      "anabolicTitle": "Anabolik agentlər",
+      "anabolic": [
+        "Ürək-damar sistemi: aritmiyalar, yüksək qan təzyiqi, qəfləti ölüm riski",
+        "Qaraciyər: zədələnmə, onkoloji xəstəliklərin sürətlənməsi",
+        "Psixoloji: asılılıq, psixi pozğunluq, aqressiya",
+        "Kişilərdə: sonsuzluq, libido pozğunluğu, keçəllik",
+        "Qadınlarda: menstrual pozğunluq, kişilərə xas tüklənmə, səsin qalınlaşması"
+      ],
+      "stimulantsTitle": "Stimullaşdırıcılar",
+      "stimulants": [
+        "Psixi pozğunluq, aqressiya, yuxusuzluq, depressiya",
+        "Qan təzyiqinin artması, ürək əzələsinin hipertrofiyası",
+        "Həyati təhlükəli aritmiyalar, qəfləti ölüm"
+      ],
+      "peptidesTitle": "Peptid hormonları (EPO daxil olmaqla)",
+      "peptides": [
+        "Qan laxtalanması: insult, ürək tutması",
+        "Şəkərli diabet, onkoloji xəstəliklərin sürətlənməsi",
+        "Akromeqaliya — bədənin bəzi hissələrinin qeyri-proporsional böyüməsi"
+      ]
+    },
+    "socialTitle": "Sosial və iqtisadi fəsadlar",
+    "social": [
+      "Qazanılmış medallar, xallar, sertifikatlar və nəticələrin ləğv edilməsi",
+      "Yarışlardan müvəqqəti və ya ömürlük kənarlaşdırılma",
+      "Beynəlxalq yarışlarda iştirak hüququnun itirilməsi",
+      "İdman karyerasının, həmçinin məşqçi fəaliyyətinin dayandırılması",
+      "Maliyyə dəstəklərinin, sponsorluğun itirilməsi",
+      "İctimai nüfuzun sarsılması"
+    ],
+    "warning": "Dopinq istifadəsinin nəticəsi yalnız bir sanksiya deyil — sağlamlığın, karyeranın və nüfuzun birdəfəlik itirilməsi ola bilər. Hər bir idmançı bu həqiqəti bilməlidir."
+  },
+  "governance": {
+    "title": "Antidopinq sisteminin idarəçiliyi",
+    "intro": "Qlobal antidopinq sistemi çoxsəviyyəli beynəlxalq quruluşa malikdir. Bu sistemin əsas dayağını Ümumdünya Antidopinq Agentliyi (WADA) təşkil edir.",
+    "institutionsTitle": "Əsas qurumlar",
+    "institutions": [
+      { "name": "WADA", "role": "Ümumdünya Antidopinq Agentliyi — Məcəlləni, Standartları və Qadağan edilmiş Siyahını hazırlayır, uyğunluğu izləyir" },
+      { "name": "AMADA", "role": "Azərbaycan Milli Antidopinq Agentliyi — ölkə daxilində antidopinq siyasətini həyata keçirir" },
+      { "name": "Milli Federasiyalar", "role": "İdman növü üzrə ölkə çempionluq sistemini idarə edir, AMADA ilə əməkdaşlıq edir" },
+      { "name": "Beynəlxalq Federasiyalar (IF)", "role": "Beynəlxalq səviyyədə idman növü üzrə test proqramlarını həyata keçirir" },
+      { "name": "ADAMS", "role": "Anti-Doping Administration and Management System — məkan məlumatı, nümunə izlənməsi, Tİİ" },
+      { "name": "CAS", "role": "İdman Arbitraj Məhkəməsi — antidopinq işlərini müstəqil nəzərdən keçirir" }
+    ],
+    "legalTitle": "Azərbaycanda antidopinq hüquqi bazası",
+    "legal": [
+      "Azərbaycan Respublikasının İdman haqqında Qanunu",
+      "WADA-nın Ümumdünya Antidopinq Məcəlləsi (2027)",
+      "UNESCO-nun Dopinqə Qarşı Beynəlxalq Konvensiyası",
+      "Avropa Şurasının Dopinqə Qarşı Konvensiyası",
+      "AMADA-nın antidopinq qaydaları"
+    ]
+  },
+  "values": {
+    "title": "Dəyərlər & Təmiz İdman prinsipləri",
+    "intro": "Ümumdünya Antidopinq Məcəlləsi idmanın mahiyyətini — 'İdmanın Ruhunu' — müəyyən edir. Bu ruh idmanda insan olduğumuzun ən yüksək ifadəsidir. AMADA-nın dəyər əsaslı təhsili bu prinsipləri gənc idmançılara aşılamağa yönəlib.",
+    "valuesTitle": "İdmanın Ruhunu təşkil edən dəyərlər",
+    "values": [
+      "Etik davranış, dürüstlük, vicdanlılıq",
+      "Sağlamlıq",
+      "Mükəmməllik",
+      "Xarakter və təhsil",
+      "Əyləncə və sevinc",
+      "Komanda ruhu",
+      "Fədakarlıq",
+      "Qaydalar və qanunlara hörmət",
+      "Özünəhörmət və digər iştirakçılara hörmət",
+      "Cəsarət",
+      "Toplum ruhu və həmrəylik"
+    ],
+    "programTitle": "Dəyər əsaslı təhsil proqramı",
+    "program": "AMADA uşaqlar, yeniyetmələr və gənclər arasında dəyər əsaslı vörkshoplar keçirir. Bu vörkshoplarda etik qərar qəbulu, ədalətli oyun anlayışı, özünə və rəqibə hörmət kimi mövzular interaktiv oyunlar, müzakirələr və viktorinalar vasitəsilə öyrədilir.",
+    "programDetails": [
+      "Yaş qrupuna uyğun məzmun",
+      "Müəllimlər üçün metodiki vəsait",
+      "Ssenari əsaslı fəaliyyətlər",
+      "Həmyaşıd öyrəncilər (peer-to-peer learning) üsulu"
+    ]
+  },
+  "whereabouts": {
+    "title": "Məkan məlumatı & ADAMS",
+    "intro": "Məkan məlumatı (Whereabouts) — Qeydiyyata alınmış Test Qrupuna (QTQ) daxil olan idmançıların hər gün müəyyən saatlarda öz yerlərini ADAMS sisteminə qeyd etmələrini nəzərdə tutan məcburi öhdəlikdir.",
+    "adamsTitle": "ADAMS nədir?",
+    "adams": "ADAMS (Anti-Doping Administration and Management System) — WADA-nın istifadəçi dostu onlayn platformasıdır. İdmançılar bu platforma vasitəsilə məkan məlumatlarını daxil edir, Tİİ müraciətlərini izləyir və antidopinq rekorlarına baxış keçirir.",
+    "obligationsTitle": "Məkan məlumatı öhdəlikləri",
+    "obligations": [
+      "Hər rüb üçün məlumat vaxtında daxil edilməlidir",
+      "Hər gün 60 dəqiqəlik 'test pəncərəsi' müəyyən edilməlidir",
+      "Ünvan, məşq yeri, yarış cədvəli daxil edilir",
+      "Dəyişiklik olduqda dərhal yeniləmə vacibdir"
+    ],
+    "consequenceTitle": "Pozuntu nə ilə nəticələnir?",
+    "consequence": "12 aylıq dövr ərzində üç dəfə qaçırılmış test (Missed Test) və ya məkan məlumatının vaxtında təqdim edilməməsi (Filing Failure) kombinasiyası Antidopinq Qayda Pozuntusu sayılır.",
+    "adamsLink": "ADAMS-a giriş: https://adams.wada-ama.org — Mobil tətbiq: 'ADAMS' iOS və Android üçün mövcuddur"
+  },
+  "prohibitedList": {
+    "title": "Qadağan olunmuş siyahı",
+    "intro": "Qadağan edilmiş Siyahı — WADA tərəfindən hər il yenilənən, idmanda istifadəsi qadağan edilmiş maddə və üsulların rəsmi siyahısıdır. Siyahı hər il 1 yanvar tarixindən qüvvəyə minir.",
+    "criteriaTitle": "Siyahıya daxilolma meyarları",
+    "criteria": "Maddə və ya üsul aşağıdakı meyarlardan ən azı ikisini ödərsə Qadağan edilmiş Siyahıya salınır:",
+    "criteriaItems": [
+      "İdman göstəricilərini artırma potensialı",
+      "İdmançının sağlamlığına real və ya potensial zərər",
+      "İdmanın ruhuna zidd olması"
+    ],
+    "categoriesTitle": "Siyahının strukturu",
+    "categories": [
+      { "code": "S0", "name": "Hər zaman qadağan (yarışkənar daxil)", "description": "Onaylı terapevtik istifadəsi olmayan bütün farmakologik maddələr" },
+      { "code": "S1", "name": "Anabolik agentlər", "description": "Anabolik steroidlər, SARM-lar" },
+      { "code": "S2", "name": "Peptid hormonları, böyümə faktorları", "description": "EPO, HGH, IGF-1" },
+      { "code": "S3", "name": "Beta-2 agonistlər", "description": "Yalnız müəyyən şərtlər altında icazəlidir" },
+      { "code": "S4", "name": "Hormon modulyatorları", "description": "Aromataz inhibitorları, SERMs" },
+      { "code": "S5", "name": "Diuretiklər & maskelər", "description": "Maddələri gizlətmək üçün istifadə edilən vasitələr" },
+      { "code": "S6", "name": "Stimullaşdırıcılar", "description": "Amfetaminlər, kokain (yalnız yarış dövründə)" },
+      { "code": "S7", "name": "Narkotiklər", "description": "Morfin, fentanil (yalnız yarış dövründə)" },
+      { "code": "S8", "name": "Kanabioidlər", "description": "THC (yalnız yarış dövründə)" },
+      { "code": "S9", "name": "Kortikosteroidlər", "description": "Yalnız yarış dövründə qadağandır" },
+      { "code": "M seriyası", "name": "Üsullar", "description": "Qan manipulyasiyası, gen dopinqi, kimyəvi/fiziki saxtalaşdırma" },
+      { "code": "P seriyası", "name": "Xüsusi idman növləri", "description": "Beta-blokerlər (atıcılıq, oxatma və s.)" }
+    ],
+    "link": "Aktual Qadağan edilmiş Siyahıya baxmaq üçün: https://www.wada-ama.org/en/prohibited-list"
+  },
+  "testingProcedures": {
+    "title": "Sınaq prosedurları",
+    "intro": "Dopinq nəzarəti prosesi WADA-nın Test etmə və Araşdırmalar üzrə Beynəlxalq Standartına (IST) uyğun həyata keçirilir. Hər bir idmançı istənilən vaxt, istənilən yerdə, heç bir xəbərdarlıq edilmədən dopinq nəzaratına tabe tutula bilər.",
+    "stepsTitle": "Prosesin mərhələləri",
+    "steps": [
+      { "number": 1, "name": "Seçilmə", "description": "İdmançı risk əsaslı, fərdi hədəflənmiş və ya təsadüfi seçim əsasında seçilir." },
+      { "number": 2, "name": "Bildiriş", "description": "İdmançıya Dopinq Nəzarəti İnspektoru (DNİ) tərəfindən rəsmi bildiriş verilir. Bu andan etibarən nəzarət başlanır." },
+      { "number": 3, "name": "Dopinq Nəzarəti Məntəqəsinə getmə", "description": "İdmançı gecikmədən Dopinq Nəzarəti Məntəqəsinə getməlidir." },
+      { "number": 4, "name": "Nümunə seçimi", "description": "İdmançı sidik, qan və ya hər ikisini verə bilər." },
+      { "number": 5, "name": "Nümunənin möhürlənməsi", "description": "A və B nümunələri ayrıca möhürlənir." },
+      { "number": 6, "name": "Laboratoriya analizi", "description": "WADA akkreditasiyalı laboratoriyada analiz." },
+      { "number": 7, "name": "Nəticə", "description": "Müsbət nəticə olduqda Nəticənin İdarə Edilməsi (Results Management) prosesi başlayır." }
+    ],
+    "rightsTitle": "İdmançının hüquqları dopinq nəzarəti zamanı",
+    "rights": [
+      "Prosedur haqqında məlumat almaq hüququ",
+      "Nümayəndəsinin (şahidin) iştirakını istəmək hüququ",
+      "Qeyri-adekvat şərtləri rəsmi şikayət formasına qeyd etmək hüququ",
+      "B nümunəsinin ayrı laboratoriyada analizini tələb etmək hüququ"
+    ],
+    "passportTitle": "İdmançı Bioloji Pasportu (IBP)",
+    "passport": "İdmançı Bioloji Pasportu (ABP) — idmançının qan və ya steroid hematologiya parametrləri üzrə vaxt içindəki dəyişiklikləri izləyən longitudinal proqramdır. IBP birbaşa qadağan edilmiş maddəni axtarmır — əvəzinə qanın və ya hormonların biologiyasındakı anormal dəyişiklikləri müəyyən edir."
+  },
+  "strictLiability": {
+    "title": "Ciddi məsuliyyət",
+    "intro": "Ciddi Məsuliyyət — idmançı öz bədəninə daxil olan hər hansı maddəyə görə şəxsən məsuliyyət daşıyır. Bu prinsip Ümumdünya Antidopinq Məcəlləsinin əsas sütunlarından biridir.",
+    "whatItMeansTitle": "Prinsip nə deməkdir?",
+    "whatItMeans": "Müsbət dopinq nəzarəti nəticəsi aldıqda idmançı aşağıdakıları sübut etməyə məcbur deyil:",
+    "notRequired": [
+      "Maddəni bilərəkdən istifadə etdiyini",
+      "Maddənin öz bədəninə necə daxil olduğunu",
+      "İstifadənin niyyətli olduğunu"
+    ],
+    "mitigationNote": "İdmançı yalnız müəyyən hallarda cəza müddətini azalda bilər — məsələn, maddənin bilmədən qəbul edildiyi, ya da kontaminasiya nəticəsində olduğu sübut olunduqda. Lakin bu sübut yükü idmançının üzərindədir.",
+    "practicalTitle": "Praktik nəticə",
+    "practical": [
+      "✅ Hər hansı maddəni qəbul etməzdən əvvəl Qadağan edilmiş Siyahıda yoxlayın.",
+      "✅ Hər qida əlavəsi, bitkisel çay, vitamin preparatı — hər şeyi yoxlayın.",
+      "✅ Şübhəli olduğunuzda AMADA-ya müraciət edin.",
+      "❌ 'Bilmirdim' bəhanəsi antidopinq hüququnda kifayət etmir."
+    ]
+  },
+  "tue": {
+    "title": "Terapevtik İstifadə İcazəsi (Tİİ)",
+    "intro": "Tİİ — idmançının tibbi zərurətə görə qəbul etməli olduğu dərman və ya prosedur Qadağan edilmiş Siyahıda olduqda, müvafiq tibbi sənədləşmə əsasında istifadəyə icazə verən rəsmi icazədir.",
+    "conditionsTitle": "Tİİ almaq üçün şərtlər",
+    "conditions": [
+      "İdmançının ciddi tibbi vəziyyəti mövcud olmalıdır",
+      "Qadağan edilmiş olmayan alternativ dərman mövcud olmamalı və ya effektiv olmamalıdır",
+      "Tİİ idman göstəricilərinə əhəmiyyətli dərəcədə kömək etməməlidir",
+      "İdmançının tibbi vəziyyəti öncədən qadağan edilmiş maddənin istifadəsi nəticəsində yaranmamalıdır"
+    ],
+    "processTitle": "Müraciət prosesi",
+    "processNote": "Milli səviyyəli idmançılar AMADA-ya, beynəlxalq səviyyəli idmançılar isə müvafiq Beynəlxalq Federasiyaya müraciət edir. Müraciət ADAMS sistemi vasitəsilə həyata keçirilir.",
+    "steps": [
+      { "step": 1, "name": "Tibbi sənədlərin hazırlanması", "detail": "Həkim müayinəsi, diaqnoz, müalicə planı" },
+      { "step": 2, "name": "ADAMS-da ərizənin doldurulması", "detail": "adams.wada-ama.org ünvanında müraciət" },
+      { "step": 3, "name": "Nəzərdən keçirilmə", "detail": "Tİİ Komitəsi tərəfindən 30 gün ərzində" },
+      { "step": 4, "name": "Qərar", "detail": "Qəbul, rədd və ya əlavə sənəd tələbi" },
+      { "step": 5, "name": "Apellyasiya", "detail": "Rədd edildikdə CAS-a müraciət hüququ" }
+    ],
+    "contact": "Ətraflı məlumat üçün: education@amada.az"
+  },
+  "reportDoping": {
+    "title": "Narahatlığı bildir",
+    "intro": "Dopinqə qarşı mübarizənin ən güclü vasitələrindən biri məlumatlı idman ictimaiyyətidir. Hər kəs — idmançı, məşqçi, valideyn, tibb mütəxəssisi, ya da idman icmasının hər hansı bir üzvü — şübhəli vəziyyət gördükdə anonim şəkildə məlumat verə bilər.",
+    "whyTitle": "Niyə məlumat vermək vacibdir?",
+    "why": [
+      "Təmiz idman mühitini qoruyur",
+      "Günahsız idmançıların haqlarını müdafiə edir",
+      "Dopinqin idmana vurduğu ziyanın qarşısını alır",
+      "Sistemin dürüstlüyünü qoruyur"
+    ],
+    "howTitle": "Necə məlumat vermək olar?",
+    "amada": {
+      "title": "AMADA-ya birbaşa müraciət:",
+      "channels": [
+        "E-poçt: education@amada.az",
+        "Telefon: +994 12 000 00 00",
+        "Rəsmi veb-sayt: amada.az"
+      ]
+    },
+    "wada": {
+      "title": "WADA Speak Up! platforması:",
+      "channels": [
+        "https://speakup.wada-ama.org",
+        "Beynəlxalq, tam məxfi, 24/7 əlçatan hesabat platforması",
+        "Bir neçə dildə mövcuddur"
+      ]
+    },
+    "confidentialityNote": "Bütün müraciətlər tam məxfidir. Məlumat verən şəxsin kimliyinin açıqlanması qanunla qadağandır. Unutmayın: Bir məlumat — onlarla idmançının karyerasını xilas edə bilər."
+  }
+}

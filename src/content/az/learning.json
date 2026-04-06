@@ -1,0 +1,53 @@
+{
+  "overview": {
+    "title": "Öyrənmə Mərkəzi — Ümumi baxış",
+    "intro": "AMADA-nın Öyrənmə Mərkəzi müxtəlif qruplara — idmançılardan tutmuş tibb mütəxəssislərinə, məktəb şagirdlərindən federasiya nümayəndələrinə qədər — uyğunlaşdırılmış antidopinq təhsilini çeşidli formatlar vasitəsilə çatdırır. ISE Maddə 9.2 bu formatların genişliyini məcburi element kimi müəyyən edir."
+  },
+  "elearning": {
+    "title": "Elektron öyrənmə kursları",
+    "intro": "AMADA WADA-nın ADEL (Anti-Doping Education and Learning) platforması vasitəsilə müxtəlif hədəf qruplar üçün onlayn interaktiv kurslar təqdim edir. Kurslar nəticə əsaslı formata uyğun qurulmuş olub, uğurla tamamlayan iştirakçılara elektron sertifikat verilir.",
+    "details": [
+      "Kurslara giriş: https://adel.wada-ama.org",
+      "Azərbaycan dili daxil olmaqla bir neçə dildə mövcuddur",
+      "Yeni Qadağan edilmiş Siyahı ilə sinxronlaşdırılmış məzmun",
+      "İstənilən cihazdan əlçatan"
+    ]
+  },
+  "webinars": {
+    "title": "Vebinarlar",
+    "intro": "AMADA hər il müntəzəm olaraq onlayn vebinarlar təşkil edir. Bu vebinarlar federasiyalar, tibb mütəxəssisləri, məşqçilər və digər maraqlı tərəflər üçün interaktiv öyrənmə imkanı yaradır. Vebinar cədvəli hər ilin əvvəlində açıqlanır.",
+    "details": [
+      "Mövzular: qadağan edilmiş maddələr, Tİİ prosesi, dopinq nəzarəti, məkan məlumatı",
+      "Qeydiyyat: education@amada.az ünvanına e-poçt vasitəsilə"
+    ]
+  },
+  "seminars": {
+    "title": "Seminarlar",
+    "intro": "Canlı seminarlar AMADA-nın əsas çatdırılma metodlarından biridir. Hər il risk qiymətləndirməsinə əsasən 29 milli federasiya arasında paylanmış seminarlar həyata keçirilir. Seminarlara akkreditasiyalı AMADA Maarifləndiriciləri rəhbərlik edir.",
+    "details": [
+      "Müddət: 2–4 saat",
+      "Format: Canlı, interaktiv, ssenari əsaslı",
+      "Dil: Azərbaycan dili",
+      "Qeydiyyat: Federasiya koordinatoru vasitəsilə"
+    ]
+  },
+  "schoolPrograms": {
+    "title": "Məktəb proqramları",
+    "intro": "AMADA uşaqlar və gənclər arasında erkən mərhələdən antidopinq maarifləndirməsi aparmaq məqsədilə ümumtəhsil məktəbləri ilə əməkdaşlıq edir. Proqramlar yaş qrupuna uyğun metodika ilə hazırlanmış, dəyər əsaslı təhsil elementlərini özündə birləşdirir.",
+    "details": [
+      "Hədəf: 10–17 yaş arası şagirdlər",
+      "Format: İnteraktiv dərs, oyun əsaslı fəaliyyətlər, müzakirə",
+      "Müəllim üçün metodiki vəsait mövcuddur"
+    ]
+  },
+  "events": {
+    "title": "Hadisə əsaslı təhsil",
+    "intro": "Yarış, turnir və idman tədbirləri zamanı AMADA hadisə əsaslı antidopinq maarifləndirməsi həyata keçirir. Bu fəaliyyətlər ISE Maddə 9.2-nin Event-Based Education kateqoriyasına uyğun gəlir.",
+    "details": [
+      "Yarışlara aid xüsusi antidopinq qaydaları",
+      "Tanıtım materialları: flayerlər, bukletlər, afişalar",
+      "AMADA stendi: məlumat, sual-cavab",
+      "QR kodlar vasitəsilə onlayn resurslara birbaşa keçid"
+    ]
+  }
+}

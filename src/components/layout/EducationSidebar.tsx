@@ -38,7 +38,6 @@ function NavSection({
 
   const [isExpanded, setIsExpanded] = useState(shouldBeExpanded);
 
-  // Auto-expand if a child or the title itself becomes active via external navigation
   useEffect(() => {
     if (shouldBeExpanded) {
       setIsExpanded(true);
@@ -52,7 +51,7 @@ function NavSection({
           href={titleHref}
           className={`flex-1 py-2 px-4 text-[14px] font-medium text-[#0D9488] ml-4 rounded-r-md ${
             isTitleActive ? activeStyles : hoverStyles
-          } pr-10`} // Added pr-10 to prevent text from overlapping with the absolute button
+          } pr-10`}
         >
           {title}
         </Link>
@@ -67,7 +66,7 @@ function NavSection({
           {isExpanded ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
         </button>
       </div>
-      
+
       {isExpanded && (
         <div className="flex flex-col ml-8 border-l border-slate-200 animate-in fade-in slide-in-from-top-2 duration-200">
           {items.map((item, idx) => (
@@ -94,20 +93,18 @@ export function EducationSidebar({ lang }: SidebarProps) {
 
   const isActive = (path: string) => pathname === path;
 
-  // Active state styles
-  const activeStyles = "border-l-[3px] border-amada-teal bg-amada-teal/10 text-amada-teal font-semibold";
+  const activeStyles =
+    "border-l-[3px] border-amada-teal bg-amada-teal/10 text-amada-teal font-semibold";
   const hoverStyles = "hover:bg-[#F0FDFA] transition-colors duration-200";
 
   return (
     <aside className="hidden lg:block w-full sticky top-24 h-[calc(100vh-120px)] overflow-y-auto pr-2 pb-10">
       <nav className="flex flex-col gap-6">
-        
-        {/* MAIN MENU */}
         <div className="flex flex-col gap-2">
           <div className="text-[#1F3864] font-bold text-[13px] uppercase tracking-wider mb-2">
             {t(s.whatWeDo, l)}
           </div>
-          
+
           <div className="flex flex-col gap-1">
             {/* Təhsil */}
             <NavSection
@@ -156,11 +153,11 @@ export function EducationSidebar({ lang }: SidebarProps) {
                 { label: t(s.valuesCleanSport, l), path: `/${l}/education/topics/values-clean-sport` },
                 { label: t(s.whereaboutsAdams, l), path: `/${l}/education/topics/whereabouts-adams` },
                 { label: t(s.supplementsRisk, l), path: `/${l}/education/topics/supplements-risk` },
-                { label: t(s.reportConcern, l), path: `/${l}/education/report-doping` },
                 { label: t(s.prohibitedList, l), path: `/${l}/education/topics/prohibited-list` },
                 { label: t(s.testingProcedures, l), path: `/${l}/education/topics/testing-procedures` },
                 { label: t(s.strictLiability, l), path: `/${l}/education/topics/strict-liability` },
                 { label: t(s.tue, l), path: `/${l}/education/topics/tue` },
+                { label: t(s.reportConcern, l), path: `/${l}/education/report-doping` },
               ]}
             />
 
@@ -197,9 +194,7 @@ export function EducationSidebar({ lang }: SidebarProps) {
             />
           </div>
         </div>
-
       </nav>
     </aside>
   );
 }
-
