@@ -89,6 +89,26 @@ export default async function EventsPage({
               : "If you'd like to include AMADA education at your event, contact education@amada.az"}
             type="info"
           />
+
+          <div className="mt-14">
+            <h2 className="text-2xl font-bold text-primary mb-4">
+              {isAz ? "Tədbirlərimizdən Video" : "Video from Our Events"}
+            </h2>
+            <p className="text-[#102033] mb-6">
+              {isAz
+                ? "Aşağıda AMADA-nın maarifləndirmə tədbirlərindən görüntülər yer alır."
+                : "Watch AMADA's outreach education activities at sporting events."}
+            </p>
+            <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-border shadow-md">
+              <iframe
+                src="https://www.youtube.com/embed/gbwKUA0jKoI"
+                title={isAz ? "AMADA Maarifləndirmə Tədbirləri" : "AMADA Outreach Events"}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
