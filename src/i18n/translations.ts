@@ -185,43 +185,43 @@ export const translations = {
   // ─── Athlete Pathway ────────────────────────────────────────────────────────
   pathway: {
     title: {
-      az: "İdmançı İnkişaf Yolu",
+      az: "İdmançının təmiz inkişaf yolu",
       en: "Athlete Development Pathway"
     },
     subtitle: {
-      az: "Təmiz idman təhsili ömür boyu bir səfərdir. AMADA-nın Təhsil Proqramının idmançıları karyeralarının hər mərhələsində necə dəstəklədiyini kəşf edin.",
+      az: "Təmiz idman təhsili davamlı və mərhələli prosesdir. AMADA-nın Təhsil Proqramı idmançıları karyeralarının bütün mərhələlərində sistemli şəkildə dəstəkləyir.",
       en: "Clean sport education is a lifelong journey. Explore how AMADA's Education Program supports athletes at every stage of their career."
     },
     timelineTitle: {
-      az: "Oyun Meydançasından Kürsüyə",
+      az: "Oyun meydançasından podiuma",
       en: "From Playground to Podium"
     },
     timelineDesc: {
-      az: "Hər mərhələdə məsuliyyətlərinizi anlayın. Cari səviyyənizlə bağlı gözlənilən öyrənmə ehtiyaclarını və riskləri nəzərdən keçirin.",
+      az: "Hər mərhələdə öhdəliklərinizi anlayın, mövcud səviyyənizə uyğun öyrənmə ehtiyaclarını və riskləri nəzərdən keçirin.",
       en: "Understanding your responsibilities at every stage. Review the expected learning needs and risks associated with your current level."
     },
     stages: {
       children: {
-        title: { az: "İdmanda Uşaqlar", en: "Children in Sport" },
-        subtitle: { az: "Əsas Mərhələ", en: "Foundation Stage" },
+        title: { az: "İdmanda uşaqlar", en: "Children in Sport" },
+        subtitle: { az: "Əsas mərhələ", en: "Foundation Stage" },
         description: {
-          az: "Aktiv oyun vasitəsilə ədalətli oyun, hörmət və bərabərliyin əsas dəyərlərini tanıtmaq. Həqiqi təmiz idman, idmançılar antidopinq qaydalarını öyrənməzdən əvvəl oyunu özünəməxsus dəyərinə görə sevməyi öyrəndikdə qurulur.",
+          az: "Əyləncəli oyunlar vasitəsilə ədalət, hörmət və bərabərlik kimi əsas dəyərlərin formalaşdırılması.",
           en: "Introducing the core values of fair play, respect, and equity through active play. True clean sport is built when athletes learn to love the game for its intrinsic value before they learn the rules of anti-doping."
         },
         points: {
-          az: ["Dəyərlərə əsaslanan idman proqramlarına diqqət", "Qalib olmaqdan əvvəl iştirakın sevincini ön plana çıxarmaq", "Valideynləri və bədən tərbiyəsi müəllimlərini cəlb etmək", "Ədalətli oyun anlayışını üzvi olaraq tanıtmaq"],
+          az: ["Dəyərlərə əsaslanan təmiz idman yanaşmasının təşviqi", "İştirakın nəticədən üstün tutulması", "Valideynlərin və müəllimlərin prosesə cəlb edilməsi", "Ədalətli oyun anlayışının erkən mərhələdə formalaşdırılması"],
           en: ["Focus on values-based sport programs", "Promote joy of participation over winning", "Involve parents and physical education teachers", "Introduce the concept of fair play organically"]
         }
       },
       youth: {
-        title: { az: "Gənc İdmançılar", en: "Youth Athletes" },
-        subtitle: { az: "İnkişaf Mərhələsi", en: "Development Stage" },
+        title: { az: "Gənc idmançılar", en: "Youth Athletes" },
+        subtitle: { az: "İnkişaf mərhələsi", en: "Development Stage" },
         description: {
-          az: "İdmançılar rəqabət aparmağa başladıqda, qalib olmaq üçün ilk xarici təzyiqlərlə üzləşirlər. Bu, antidopinq anlayışlarını rəsmi olaraq təqdim etmək və onların sağlam qidalanma ilə təhlükəli əlavə qidalar arasındakı fərqi başa düşmələrini təmin etmək mərhələsidir.",
+          az: "İdmançılar rəqabət mühitinə daxil olduqca, nəticəyə yönəlmiş ilk xarici təsirlərlə üzləşirlər. Bu mərhələdə antidopinq anlayışlarının təqdim olunması və sağlam seçimlərin təşviqi vacibdir.",
           en: "As athletes begin to compete, they face their first external pressures to win. This is the stage to formally introduce anti-doping concepts and ensure they understand the difference between healthy nutrition and dangerous supplements."
         },
         points: {
-          az: ["Ciddi məsuliyyətin ilk tanıdılması", "Qadağan olunmuş siyahı haqqında əsas məlumatlılıq", "Dərmanların risk daşıdığını anlamaq", "Qida Öncəlikli yanaşma fəlsəfəsini formalaşdırmaq"],
+          az: ["Ciddi Məsuliyyət prinsipinin ilkin izahı", "Qadağan olunmuş siyahı barədə ilkin məlumatlılığın formalaşdırılması", "Dərman vasitələrinin risklərinin başa düşülməsi", "Qidalanmada “Sağlam Qida” prinsipinin təşviqi"],
           en: ["First introduction to strict liability", "Basic awareness of the Prohibited List", "Understanding that medications hold risks", "Establishing a food-first philosophy"]
         }
       },

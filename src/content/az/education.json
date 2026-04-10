@@ -1,25 +1,25 @@
 {
   "homepage": {
-    "heroTitle": "Təhsil ilə Təmiz İdmanı Gücləndiririk",
-    "heroSubtitle": "Azərbaycandakı idmançılar, məşqçilər, federasiyalar, məktəblər və idman icması üçün əlçatan, profilaktika əsaslı antidopinq təhsili.",
+    "heroTitle": "Təhsil vasitəsilə təmiz idmanın təşviqi",
+    "heroSubtitle": "Azərbaycanda bütün idmançılar, idmançı köməkçi heyəti, idman federasiyaları, təhsil müəssisələri və geniş idman ictimaiyyəti üçün əlçatan, profilaktikaya yönəlmiş antidopinq təhsili.",
     "startLearning": "Öyrənməyə Başla",
     "onThisPage": "Bu səhifədə",
-    "choosePath": "Öyrənmə Yolunuzu Seçin",
-    "choosePathDesc": "İdmandakı rolunuza uyğun antidopinq məlumatları və resurslar.",
-    "essentialTopics": "Əsas Təmiz İdman Mövzuları",
+    "choosePath": "Öyrənmə yolunuzu seçin",
+    "choosePathDesc": "Hədəf qruplarına uyğunlaşdırılmış antidopinq məlumatları və resurslar:",
+    "essentialTopics": "Təmiz idmanın əsas mövzuları",
     "essentialTopicsDesc": "Hər iştirakçının bilməli olduğu qaydalar, prosedurlar və risklər.",
     "viewAllTopics": "Bütün Mövzulara Bax",
-    "didYouKnow": "Bilirdinizmi?",
-    "didYouKnowText": "İdmançı olaraq, bədəninizdə aşkar edilən istənilən qadağan olunmuş maddəyə görə şəxsən məsuliyyət daşıyırsınız. Buna 'Ciddi Məsuliyyət' (Strict Liability) prinsipi deyilir — niyyətinizdən asılı olmayaraq.",
-    "playgroundToPodium": "Oyun Meydançasından Podiumadək",
+    "didYouKnow": "Bilirsinizmi?",
+    "didYouKnowText": "İdmançı olaraq, orqanizminizdə aşkar edilən hər hansı qadağan olunmuş maddəyə görə şəxsən məsuliyyət daşıyırsınız. Bu, Ciddi Məsuliyyət prinsipi (Strict Liability) adlanır.",
+    "playgroundToPodium": "Oyun meydançasından podiuma – təmiz idmançı yolu",
     "playgroundDesc": "Antidopinq təhsili idmançının inkişafının hər mərhələsini əhatə etməlidir. Gənc iştirakçılıqdan Qeydiyyata Alınmış Test Qrupuna (QTQ) qədər hər mərhələyə uyğun öyrənmə ehtiyaclarını kəşf edin.",
     "explorePathway": "İdmançı Yolunu Kəşf Et",
-    "learningFormats": "Öyrənmə Formatları",
+    "learningFormats": "Öyrənmə formatları və imkanları",
     "viewLearningHub": "Öyrənmə Mərkəzinə Bax",
     "speakUp": "Təmiz İdman Uğrunda Səsini Qaldır",
     "speakUpDesc": "Dopinqə dair şübhələrinizi necə təhlükəsiz və məxfi şəkildə bildirə biləcəyinizi öyrənin.",
     "reportingOptions": "Bildiriş Seçimləri",
-    "reporting": "Narahatlığı Bildirmək"
+    "reporting": "Şübhəli halların bildirilməsi"
   },
   "about": {
     "title": "Təhsil Proqramına Ümumi Baxış",
@@ -43,30 +43,28 @@
     ]
   },
   "cleanSportBehaviors": {
-    "title": "Təmiz İdman Davranışları",
-    "intro": "Təmiz idman davranışları — idmançıların və idmançı dəstək heyətinin antidopinq qaydaları çərçivəsində nümayiş etdirməli olduğu konkret hərəkət və davranış normalarıdır. Bu davranışlar ISE Maddə 8.1.1-də müəyyən edilmiş məcburi mövzular əsasında formalaşır.",
-    "areasTitle": "Əsas Davranış Sahələri",
+    "title": "Təmiz idman davranışları",
+    "intro": "Təmiz idman davranışları — idmançıların və idmançı köməkçi heyətinin antidopinq qaydalarına uyğun olaraq, nümayiş etdirməli olduqları hərəkət və davranış normalarıdır. Bu davranışlar təhsillə bağlı beynəlxalq standartlarda müəyyən edilmiş məcburi mövzular əsasında formalaşdırılır.",
+    "areasTitle": "Bilikdən əmələ",
     "knowTitle": "Bil",
     "know": [
-      "Qadağan Edilmiş Siyahını mütəmadi olaraq yoxla (hər il 1 yanvarda yenilənir)",
-      "AMADA-nın antidopinq qaydaları ilə tanış ol",
-      "Terapevtik İstifadə İcazəsi (Tİİ) prosedurunu anla",
-      "Ciddi Məsuliyyət prinsipinin nə demək olduğunu dərk et"
+      "Qadağan olunmuş siyahını mütəmadi olaraq yoxlayın (hər il 1 yanvar tarixində yenilənir)",
+      "AMADA-nın antidopinq qaydaları ilə tanış olun",
+      "Terapevtik İstifadə üçün İstisna (Tİİ) prosedurlarını tətbiq edin",
+      "Ciddi Məsuliyyət prinsipinin mahiyyətini dərk edin"
     ],
     "doTitle": "Et",
     "do": [
-      "Hər hansı dərman və ya qida əlavəsini qəbul etməzdən əvvəl Qadağan Edilmiş Siyahıda yoxla",
-      "Dərman qəbul etməzdən əvvəl tibb mütəxəssisi ilə məsləhətləş və idmançı olduğunu bildir",
-      "Dopinq nəzarəti prosesinə tam şəffaflıqla iştirak et",
-      "Qeydiyyata alınmış Test Qrupunun (QTQ) üzvüsənsə, məkan məlumatını vaxtında ADAMS-a daxil et"
+      "Hər hansı dərman vasitəsi və ya qida əlavəsi qəbul etməzdən əvvəl Qadağan olunmuş siyahını yoxlayın",
+      "Dərman qəbul etməzdən əvvəl tibb mütəxəssisi ilə məsləhətləşin və idmançı olduğunuzu bildirin",
+      "Dopinq nəzarəti prosesində tam şəffaflıqla iştirak edin",
+      "Qeydiyyata alınmış Test Qrupunun (QTQ) üzvüsünüzsə, məkan məlumatlarınızı vaxtında ADAMS sisteminə daxil edin"
     ],
-    "speakTitle": "Danış",
+    "speakTitle": "Susma",
     "speak": [
-      "Şübhəli vəziyyətlər barədə etibarlı bir şəxsə məlumat ver",
-      "AMADA-nın 'Narahatlığı Bildir' kanalından istifadə et",
-      "Komanda yoldaşlarını təmiz idman haqqında məlumatlandır və onları dəstəklə"
+      "Şübhəli hallar barədə etibarlı şəxsə və ya aidiyyəti quruma məlumat verin"
     ],
-    "closing": "Bu davranışlar idmançının karyerası boyunca — gənc mərhələdən elit səviyyəyə qədər — inkişaf etdirilməli və möhkəmləndirilməlidir. AMADA-nın bütün təhsil fəaliyyətləri məhz bu davranışların formalaşdırılmasına yönəlib."
+    "closing": "AMADA-nın bütün antidopinq təhsil fəaliyyətləri bu davranışların formalaşdırılmasına və möhkəmləndirilməsinə yönəldilmişdir. Bu davranışlar idmançının karyerası boyunca, erkən mərhələdən elit səviyyəyə qədər davamlı şəkildə inkişaf etdirilməlidir."
   },
   "athletePathway": {
     "title": "İdmançı İnkişaf Yolu",

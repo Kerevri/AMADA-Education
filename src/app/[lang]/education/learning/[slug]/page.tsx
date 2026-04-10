@@ -28,17 +28,17 @@ const LEARNING_DATA: Record<string, Record<string, {
       ctaPath: "https://adel.wada-ama.org"
     },
     "az": {
-      title: "Elektron Öyrənmə (WADA ADEL)",
-      subtitle: "Dopinqə Qarşı Təhsil və Öyrənmə Platforması",
-      intro: "WADA-nın ADEL platforması bütün hədəf qrupları üçün interaktiv, onlayn modullar təklif edir. Xüsusi ADEL kurslarını tamamlamaq tez-tez böyük milli və ya beynəlxalq tədbirlərdə iştirak etməzdən əvvəl məcburidir.",
-      audience: ["İdmançılar (bütün səviyyələr)", "Məşqçilər", "Tibb Heyəti", "Valideynlər"],
+      title: "Elektron öyrənmə (ADEL)",
+      subtitle: "Antidopinq və öyrənmə platforması",
+      intro: "ADEL platforması müxtəlif hədəf qrupları üçün interaktiv onlayn təhsil modulları təqdim edir. Müəyyən ADEL kurslarının tamamlanması milli və ya beynəlxalq idman tədbirlərində iştirakdan əvvəl tələb oluna bilər.",
+      audience: ["İdmançılar (bütün səviyyələr)", "Məşqçilər", "Tibb mütəxəssisləri", "Valideynlər və s."],
       keyFeatures: [
-        "Cihazınızda istənilən yerdə, istənilən vaxt daxil olun",
-        "Çoxsaylı dillərdə mövcuddur",
-        "Bitirdikdən sonra yoxlanıla bilən rəqəmsal sertifikat alın",
-        "Xüsusi rollar üçün uyğunlaşdırılmış kurslar (məsələn, Tibb Mütəxəssisi kursu)"
+        "İstənilən vaxt və istənilən yerdən çıxış imkanı",
+        "Çoxdilli interfeys və məzmun",
+        "Tamamlandıqdan sonra yoxlanıla bilən rəqəmsal sertifikat",
+        "Müxtəlif hədəf qruplarına uyğunlaşdırılmış kurslar (məsələn, tibb mütəxəssisləri üçün proqramlar və s.)"
       ],
-      ctaLabel: "ADEL Platformasına Keç",
+      ctaLabel: "ADEL platformasına keçid",
       ctaPath: "https://adel.wada-ama.org"
     }
   },
@@ -58,17 +58,17 @@ const LEARNING_DATA: Record<string, Record<string, {
       ctaPath: "/education/contact"
     },
     "az": {
-      title: "Əyani Seminarlar",
-      subtitle: "Birbaşa qarşılıqlı əlaqə və uyğunlaşdırılmış öyrənmə",
-      intro: "Təlim keçmiş Maarifləndiricilərimiz ölkə boyu əyani seminarlar keçirirlər. Bu sessiyalar birbaşa qarşılıqlı əlaqə, sual-cavab və sınaq prosesinin praktiki nümayişinə imkan verir.",
+      title: "Seminarlar",
+      subtitle: "Əyani seminarlar və interaktiv sessiyalar",
+      intro: "AMADA tərəfindən ölkə üzrə əyani seminarlar təşkil olunur. Bu sessiyalar interaktiv müzakirə, sual-cavab və praktiki nümayiş imkanları yaradır.",
       audience: ["Milli Komandalar", "Federasiya Heyəti", "Klublar", "Dəstək Heyəti"],
       keyFeatures: [
-        "AMADA Sertifikatlı Maarifləndiriciləri tərəfindən aparılır",
-        "Ssenari əsaslı öyrənmə və nümunə araşdırmaları",
-        "Dopinq kontrol avadanlıqlarının praktiki nümayişi",
-        "Sizin məşq müəssisənizdə keçirilə bilər"
+        "AMADA tərəfindən həyata keçirilir",
+        "Ssenari əsaslı öyrənmə və praktiki nümunələr",
+        "Dopinq nəzarəti prosedurlarının nümayişi",
+        "Müvafiq idman qurumlarının bazasında təşkil oluna bilər"
       ],
-      ctaLabel: "Seminar Sorğula",
+      ctaLabel: "Seminar tələb et",
       ctaPath: "/education/contact"
     }
   },
@@ -89,16 +89,16 @@ const LEARNING_DATA: Record<string, Record<string, {
     },
     "az": {
       title: "Vebinarlar",
-      subtitle: "Mövzuya xüsusi virtual sessiyalar",
-      intro: "AMADA mütəmadi olaraq Qadağan olunmuş Siyahıdakı dəyişikliklər, Tİİ prosesi və ya yeni dopinqə qarşı siyasətlər kimi xüsusi, kritik mövzulara yönəlmiş vebinarlar təşkil edir.",
-      audience: ["Bütün Hədəf Qrupları", "İctimaiyyət"],
+      subtitle: "Mövzuya uyğun xüsusi onlayn sessiyalar",
+      intro: "AMADA mütəmadi olaraq, Qadağan olunmuş siyahıdakı dəyişikliklər, Terapevtik İstifadə üçün İstisna (Tİİ) prosesi və antidopinq siyasətində yeniliklər kimi aktual mövzular üzrə vebinarlar təşkil edir.",
+      audience: ["İdmançılar (bütün səviyyələr)", "Məşqçilər", "Tibb mütəxəssisləri", "Valideynlər və s.", "İctimaiyyət"],
       keyFeatures: [
-        "Dopinqə qarşı mütəxəssislərlə canlı sual-cavab",
-        "Uzaqdan daxil olmaq imkanı",
-        "Resurs Kitabxanamızda sonradan baxmaq üçün qeyd olunur",
-        "Cari hadisələrə və yeniliklərə diqqət yetirir"
+        "Antidopinq üzrə mütəxəssislərlə canlı sual-cavab imkanı",
+        "Məsafədən qoşulma imkanı",
+        "Sessiyaların sonradan baxış üçün resurs bazasında yerləşdirilməsi",
+        "Cari dəyişikliklər və yeniliklərə fokuslanmış məzmun"
       ],
-      ctaLabel: "Gələcək Vebinarlara Bax",
+      ctaLabel: "Gələcək vebinarlara bax",
       ctaPath: "/education/events"
     }
   },
@@ -289,11 +289,11 @@ export default async function LearningSlugPage({
   const isExternal = program.ctaPath.startsWith("http");
   const finalPath = isExternal ? program.ctaPath : `/${lang}${program.ctaPath}`;
 
-  const keyFeaturesTitle = l === "az" ? "Əsas Özəlliklər" : "Key Features";
-  const targetAudienceTitle = l === "az" ? "Hədəf Auditoriya" : "Target Audience";
-  const readyToParticipateTitle = l === "az" ? "İştirak etməyə hazırsınız?" : "Ready to participate?";
+  const keyFeaturesTitle = l === "az" ? "Əsas xüsusiyyətlər" : "Key Features";
+  const targetAudienceTitle = l === "az" ? "Hədəf auditoriya" : "Target Audience";
+  const readyToParticipateTitle = l === "az" ? "İştiraka başlayın" : "Ready to participate?";
   const readyDesc = l === "az" 
-    ? `${program.title.toLowerCase()} resurslarına daxil olmaq və ya sessiya sorğulamaq üçün aşağıdakı linki izləyin.`
+    ? `${program.title} resurslarına daxil olmaq üçün aşağıdakı linkdən istifadə edin:`
     : `Follow the link below to access ${program.title.toLowerCase()} resources or request a session.`;
 
   return (
