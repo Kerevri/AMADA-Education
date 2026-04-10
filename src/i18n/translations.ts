@@ -262,7 +262,7 @@ export const translations = {
         }
       },
       returning: {
-        title: { az: "Geri Dönən İdmançılar", en: "Returning Athletes" },
+        title: { az: "Sanksiyadan Qayıdan İdmançılar", en: "Returning Athletes" },
         subtitle: { az: "Reintegrasiya Mərhələsi", en: "Re-integration Stage" },
         description: {
           az: "Sanksiya müddətini başa vuran idmançılar. Təhsil reabilitasiyaya, yenilənmiş qaydalara dair biliklərin artırılmasına və müsabiqəyə qayıdışda uyğunluğun təmin edilməsinə yönəlir.",
