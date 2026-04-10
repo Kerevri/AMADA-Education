@@ -94,6 +94,7 @@ export function Header({ lang }: { lang: string }) {
             </DropdownMenuContent>
           </DropdownMenu>
 
+          {navLink(`/${l}/bulletin`, l === "az" ? "e-Bülletin" : "e-Bulletin")}
           {navLink(`/${l}/contact`, t(n.contact, l))}
         </div>
 
@@ -127,6 +128,7 @@ export function Header({ lang }: { lang: string }) {
         <div className="lg:hidden border-t border-border bg-white py-4 px-4 space-y-4">
           <div className="flex flex-col gap-3">
             <Link href={`/${l}/education`} className="text-sm font-semibold text-[#003466]">{t(n.education, l)}</Link>
+            <Link href={`/${l}/bulletin`} className="text-sm font-semibold text-[#003466]">{l === "az" ? "e-Bülletin" : "e-Bulletin"}</Link>
             <Link href={`/${l}/education/topics`} className="text-sm font-semibold text-[#003466]">{t(s.cleanSportTopics, l)}</Link>
             <Link href={`/${l}/education/resources`} className="text-sm font-semibold text-[#003466]">{t(s.resourceLibrary, l)}</Link>
             <Link href={`/${l}/education/contact`} className="text-sm font-semibold text-[#003466]">{t(n.contact, l)}</Link>
